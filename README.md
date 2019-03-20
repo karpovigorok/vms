@@ -5,12 +5,14 @@ VMS is your Video Subscription Platform. Add unlimited videos (upload video file
 
 
 ## Overview
+* Easy to install
+VMS is ready for use is out of the box, Install script included.
 * Easy to monetize.
 All options to monetize your video content - ready integration with Google Ads, in-video overlay ads, subscription model.
 * ​Fully customizable.
 More that 200 parameters to configure your platform, not including content itself. If it's not enough - develop your own plugins and themes!
 * Accept payments to monetize.
-VMS Video integrated with Stripe to allow you accept re-current subscription payments from your users.
+VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-current subscription payments from your users.
 * Translation ready using PO files.
 
 ### Supported languages
