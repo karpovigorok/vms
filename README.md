@@ -1,5 +1,6 @@
 # Premium Video Management System
 VMS is your Video Subscription Platform. Add unlimited videos (upload video files or embed video), posts, and pages to your subscription site. Earn re-curring revenue and require users to subscribe to access premium content on your website.
+
 ![Premium Video Management System](https://demo.noxls.net/vms/documentation/images/main_750.png "Premium Video Management System")
 
 
@@ -10,6 +11,11 @@ All options to monetize your video content - ready integration with Google Ads, 
 More that 200 parameters to configure your platform, not including content itself. If it's not enough - develop your own plugins and themes!
 * Accept payments to monetize.
 VMS Video integrated with Stripe to allow you accept re-current subscription payments from your users.
+* Translation ready using PO files.
+
+### Supported languages
+* English
+* Russian
 
 ### Full solution for small video hosting platforms:
 - [x] Multi Language interface
@@ -39,3 +45,25 @@ Admin User
 Username: admin 
 Password: admin 
 [Admin Panel](http://vms-light-demo.noxls.net/login)
+
+### Need help with translations
+* Arabic
+* Danish
+* Dutch
+* French
+* German
+* Hindi
+* Indonesian
+* Italian
+* Norwegian
+* Spanish
+* Сhinese
+* Japan
+* Korean
+* your language
+
+### In progress
+* dark theme
+
+### Any questins?
+mail@noxls.net
