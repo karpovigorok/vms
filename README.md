@@ -1,5 +1,5 @@
 # Premium Video Management System
-VMS is your Video Subscription Platform. Add unlimited videos, posts, and pages to your subscription site. Earn re-curring revenue and require users to subscribe to access premium content on your website.
+VMS is your Video Subscription Platform. Add unlimited videos (upload video files or embed video), posts, and pages to your subscription site. Earn re-curring revenue and require users to subscribe to access premium content on your website.
 ![Premium Video Management System](https://demo.noxls.net/vms/documentation/images/main_750.png "Premium Video Management System")
 
 
