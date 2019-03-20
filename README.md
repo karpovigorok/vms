@@ -28,7 +28,7 @@ VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-c
 - [x] SEO Plugin for Videos and Blog
 - [x] Extend platform with Plugins
 - [x] Multi Themes support
-- [x] <a href="https://demo.noxls.net/vms/documentation" target="_blank">Well Documented</a>
+- [x] <a href="https://demo.noxls.net/vms/documentation?source=github" target="_blank">Well Documented</a>
 
 
 ### Developers Friendly:
