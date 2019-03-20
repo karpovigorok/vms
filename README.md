@@ -48,7 +48,9 @@ Username: admin
 Password: admin 
 [Admin Panel](http://vms-light-demo.noxls.net/login)
 
-### Need help with translations
+### How to help VMS
+1. Simple way - press Star button at the top of page
+2. Easy way - translate to language below:
 * Arabic
 * Danish
 * Dutch
@@ -63,6 +65,8 @@ Password: admin
 * Japan
 * Korean
 * your language
+3. Hard way - write reviw in you blog
+4. Rocket since way - [donate](https://noxls.net/send-money)
 
 ### In progress
 * dark theme
