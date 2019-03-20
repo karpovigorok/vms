@@ -28,7 +28,7 @@ VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-c
 - [x] SEO Plugin for Videos and Blog
 - [x] Extend platform with Plugins
 - [x] Multi Themes support
-- [x] [Well Documented](https://demo.noxls.net/vms/documentation)
+- [x] <a href="https://demo.noxls.net/vms/documentation" target="_blank">Well Documented</a>
 
 
 ### Developers Friendly:
@@ -37,23 +37,15 @@ VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-c
 
 ### Credentials
 
-Visit the [Demo site](http://vms-light-demo.noxls.net/?source=github)
+Visit the <a href="http://vms-light-demo.noxls.net/?source=github" target="_blank">Demo site</a>
+Visit <a href="http://vms-light-demo.noxls.net/login?source=github" target="_blank">Admin Panel</a>
 
 Type | Username | Password
 --- | --- | ---
-Demo | demo | demo
-Admin | admin | admin
+Demo User | demo | demo
+Admin User | admin | admin
 
-Demo User
-Username: demo
-Password: demo
 
-Admin User
-
-Username: admin
-
-Password: admin
-[Admin Panel](http://vms-light-demo.noxls.net/login?source=github)
 
 ### How to help VMS
 1. Simple way - press Star button at the top of page
@@ -73,7 +65,7 @@ Password: admin
 * Korean
 * your language
 3. Hard way - write reviw in you blog
-4. Rocket since way - [donate](https://noxls.net/send-money)
+4. Rocket since way - <a href="https://noxls.net/send-money?source=github" target="_blank">donate</a>
 
 ### In progress
 * Dark theme
