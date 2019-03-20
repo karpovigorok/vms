@@ -37,16 +37,18 @@ VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-c
 
 ### Credentials
 
-Visit the [Demo site](http://vms-light-demo.noxls.net/)
+Visit the [Demo site](http://vms-light-demo.noxls.net/?source=github)
 
 Demo User
 Username: demo
 Password: demo
 
 Admin User
+
 Username: admin
+
 Password: admin
-[Admin Panel](http://vms-light-demo.noxls.net/login)
+[Admin Panel](http://vms-light-demo.noxls.net/login?source=github)
 
 ### How to help VMS
 1. Simple way - press Star button at the top of page
