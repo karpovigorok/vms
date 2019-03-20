@@ -1,0 +1,26 @@
+.sectionHeader{
+	margin-bottom:30px;
+}
+
+#episode_sidebar h3, #series_you_may_like h3{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#video_container{
+	padding-top:0px;
+}
+
+#episodes{
+	min-height: 330px !important;
+    max-height: 330px !important;
+}
+
+#video_bg_overlay{
+	background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

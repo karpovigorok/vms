@@ -1,0 +1,58 @@
+{
+    "name": "pbmedia/laravel-ffmpeg",
+    "description": "FFMpeg for Laravel 5.1 and higher",
+    "keywords": [
+        "pbmedia",
+        "laravel-ffmpeg"
+    ],
+    "homepage": "https://github.com/pbmedia/laravel-ffmpeg",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pascal Baljet",
+            "email": "pascal@pascalbaljetmedia.com",
+            "homepage": "http://www.pascalbaljetmedia.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/config": "^5.1",
+        "illuminate/filesystem": "^5.1",
+        "illuminate/log": "^5.1",
+        "league/flysystem": "^1.0",
+        "php-ffmpeg/php-ffmpeg": "~0.6",
+        "symfony/process": "^2.5|^3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "~5.0|~6.0",
+        "scrutinizer/ocular": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pbmedia\\LaravelFFMpeg\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pbmedia\\LaravelFFMpeg\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pbmedia\\LaravelFFMpeg\\FFMpegServiceProvider"
+            ],
+            "aliases": {
+                "FFMpeg": "Pbmedia\\LaravelFFMpeg\\FFMpegFacade"
+            }
+        }
+    }
+}

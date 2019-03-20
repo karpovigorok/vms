@@ -1,0 +1,13 @@
+filter:
+    paths:
+        - 'src/*'
+    excluded_paths:
+        - 'src/config/*'
+        - 'vendor/*'
+tools:
+    php_cs_fixer:
+        config: { level: psr2 }
+checks:
+    php:
+        code_rating: true
+        duplication: true

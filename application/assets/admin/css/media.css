@@ -1,0 +1,24 @@
+.nothingfound{
+	display:none;
+}
+#files{
+	display:flex;
+	list-style:none;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border:1px solid #f1f1f1;
+	flex-wrap:wrap;
+}
+#files li{
+	flex:1;
+	width:100%;
+	max-width:260px;
+	min-width:260px;
+}
+#files li .file_link{
+	background:#eee;
+	padding:20px;
+	margin:10px;
+	cursor:pointer;
+}

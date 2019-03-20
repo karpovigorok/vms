@@ -1,0 +1,10 @@
+filter:
+    paths:
+        - 'src/*'
+    excluded_paths:
+        - 'src/config/*'
+        - 'vendor/*'
+        - 'spec/*'
+tools:
+    php_cs_fixer:
+        config: { level: psr2 }

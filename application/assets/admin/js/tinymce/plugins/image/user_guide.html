@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Guide &middot; TinyMCE 4 Image Manager</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+		<script src="bootstrap/js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="mailto:robertnduati.karanja@gmail.com">robertnduati.karanja@gmail.com</a></li>
+        </ul>
+        <h3 class="muted">TinyMCE 4 Image Manager</h3>
+      </div>
+
+      <hr>
+
+      <h2>About</h2>
+			<p>This is a TinyMCE plugin that replaces the default one that comes with the editor and makes that editor more useful in CSMs by adding features to it. It makes it easier to added images when using the popular wysiwyg editor. This plugin only works with the updated and stylish TinyMCE 4 versions.</p>
+		<p><span class="label">tinymce</span>&nbsp;<span class="label">plugin</span>&nbsp;<span class="label">wysiwyg</span>&nbsp;<span class="label">html editor</span>&nbsp;<span class="label">Images</span>&nbsp;<span class="label">Manage Images</span>&nbsp;<span class="label">CMS</span></p>
+		<br/>
+		<h2>Features:</h2>
+		<ul>
+			<li><b>Image Preview</b>: When adding an image from a link, the plugin will retrieve the image and show a preview so that you are sure of the image that you are adding.</li>
+			<li><b>Permission</b>: The plugin has a configuration file <code>config.php</code> that you can use to determine who can upload images or view the defined library of images. User with no permissions can only insert images from links.</li>
+			<li><b>Multiple Uploads</b>: You will be able to upload multiple images at once by selecting them or draging and dropping.</li>
+			<li><b>Ajax Upload</b>: The upload feature uses ajax and so no page refreshing when uploading.</li>
+			<li><b>Recent List of Files</b>: When you insert images from an url or upload the or get them from the library, the plugin in saves them in a session and you can be able to view them the next time you open the dialog for the plugin.</li>
+			<li><b>Define an Image Library</b>: During installation you will be able to define a path to an image library. This will be a folder with images that you can access from the plugin and also the folder to which files are uploaded to.</li>
+			<li><b>Traverse the Library Subfolder</b>: If the library folder has nested subfolders the plugin will be able to handle them.</li>
+			<li><b>Search the Library</b>: This plugin has a search feature for the library that allows you to search it and the subfolders for an image using the image's name.</li>
+			<li><b>Bootstrap CSS and HTML</b>: If you wish to change any of the styling and are familiar with the Twitter Bootstrap framework, you will have no difficulty.</li>
+			<li><b>Image Alignment</b>: When inserting images, you will be able to define the alignment relative to the text around it. The plugin in uses float rather than the align(deprecated in HTML5)</li>
+			<li><b>Wrap Images in a Link</b>: You can easily choose to wrap an image in a link when adding it.</li>
+			<li><b>Image Dimensions</b>: When you add an image it is possible to define the dimension that it will be added with. You can easily keep the image's aspec ratio.</li>
+			<li><b>Quick Install</b>: Just modify the configuration file(if you want) and then upload to the tinymce plugins' folder. That is it.</li>
+			<li><b>Source Code</b>: Nothing is hidden.</li>
+		</ul>
+
+      <hr>
+ <h2>Installation</h2>
+			<ol>
+			<li>Unzip the file</li>
+			<li>Open the file <code>config.php</code> and define the library path and url and also the permissions. There are comments in the php file to help you with this.</li>
+			<li>Upload the files to the tinymce plugins' folder replacing the default image plugin</li>
+			</ol>
+		
+		 <hr>
+ <h2>Usage</h2>
+			<p>When using the editor, click on the <i class="icon-picture"></i> icon to activate the dialog for this plugin.</p>
+			<h4>1. Insert from Url</h4>
+			<p>When you click on the icon to select this plugin you will be presented with a form like the one below.</p>
+			<p><img src="userguide_files/img1.jpg"></p>
+			<ul>
+			<li><b>URL</b>: this is the url to the img that you want to add. Please use a full url that includes the protocol.</li>
+			<li><b>Title</b>: this is the text that will be displayed when the image is hovered.</li>
+			<li><b>Description</b>: this is the alternative text that will be displayed if the image can not be loaded.</li>
+			<li><b>Width and Height</b>: these are the dimensions that the image will be added with. When you provide a URL these fields are automatically populated. You can change them.</li>
+			<li><b>Force original aspect ratio</b>: when this is check and you change either the width or height, the other dimension will be calculated based in the original aspect ratio of the image.</li>
+			<li><b>Alignment</b>: this is the url to the image that you want to add. Please use a full url that includes the protocol.</li>
+			<li><b>Wrap image in a link</b>: check this if you want to link the image to something.</li>
+			<li><b>Link URL</b>: this is the url to link the image too.</li>
+			<li><b>Target</b>: if the image is wrapped in a link, this determines if the link will be opened in a new window or not when clicked</li>
+			<li><b>Preview</b>: when you input an image url in the first field, the image will be loaded here for preview.</li>
+			</ul>
+			
+			<br/>
+			<h4>2. Get from Library</h4>
+			<p>When you click on the tab titled "Get from Library" you will be presented with the following.</p>
+			<p><img src="userguide_files/img2.jpg"></p>
+			<ul>
+			<li><b>Folders</b>: when you click on a folder thumbnail, the content of the folder will be displayed.</li>
+			<li><b>Images</b>: when you click on an image you will be taken to the page for inserting it..</li>
+			<li><b>Back</b>: there is a "Back" button at the top left. When you are in a folder use this to go back up one level at a time.</li>
+			<li><b>Search</b>: you can search for images using the input at the top right. Just type the term you want to search using.</li>
+			<li><b>Refresh</b>: when you click the <i class="icon-refresh"></i> icon, the contents of the current folder are refreshed.</li>
+			</ul>
+			
+			<br/>
+			<h4>3. Upload Now</h4>
+			<p>When you click on the tab titled "Upload Now" you will be presented with the following.</p>
+			<p><img src="userguide_files/img3.jpg"></p>
+			<ul>
+			<li><b>Uploading</b>: click on the button or drag and drop the files in the area with a dotted boarder</li>
+			<li><b>Errors</b>: errors appear in red under the upload are and the reason is in square brackets.</li>
+			<li><b>Success</b>: when an image is uploaded successfully, its thumbnail is displayed under the upload area. You will then need to click on the image and you will be taken to the form for inserting the image.</li>
+			</ul>
+			
+			<br/>
+			<h4>4. Recent</h4>
+			<p>These are images that you have uploaded or inserted from URL during the current session.</p>
+			<p>When you click on the tab titled "Recent" you will be presented with the following.</p>
+			<p><img src="userguide_files/img4.jpg"></p>
+			
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; robertnduati 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
+

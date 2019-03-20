@@ -1,0 +1,23 @@
+{
+  "name" : "Default Rose",
+  "description" : "This is the theme for Premium Video CMS - VMS. It is a clean and responsive template for any type of video website.",
+  "version" : "1.0.0",
+  "thumbnail": "vms-thumbnail.png",
+  "image": {
+    "video": {
+      "800x400" : {"width": 800, "height": 400},
+      "370x220" : {"width": 370, "height": 220},
+      "300x190" : {"width": 300, "height": 190},
+      "170x150" : {"width": 170, "height": 150},
+      "120x80" : {"width": 120, "height": 80},
+      "80x80" : {"width": 80, "height": 80}
+    },
+    "avatar": {
+      "120x100" : {"width": 120, "height": 100},
+      "80x80" : {"width": 80, "height": 80}
+    },
+    "category": {
+      "185x130" : {"width": 185, "height": 130}
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "videos": [
+    {
+      "id": "integer",
+      "title": "string",
+      "description": "text",
+      "video_category_id": "integer|0",
+      "user_id": "integer",
+      "access": "string (guest|registered|subscriber)",
+      "active": "boolean|0",
+      "featured": "boolean|0",
+      "duration": "integer|null",
+      "views": "integer|0",
+      "created_at": "YYYY-MM-DD HH:MM:SS",
+      "updated_at": "YYYY-MM-DD HH:MM:SS",
+      "path": "/home/video/etc.."
+    }
+  ],
+  "users": [
+    {
+      "id": "integer",
+      "email": "string",
+      "username": "string",
+      "avatar": "http://|default.jpg",
+      "password": "password",
+      "role": "string (admin|demo|registered|subscriber)",
+      "active": "boolean|1",
+      "created_at": "YYYY-MM-DD HH:MM:SS",
+      "updated_at": "YYYY-MM-DD HH:MM:SS"
+    }
+  ],
+  "video_categories": [
+    {
+      "id": "integer",
+      "parent_id": "integer|null",
+      "order": "integer|1",
+      "name": "string",
+      "slug": "string",
+      "created_at": "YYYY-MM-DD HH:MM:SS",
+      "updated_at": "YYYY-MM-DD HH:MM:SS",
+      "thumb": "http://"
+    }
+  ],
+  "tags": [
+    {
+      "id": "integer",
+      "name": "string",
+      "created_at": "YYYY-MM-DD HH:MM:SS",
+      "updated_at": "YYYY-MM-DD HH:MM:SS"
+    }
+  ],
+  "tag_video": [
+    {
+      "id": "integer",
+      "video_id": "integer",
+      "tag_id": "integer"
+    }
+  ],
+  "video_comments": [
+    {
+      "user_id": "integer",
+      "video_id": "integer",
+      "comment": "text",
+      "approved": "boolean|1",
+      "rate": "double|null",
+      "created_at": "YYYY-MM-DD HH:MM:SS",
+      "updated_at": "YYYY-MM-DD HH:MM:SS"
+    }
+  ],
+  "video_comments_like_dislike": [
+    {
+      "video_id": "integer",
+      "user_id": "integer",
+      "type_id": "string (LIKE|DISLIKE)"
+    }
+  ],
+  "favorites": [
+    {
+      "video_id": "integer",
+      "user_id": "integer",
+      "created_at": "YYYY-MM-DD HH:MM:SS",
+      "updated_at": "YYYY-MM-DD HH:MM:SS"
+    }
+  ],
+  "posts": [],
+  "post_categories": [],
+  "post_comments": []
+}

@@ -1,0 +1,31 @@
+
+#upload{
+    
+}
+
+#drop {
+    position: relative;
+    width: 99%;
+    min-height: 150px;
+    border: 1px dotted #000000;
+    z-index: 20;
+    text-align: center;
+}
+
+#drop a{
+    width: 105px;
+    left: 40%;
+    top: 55px;
+    z-index: 15;
+    position: absolute;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload-msg{
+	list-style-type:none;
+	padding-left: 0px;
+	margin-left: 0px;
+}

@@ -1,0 +1,172 @@
+body{
+  font-family:'Open Sans', 'Helvetica Neue', 'Helvetica', Arial;
+}
+
+.admin a.navbar-brand{
+	width:100%;
+	text-align:center;
+}
+
+ul#admin-menu{
+  width:100%;
+  position:relative;
+  margin-left: 0px;
+  margin-top: 59px;
+  padding-left:0px;
+  display:block;
+}
+
+ul#admin-menu li{
+  display:block;
+  list-style: none;
+}
+
+ul#admin-menu i{
+  margin-right:5px;
+}
+
+ul#admin-menu li:first-child a{
+	border-top:1px solid #292931;
+}
+
+ul#admin-menu li a{
+	width:100%;
+	display:block;
+	padding:12px 20px;
+	border-bottom:1px solid #1c1c1c;
+}
+
+ul#admin-menu{
+  display:block;
+}
+
+ul#admin-menu li a:hover, ul#admin-menu li a.active{
+  background: #9FCA39;
+  color:#fff;
+  border-bottom:1px solid #9FCA39;
+}
+
+#admin-container{
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 25px;
+  margin-left: 220px;
+}
+
+#admin-container h1{
+  float:left;
+  margin-right:20px;
+  margin-top:0px;
+}
+
+#admin-container input[type="submit"]{
+  float:right;
+}
+
+#type{
+  margin-top:5px;
+}
+
+.new-video-embed{
+  display:none;
+}
+
+.page-header{
+  margin-top:15px;
+  margin-left:25px;
+  border-bottom:0px;
+  float:left;
+}
+
+.page-header h1{
+  font-size:20px;
+  font-weight:lighter;
+  color:#ccc;
+  margin:0px;
+  float:left;
+  margin-top:5px;
+  margin-right:15px;
+}
+
+#video_list{
+  margin-left:0px;
+  padding-left:0px;
+}
+
+#video_list h4{
+  color: #ccc;
+  font-size: 22px;
+  margin: 15px;
+  font-weight: lighter;
+  margin-left:10px;
+}
+
+#video_list li{
+  list-style:none;
+  width:100%;
+  clear:both;
+  background:#fff;
+  display:inline-block;
+  margin:10px auto;
+  position:relative;
+}
+
+#video_list li a{
+  text-decoration:underline;
+}
+
+#video_list li a.btn-info{
+  text-decoration:none;
+  float:right;
+  margin-right:10px;
+  margin-top:65px;
+}
+
+#video_list li a.btn-danger{
+  text-decoration:none;
+  float:right;
+  margin-top:65px;
+}
+
+#video_list li img{
+  float:left;
+  margin-right:10px;
+  clear:both;
+  width: 270px;
+  border: 10px solid #fff;
+}
+
+#video_list li p{
+  float:left;
+  margin-left:10px;
+}
+
+.delete_confirmation{
+  background:#434A54;
+  width:100%;
+  text-align:center;
+  display:none;
+}
+
+.delete_confirmation p{
+  color:#B3BAC4;
+  padding:10px;
+  display:inline-block;
+  margin-bottom:0px;
+}
+
+.delete_confirm{
+  color:#DA4453;
+  margin-left:10px;
+}
+
+.delete_confirm:hover{
+  color:#ED5565;
+}
+
+#video_list li .delete_confirmation a.btn-danger{
+  position:relative;
+  top:0px;
+  margin-top:0px;
+}
+

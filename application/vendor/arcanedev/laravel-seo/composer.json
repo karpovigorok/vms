@@ -1,0 +1,36 @@
+{
+    "name":        "arcanedev/laravel-seo",
+    "description": "SEO Package for Laravel.",
+    "keywords":    ["arcanedev", "laravel", "seo"],
+    "homepage":    "https://github.com/ARCANEDEV/LaravelSeo",
+    "authors": [
+        {
+            "name":     "ARCANEDEV",
+            "email":    "arcanedev.maroc@gmail.com",
+            "homepage": "https://github.com/arcanedev-maroc",
+            "role":     "Developer"
+        }
+    ],
+    "type":    "library",
+    "license": "MIT",
+    "require": {
+        "php":               ">=7.0",
+        "arcanedev/support": "~4.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpcov":      "~4.0",
+        "phpunit/phpunit":     "~6.0",
+        "orchestra/database":  "~3.5.0",
+        "orchestra/testbench": "~3.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arcanedev\\LaravelSeo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arcanedev\\LaravelSeo\\Tests\\": "tests/"
+        }
+    }
+}

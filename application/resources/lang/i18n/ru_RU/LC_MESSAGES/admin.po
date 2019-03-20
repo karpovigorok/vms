@@ -1,0 +1,2202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VMS\n"
+"POT-Creation-Date: 2019-02-08 11:37+0200\n"
+"PO-Revision-Date: 2019-02-08 11:46+0200\n"
+"Last-Translator: Igor Karpov <mail@noxls.net>\n"
+"Language-Team: Igor Karpov <mail@noxls.net>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: _;__;_i;_s;gettext;_n:1,2;ngettext:1,2;dgettext:2\n"
+"X-Poedit-Basepath: ../../../../../app\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: ../resources/views/admin\n"
+"X-Poedit-SearchPath-1: Http/Controllers/admin\n"
+"X-Poedit-SearchPath-2: Libraries\n"
+"X-Poedit-SearchPath-3: ../storage/framework/admin\n"
+
+#: ../resources/views/admin/comments/index.blade.php:7
+#: ../resources/views/admin/master.blade.php:168
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:168
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:5
+msgid "Comments"
+msgstr "Комментарии"
+
+#: ../resources/views/admin/comments/index.blade.php:17
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:15
+msgid "Date Add"
+msgstr "Дата добавления"
+
+#: ../resources/views/admin/comments/index.blade.php:18
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:16
+msgid "Comment"
+msgstr "Комментарий"
+
+#: ../resources/views/admin/comments/index.blade.php:19
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:17
+msgid "Type"
+msgstr "Тип"
+
+#: ../resources/views/admin/comments/index.blade.php:20
+#: ../resources/views/admin/plugins/index.blade.php:17
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:15
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:18
+msgid "Status"
+msgstr "Статус"
+
+#: ../resources/views/admin/comments/index.blade.php:21
+#: ../resources/views/admin/users/index.blade.php:54
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:19
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:52
+msgid "User"
+msgstr "Пользователь"
+
+#: ../resources/views/admin/comments/index.blade.php:22
+#: ../resources/views/admin/pages/index.blade.php:23
+#: ../resources/views/admin/posts/index.blade.php:27
+#: ../resources/views/admin/users/index.blade.php:29
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:20
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:27
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:25
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:21
+msgid "Actions"
+msgstr "Действие"
+
+#: ../resources/views/admin/comments/index.blade.php:41
+#: ../resources/views/admin/media/index.blade.php:30
+#: ../resources/views/admin/menu/index.blade.php:113
+#: ../resources/views/admin/pages/index.blade.php:37
+#: ../resources/views/admin/posts/categories/index.blade.php:108
+#: ../resources/views/admin/settings/index.blade.php:90
+#: ../resources/views/admin/settings/index.blade.php:108
+#: ../resources/views/admin/users/index.blade.php:71
+#: ../resources/views/admin/videos/categories/index.blade.php:110
+#: ../storage/framework/admin/0f96a229666e2fd049724f18a102b1069b5c4f04.php.php:39
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:28
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:111
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:69
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:35
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:108
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:88
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:106
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:106
+msgid "Delete"
+msgstr "Удалить"
+
+#: ../resources/views/admin/index.blade.php:13
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:11
+msgid "Total Subscribers"
+msgstr "Подписчики"
+
+#: ../resources/views/admin/index.blade.php:14
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:12
+msgid "The total amount of subscribers on your site."
+msgstr "Всего подписчиков на сайте."
+
+#: ../resources/views/admin/index.blade.php:22
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:20
+msgid "New Subscribers"
+msgstr "Новые подписчики"
+
+#: ../resources/views/admin/index.blade.php:23
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:21
+msgid "New Subscribers for today."
+msgstr "Новые подписчики за сегодня."
+
+#: ../resources/views/admin/index.blade.php:31
+#: ../resources/views/admin/master.blade.php:106
+#: ../resources/views/admin/videos/index.blade.php:12
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:106
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:29
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:10
+msgid "Videos"
+msgstr "Видео"
+
+#: ../resources/views/admin/index.blade.php:32
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:30
+msgid "Total videos on your site."
+msgstr "Всего видео на сайте."
+
+#: ../resources/views/admin/index.blade.php:40
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:38
+msgid "Posts"
+msgstr "Посты"
+
+#: ../resources/views/admin/index.blade.php:41
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:39
+msgid "Total Posts/Articles on your site."
+msgstr "Всего постов/стиатей на сайте."
+
+#: ../resources/views/admin/index.blade.php:77
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:75
+msgid "This Week vs. Last Week"
+msgstr "На этой / прошлой неделе"
+
+#: ../resources/views/admin/index.blade.php:97
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:95
+msgid "Real-time Visitors"
+msgstr "Пользователей онлайн"
+
+#: ../resources/views/admin/index.blade.php:116
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:114
+msgid "Top Browsers by Pageviews"
+msgstr "Топ браузеров по просмотрам"
+
+#: ../resources/views/admin/index.blade.php:133
+#: ../storage/framework/admin/48ae17744872f5a87ec20130f6480d675612977e.php.php:131
+msgid "Top Countries by Sessions"
+msgstr "Топ стран по сессиям"
+
+#: ../resources/views/admin/master.blade.php:100
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:100
+msgid "Dashboard"
+msgstr "Панель"
+
+#: ../resources/views/admin/master.blade.php:111
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:111
+msgid "All Videos"
+msgstr "Все видео"
+
+#: ../resources/views/admin/master.blade.php:116
+#: ../resources/views/admin/seo/edit.blade.php:17
+#: ../resources/views/admin/videos/create_edit.blade.php:17
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:116
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:54
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:15
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:15
+#: Http/Controllers/admin/AdminVideosController.php:54
+msgid "Add New Video"
+msgstr "Добавить новое видео"
+
+#: ../resources/views/admin/master.blade.php:121
+#: ../resources/views/admin/menu/edit.blade.php:15
+#: ../resources/views/admin/menu/index.blade.php:33
+#: ../resources/views/admin/videos/categories/index.blade.php:8
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:121
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:31
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:15
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:6
+msgid "Video Categories"
+msgstr "Видео категории"
+
+#: ../resources/views/admin/master.blade.php:129
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:129
+msgid "Pages & Posts"
+msgstr "Страницы и посты"
+
+#: ../resources/views/admin/master.blade.php:134
+#: ../resources/views/admin/pages/create_edit.blade.php:13
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:134
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:11
+msgid "All Pages"
+msgstr "Все страницы"
+
+#: ../resources/views/admin/master.blade.php:139
+#: ../resources/views/admin/pages/create_edit.blade.php:22
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:139
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:20
+msgid "Add New Page"
+msgstr "Добавить страницу"
+
+#: ../resources/views/admin/master.blade.php:144
+#: ../resources/views/admin/posts/create_edit.blade.php:13
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:144
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:11
+msgid "All Posts"
+msgstr "Все посты"
+
+#: ../resources/views/admin/master.blade.php:149
+#: ../resources/views/admin/posts/create_edit.blade.php:22
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:149
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:20
+msgid "Add New Post"
+msgstr "Добавить пост"
+
+#: ../resources/views/admin/master.blade.php:154
+#: ../resources/views/admin/menu/edit.blade.php:16
+#: ../resources/views/admin/menu/index.blade.php:34
+#: ../resources/views/admin/posts/categories/index.blade.php:8
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:154
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:32
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:16
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:6
+msgid "Post Categories"
+msgstr "Категории постов"
+
+#: ../resources/views/admin/master.blade.php:162
+#: ../resources/views/admin/media/index.blade.php:15
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:162
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:13
+msgid "Media"
+msgstr "Медиа"
+
+#: ../resources/views/admin/master.blade.php:174
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:174
+msgid "Menu"
+msgstr "Меню"
+
+#: ../resources/views/admin/master.blade.php:180
+#: ../resources/views/admin/users/index.blade.php:8
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:180
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:6
+msgid "Users"
+msgstr "Пользователи"
+
+#: ../resources/views/admin/master.blade.php:185
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:185
+msgid "All Users"
+msgstr "Все пользователи"
+
+#: ../resources/views/admin/master.blade.php:190
+#: ../resources/views/admin/users/create_edit.blade.php:26
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:190
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:26
+msgid "Add New User"
+msgstr "Добавить пользователя"
+
+#: ../resources/views/admin/master.blade.php:198
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:198
+msgid "Themes"
+msgstr "Темы"
+
+#: ../resources/views/admin/master.blade.php:204
+#: ../resources/views/admin/plugins/index.blade.php:9
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:204
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:7
+msgid "Plugins"
+msgstr "Плагины"
+
+#: ../resources/views/admin/master.blade.php:208
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:208
+msgid "All Plugins"
+msgstr "Все плагины"
+
+#: ../resources/views/admin/master.blade.php:225
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:225
+msgid "Settings"
+msgstr "Настройки"
+
+#: ../resources/views/admin/master.blade.php:230
+#: ../resources/views/admin/settings/index.blade.php:18
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:230
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:16
+msgid "Site Settings"
+msgstr "Настройки сайта"
+
+#: ../resources/views/admin/master.blade.php:235
+#: ../resources/views/admin/paymentsettings/index.blade.php:25
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:235
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:23
+msgid "Payment Settings"
+msgstr "Настройки платежей"
+
+#: ../resources/views/admin/master.blade.php:240
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:240
+msgid "Theme Settings"
+msgstr "Настройки темы"
+
+#: ../resources/views/admin/master.blade.php:245
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:245
+msgid "Widgets Settings"
+msgstr "Настройки виджетов"
+
+#: ../resources/views/admin/master.blade.php:271
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:271
+msgid "Howdy"
+msgstr "Привет"
+
+#: ../resources/views/admin/master.blade.php:283
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:283
+msgid "Upload Video"
+msgstr "Загрузить видео"
+
+#: ../resources/views/admin/master.blade.php:289
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:289
+msgid "View My Site"
+msgstr "Просмотреть сайт"
+
+#: ../resources/views/admin/master.blade.php:298
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:298
+msgid "Log Out"
+msgstr "Выход"
+
+#: ../resources/views/admin/master.blade.php:322
+#: ../resources/views/admin/master.blade.php:347
+#: ../resources/views/admin/master.blade.php:372
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:322
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:347
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:372
+msgid "Widget Options"
+msgstr "Настройки виджетов"
+
+#: ../resources/views/admin/master.blade.php:322
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:322
+msgid "Default Modal"
+msgstr "По умолчанию"
+
+#: ../resources/views/admin/master.blade.php:333
+#: ../resources/views/admin/master.blade.php:358
+#: ../resources/views/admin/master.blade.php:383
+#: ../resources/views/admin/media/index.blade.php:53
+#: ../resources/views/admin/menu/edit.blade.php:23
+#: ../resources/views/admin/menu/index.blade.php:40
+#: ../resources/views/admin/posts/categories/edit.blade.php:18
+#: ../resources/views/admin/posts/categories/index.blade.php:35
+#: ../resources/views/admin/videos/categories/edit.blade.php:25
+#: ../resources/views/admin/videos/categories/index.blade.php:41
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:333
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:358
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:383
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:51
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:38
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:18
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:23
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:39
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:33
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:25
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../resources/views/admin/master.blade.php:334
+#: ../resources/views/admin/master.blade.php:359
+#: ../resources/views/admin/master.blade.php:384
+#: ../resources/views/admin/menu/index.blade.php:41
+#: ../resources/views/admin/posts/categories/index.blade.php:36
+#: ../resources/views/admin/videos/categories/index.blade.php:42
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:334
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:359
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:384
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:39
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:40
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:34
+msgid "Save changes"
+msgstr "Сохранить"
+
+#: ../resources/views/admin/master.blade.php:348
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:348
+msgid "Inverted Skin Modal"
+msgstr "ИНвертировать скин"
+
+#: ../resources/views/admin/master.blade.php:372
+#: ../storage/framework/admin/0409c88a076bc54673f917fd981074623a8c3814.php.php:372
+msgid "Gray Skin Modal"
+msgstr "Серый скин"
+
+#: ../resources/views/admin/media/index.blade.php:23
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:21
+msgid "Upload"
+msgstr "Загрузить"
+
+#: ../resources/views/admin/media/index.blade.php:25
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:23
+msgid "Add folder"
+msgstr "Добавить папку"
+
+#: ../resources/views/admin/media/index.blade.php:29
+#: ../resources/views/admin/media/index.blade.php:157
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:27
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:155
+msgid "Move"
+msgstr "Переместить"
+
+#: ../resources/views/admin/media/index.blade.php:47
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:45
+msgid "Media Library"
+msgstr "Медиа библиотека"
+
+#: ../resources/views/admin/media/index.blade.php:77
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:75
+msgid "No files in this folder."
+msgstr "Папка пустая."
+
+#: ../resources/views/admin/media/index.blade.php:85
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:83
+msgid "No File or Folder Selected"
+msgstr "Не выбрана папка или файл"
+
+#: ../resources/views/admin/media/index.blade.php:113
+#: ../resources/views/admin/pages/create_edit.blade.php:34
+#: ../resources/views/admin/posts/create_edit.blade.php:41
+#: ../resources/views/admin/seo/edit.blade.php:65
+#: ../resources/views/admin/seo/edit.blade.php:79
+#: ../resources/views/admin/settings/index.blade.php:475
+#: ../resources/views/admin/settings/index.blade.php:489
+#: ../resources/views/admin/videos/create_edit.blade.php:41
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:111
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:63
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:77
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:39
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:473
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:487
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:39
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:32
+msgid "Title"
+msgstr "Заголовок"
+
+#: ../resources/views/admin/media/index.blade.php:115
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:113
+msgid "Size"
+msgstr "Размер"
+
+#: ../resources/views/admin/media/index.blade.php:117
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:115
+msgid "Public URL"
+msgstr "Публичныя ссылка"
+
+#: ../resources/views/admin/media/index.blade.php:118
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:116
+msgid "Click Here"
+msgstr "Нажмите здесь"
+
+#: ../resources/views/admin/media/index.blade.php:119
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:117
+msgid "Last Modified"
+msgstr "Дата изменения"
+
+#: ../resources/views/admin/media/index.blade.php:130
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:128
+msgid "No files here."
+msgstr "Нет файлов."
+
+#: ../resources/views/admin/media/index.blade.php:142
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:140
+msgid "Move File/Folder"
+msgstr "Переместить файл/папку"
+
+#: ../resources/views/admin/media/index.blade.php:146
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:144
+msgid "Destination Folder"
+msgstr "В какую папку"
+
+#: ../resources/views/admin/media/index.blade.php:156
+#: ../resources/views/admin/media/index.blade.php:181
+#: ../resources/views/admin/media/index.blade.php:205
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:154
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:179
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:203
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../resources/views/admin/media/index.blade.php:173
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:171
+msgid "Add New Folder"
+msgstr "Добавить папку"
+
+#: ../resources/views/admin/media/index.blade.php:177
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:175
+msgid "New Folder Name"
+msgstr "Новое имя папки"
+
+#: ../resources/views/admin/media/index.blade.php:182
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:180
+msgid "Create New Folder"
+msgstr "Создать папку"
+
+#: ../resources/views/admin/media/index.blade.php:196
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:194
+msgid "Are You Sure"
+msgstr "Вы уверены"
+
+#: ../resources/views/admin/media/index.blade.php:200
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:198
+msgid "Are you sure you want to delete"
+msgstr "Подтвердите удаление"
+
+#: ../resources/views/admin/media/index.blade.php:201
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:199
+msgid "Deleting a folder will remove all files and folders contained inside"
+msgstr "Папка будет удалена со всем содержимым"
+
+#: ../resources/views/admin/media/index.blade.php:206
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:204
+msgid "Yes, Delete it!"
+msgstr "Да, удалить!"
+
+#: ../resources/views/admin/media/index.blade.php:221
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:219
+msgid "Drag and drop files or click below to upload"
+msgstr "Для загрузки перетяните файлы или нажмите ниже"
+
+#: ../resources/views/admin/media/index.blade.php:229
+#: ../storage/framework/admin/122a9904ef554cb4f917739e39992406a6df1515.php.php:227
+msgid "All done"
+msgstr "Готово"
+
+#: ../resources/views/admin/menu/edit.blade.php:3
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:3
+msgid "Update Menu Item"
+msgstr "Обновить пункт меню"
+
+#: ../resources/views/admin/menu/edit.blade.php:8
+#: ../resources/views/admin/menu/edit.blade.php:9
+#: ../resources/views/admin/menu/index.blade.php:27
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:25
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:8
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:9
+msgid "Menu Item Name"
+msgstr "Название пункта меню"
+
+#: ../resources/views/admin/menu/edit.blade.php:10
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:10
+#, php-format
+msgid "URL (ex. %s)"
+msgstr ""
+"Ссылка (например,\n"
+" %s)"
+
+#: ../resources/views/admin/menu/edit.blade.php:11
+#: ../resources/views/admin/posts/categories/edit.blade.php:11
+#: ../resources/views/admin/posts/categories/index.blade.php:29
+#: ../resources/views/admin/videos/categories/edit.blade.php:11
+#: ../resources/views/admin/videos/categories/index.blade.php:29
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:11
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:11
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:27
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:27
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:11
+msgid "URL Slug"
+msgstr "Ссылка СПУ"
+
+#: ../resources/views/admin/menu/edit.blade.php:12
+#: ../resources/views/admin/menu/index.blade.php:30
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:28
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:12
+msgid "or Dropdown for"
+msgstr "или дропдаун для"
+
+#: ../resources/views/admin/menu/edit.blade.php:14
+#: ../resources/views/admin/menu/index.blade.php:32
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:30
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:14
+msgid "None"
+msgstr "Нет"
+
+#: ../resources/views/admin/menu/edit.blade.php:24
+#: ../resources/views/admin/posts/categories/edit.blade.php:19
+#: ../resources/views/admin/videos/categories/edit.blade.php:26
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:19
+#: ../storage/framework/admin/5ab2e22091427e7f5da115ff8ac7205789933187.php.php:24
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:26
+msgid "Update"
+msgstr "Обновить"
+
+#: ../resources/views/admin/menu/index.blade.php:8
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:6
+msgid "Menu Items"
+msgstr "Пункты меню"
+
+#: ../resources/views/admin/menu/index.blade.php:9
+#: ../resources/views/admin/pages/index.blade.php:8
+#: ../resources/views/admin/posts/categories/index.blade.php:9
+#: ../resources/views/admin/users/index.blade.php:10
+#: ../resources/views/admin/videos/categories/index.blade.php:9
+#: ../resources/views/admin/videos/index.blade.php:14
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:7
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:8
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:6
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:7
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:7
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:12
+msgid "Add New"
+msgstr "Добавить"
+
+#: ../resources/views/admin/menu/index.blade.php:21
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:19
+msgid "New Menu Item"
+msgstr "Новый пункт меню"
+
+#: ../resources/views/admin/menu/index.blade.php:26
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:24
+msgid "Enter the new menu item name below"
+msgstr "Ниже введите новое название пункта меню"
+
+#: ../resources/views/admin/menu/index.blade.php:28
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:26
+#, php-format
+msgid "Menu Item URL (ex. %s)"
+msgstr "Ссылка пункта меню (например, %s)"
+
+#: ../resources/views/admin/menu/index.blade.php:29
+#: ../resources/views/admin/pages/index.blade.php:21
+#: ../resources/views/admin/posts/index.blade.php:25
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:27
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:23
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:19
+msgid "URL"
+msgstr "URL"
+
+#: ../resources/views/admin/menu/index.blade.php:63
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:61
+msgid "Organize the Menu Items below: (max of 3 levels)"
+msgstr "Управление пунктами меню: (максимальная вложенность - 3)"
+
+#: ../resources/views/admin/menu/index.blade.php:112
+#: ../storage/framework/admin/3209239f69bc9526949baa921e33bed9e03a8469.php.php:110
+msgid "Note: Categories should only be in the top level menu item!"
+msgstr "Внимание: Категории могут быть только на первом уровне меню!"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:13
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:11
+msgid "New Page"
+msgstr "Новая страница"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:19
+#: ../resources/views/admin/posts/create_edit.blade.php:19
+#: ../resources/views/admin/users/create_edit.blade.php:23
+#: ../resources/views/admin/videos/create_edit.blade.php:26
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:17
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:23
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:24
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:17
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:36
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:34
+msgid "Add the page title in the textbox below"
+msgstr "Введите заголовок страницы"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:37
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:35
+msgid "Page Title"
+msgstr "Заголовок страницы"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:45
+#: ../resources/views/admin/posts/create_edit.blade.php:52
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:50
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:43
+msgid "SEO URL Slug"
+msgstr "SEO ссылка"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:47
+#: ../resources/views/admin/posts/create_edit.blade.php:54
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:52
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:45
+#, php-format
+msgid "(example. %s)"
+msgstr "(например, %s)"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:48
+#: ../resources/views/admin/posts/create_edit.blade.php:55
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:53
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:46
+msgid "slug-name"
+msgstr "чпу-заголовок"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:56
+#: ../resources/views/admin/posts/create_edit.blade.php:63
+#: ../resources/views/admin/videos/create_edit.blade.php:59
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:61
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:57
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:54
+msgid "Created Date"
+msgstr "Дата создания"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:58
+#: ../resources/views/admin/posts/create_edit.blade.php:65
+#: ../resources/views/admin/videos/create_edit.blade.php:64
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:63
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:62
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:56
+msgid "Select Date/Time Below"
+msgstr "Выберите дату/время"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:69
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:67
+msgid "Page Content"
+msgstr "Тело страницы"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:83
+#: ../resources/views/admin/videos/create_edit.blade.php:242
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:240
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:81
+msgid "Status Settings"
+msgstr "Настройки статуса"
+
+#: ../resources/views/admin/pages/create_edit.blade.php:87
+#: ../storage/framework/admin/d104c9ab6672e3ac6a64c807442e255c53889588.php.php:85
+msgid "Is this page Active"
+msgstr "Эта страница активна"
+
+#: ../resources/views/admin/pages/index.blade.php:8
+#: ../resources/views/admin/pages/index.blade.php:20
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:6
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:18
+msgid "Page"
+msgstr "Страница"
+
+#: ../resources/views/admin/pages/index.blade.php:22
+#: ../resources/views/admin/posts/index.blade.php:26
+#: ../resources/views/admin/themes/index.blade.php:30
+#: ../resources/views/admin/users/index.blade.php:27
+#: ../resources/views/admin/videos/create_edit.blade.php:257
+#: ../resources/views/admin/videos/index.blade.php:59
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:30
+#: ../storage/framework/admin/201f970ef1ca66c947b70c59c89f4d044649e4a8.php.php:28
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:25
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:24
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:20
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:255
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:57
+msgid "Active"
+msgstr "Активно"
+
+#: ../resources/views/admin/pages/index.blade.php:34
+#: ../resources/views/admin/posts/categories/index.blade.php:108
+#: ../resources/views/admin/posts/index.blade.php:42
+#: ../resources/views/admin/users/index.blade.php:70
+#: ../resources/views/admin/videos/categories/index.blade.php:108
+#: ../resources/views/admin/videos/index.blade.php:48
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:68
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:40
+#: ../storage/framework/admin/5e87ebfb34d1e78d78fdb071c10df59beb755975.php.php:32
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:106
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:106
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:46
+msgid "Edit"
+msgstr "Редактировать"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:34
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:32
+msgid "Live Mode Or Test Mode"
+msgstr "Продакшин или тестовый режим"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:37
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:35
+msgid "Payment Settings are in Live Mode"
+msgstr "Продакшин режим"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:48
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:46
+msgid "Stripe Subscription Plans"
+msgstr "Stripe планы подписки"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:58
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:56
+#, fuzzy, php-format
+#| msgid ""
+#| "You should have al least one subscribtion plan. Please configure your "
+#| "subscribtion plans <a target=\"_blank\" href=\"%s\">here."
+msgid ""
+"You should have at least one subscription plan. Please configure your "
+"subscription plans <a target=\"_blank\" href=\"%s\">here</a>."
+msgstr ""
+"У вас должен быть хотябы один план подписки. Создайте подписку <a target="
+"\"_blank\" href=\"%s\">здесь</a>."
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:66
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:64
+msgid "Stripe Payment API Keys"
+msgstr "Stripe Payment API ключи"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:68
+#: ../resources/views/admin/paymentsettings/index.blade.php:69
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:66
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:67
+msgid "Test Secret Key"
+msgstr "Тестовый секретный ключ"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:72
+#: ../resources/views/admin/paymentsettings/index.blade.php:73
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:70
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:71
+msgid "Test Publishable Key"
+msgstr "Тестовый публичный ключ"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:76
+#: ../resources/views/admin/paymentsettings/index.blade.php:77
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:74
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:75
+msgid "Live Secret Key"
+msgstr "Продакшин секретный ключ"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:80
+#: ../resources/views/admin/paymentsettings/index.blade.php:81
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:78
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:79
+msgid "Live Publishable Key"
+msgstr "Продакшин публичный ключ"
+
+#: ../resources/views/admin/paymentsettings/index.blade.php:89
+#: ../storage/framework/admin/fe143461636f787d20d4cf703defae2db0f57c68.php.php:87
+msgid "Update Payment Settings"
+msgstr "Обнововить настройки"
+
+#: ../resources/views/admin/plugins/index.blade.php:16
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:14
+msgid "Plugin Name"
+msgstr "Название плагина"
+
+#: ../resources/views/admin/plugins/index.blade.php:18
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:16
+msgid "Action"
+msgstr "Действие"
+
+#: ../resources/views/admin/posts/categories/edit.blade.php:3
+#: ../resources/views/admin/videos/categories/edit.blade.php:3
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:3
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:3
+msgid "Update Category"
+msgstr "Обновить категорию"
+
+#: ../resources/views/admin/posts/categories/edit.blade.php:8
+#: ../resources/views/admin/posts/categories/edit.blade.php:9
+#: ../resources/views/admin/posts/categories/index.blade.php:27
+#: ../resources/views/admin/videos/categories/edit.blade.php:8
+#: ../resources/views/admin/videos/categories/edit.blade.php:9
+#: ../resources/views/admin/videos/categories/index.blade.php:27
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:8
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:9
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:25
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:25
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:8
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:9
+msgid "Category Name"
+msgstr "Название категории"
+
+#: ../resources/views/admin/posts/categories/edit.blade.php:10
+#: ../resources/views/admin/posts/categories/index.blade.php:28
+#: ../resources/views/admin/videos/categories/edit.blade.php:10
+#: ../resources/views/admin/videos/categories/index.blade.php:28
+#: ../storage/framework/admin/55633dc3e95fd5cc18571eadac83266098eefc91.php.php:10
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:26
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:26
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:10
+#, php-format
+msgid "URL slug (ex. %s)"
+msgstr "Ссылка ЧПУ (например, %s)"
+
+#: ../resources/views/admin/posts/categories/index.blade.php:21
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:19
+msgid "New Post Category"
+msgstr "Новая категория поста"
+
+#: ../resources/views/admin/posts/categories/index.blade.php:26
+#: ../resources/views/admin/videos/categories/index.blade.php:26
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:24
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:24
+msgid "Enter the new category name below"
+msgstr "Введите название новой категории"
+
+#: ../resources/views/admin/posts/categories/index.blade.php:58
+#: ../resources/views/admin/videos/categories/index.blade.php:64
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:62
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:56
+msgid "Organize the Categories below: (max of 3 levels)"
+msgstr "Управление категриями: (максимальная вложенность - 3)"
+
+#: ../resources/views/admin/posts/categories/index.blade.php:157
+#: ../resources/views/admin/videos/categories/index.blade.php:151
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:149
+#: ../storage/framework/admin/846c58289785e21b5ad0547c822dc256742b71b0.php.php:155
+msgid "Are you sure you want to delete this category?"
+msgstr "Подтвердите удаление категории."
+
+#: ../resources/views/admin/posts/create_edit.blade.php:13
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:11
+msgid "New Post"
+msgstr "Новый пост"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:27
+#: ../resources/views/admin/seo/edit.blade.php:22
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:20
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:25
+msgid "General"
+msgstr "Основное"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:28
+#: ../resources/views/admin/posts/index.blade.php:43
+#: ../resources/views/admin/seo/edit.blade.php:26
+#: ../resources/views/admin/seo/edit.blade.php:33
+#: ../resources/views/admin/settings/index.blade.php:430
+#: ../resources/views/admin/videos/categories/index.blade.php:109
+#: ../resources/views/admin/videos/create_edit.blade.php:24
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:24
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:31
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:26
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:41
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:107
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:428
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:22
+msgid "SEO"
+msgstr "SEO"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:43
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:41
+msgid "Add the post title in the textbox below"
+msgstr "Введите заголовок поста"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:44
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:42
+msgid "Post Title"
+msgstr "Заголовок поста"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:76
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:74
+msgid "Post Content"
+msgstr "Тело поста"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:84
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:82
+msgid "Content to be shown to non-subscriber (if any)"
+msgstr "Контент, который будет показан не-подписчику (если есть)"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:97
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:95
+msgid "Post Image"
+msgstr "Изображение"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:102
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:100
+#, php-format
+msgid "Select the post image (%s for best results)"
+msgstr "Выберите изображение (%s подойдет лучше всего)"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:110
+#: ../resources/views/admin/videos/create_edit.blade.php:167
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:108
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:165
+msgid "Category"
+msgstr "Категория"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:112
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:110
+msgid "Select a Post Category Below"
+msgstr "Выберите категорию поста"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:114
+#: ../resources/views/admin/videos/create_edit.blade.php:174
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:112
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:172
+msgid "Uncategorized"
+msgstr "Без категории"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:125
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:123
+msgid "Status & Access Settings"
+msgstr "Статус и настройки доступа"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:128
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:126
+msgid "Is this post Active"
+msgstr "Пост активен"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:131
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:129
+msgid "Who is allowed to view this post?"
+msgstr "У кого есть доступ для просмотра поста?"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:133
+#: ../resources/views/admin/videos/create_edit.blade.php:224
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:131
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:222
+msgid "Guest (everyone)"
+msgstr "Гость (кто угодно)"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:134
+#: ../resources/views/admin/users/create_edit.blade.php:89
+#: ../resources/views/admin/videos/create_edit.blade.php:227
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:132
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:89
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:225
+msgid "Registered Users (free registration must be enabled)"
+msgstr ""
+"Зарегистрированные пользователи (бесплатная регитрация должна быть разрешена)"
+
+#: ../resources/views/admin/posts/create_edit.blade.php:135
+#: ../resources/views/admin/videos/create_edit.blade.php:230
+#: ../storage/framework/admin/508bf0c97fbd605ef2be96e104d37edb2393cee7.php.php:133
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:228
+msgid "Subscriber (only paid subscription users)"
+msgstr "Подписчики (пользователи, оплатившие подписку)"
+
+#: ../resources/views/admin/posts/index.blade.php:24
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:22
+msgid "Post"
+msgstr "Пост"
+
+#: ../resources/views/admin/posts/index.blade.php:65
+#: ../resources/views/admin/videos/index.blade.php:107
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:63
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:105
+msgid "Are you sure?"
+msgstr "Уверены?"
+
+#: ../resources/views/admin/posts/index.blade.php:66
+#: ../resources/views/admin/videos/index.blade.php:108
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:64
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:106
+#, fuzzy
+#| msgid "Do you want to permanantly delete this post?"
+msgid "Do you want to permanently delete this post?"
+msgstr "Пост будет удален."
+
+#: ../resources/views/admin/posts/index.blade.php:70
+#: ../resources/views/admin/videos/index.blade.php:112
+#: ../storage/framework/admin/569a2fc808e769413e813921c308a6e31f0a035c.php.php:68
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:110
+msgid "Yes, delete it!"
+msgstr "Да, удалить!"
+
+#: ../resources/views/admin/seo/edit.blade.php:24
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:22
+msgid "Back to Categories List"
+msgstr "К списку категорий"
+
+#: ../resources/views/admin/seo/edit.blade.php:39
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:37
+msgid "Disable For Crawlers"
+msgstr "Запретить для поисковиков"
+
+#: ../resources/views/admin/seo/edit.blade.php:51
+#: ../resources/views/admin/seo/edit.blade.php:53
+#: ../resources/views/admin/settings/index.blade.php:435
+#: ../resources/views/admin/settings/index.blade.php:437
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:49
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:51
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:433
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:435
+msgid "Meta Title"
+msgstr "Meta Title"
+
+#: ../resources/views/admin/seo/edit.blade.php:56
+#: ../resources/views/admin/seo/edit.blade.php:57
+#: ../resources/views/admin/settings/index.blade.php:440
+#: ../resources/views/admin/settings/index.blade.php:441
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:54
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:55
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:438
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:439
+msgid "Meta Description"
+msgstr "Meta Description"
+
+#: ../resources/views/admin/seo/edit.blade.php:59
+#: ../resources/views/admin/seo/edit.blade.php:61
+#: ../resources/views/admin/settings/index.blade.php:443
+#: ../resources/views/admin/settings/index.blade.php:445
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:57
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:59
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:441
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:443
+msgid "Meta Keywords"
+msgstr "Meta Keywords"
+
+#: ../resources/views/admin/seo/edit.blade.php:64
+#: ../resources/views/admin/settings/index.blade.php:474
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:62
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:472
+msgid "Open Graph"
+msgstr "Open Graph"
+
+#: ../resources/views/admin/seo/edit.blade.php:67
+#: ../resources/views/admin/seo/edit.blade.php:81
+#: ../resources/views/admin/settings/index.blade.php:477
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:65
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:79
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:475
+msgid "Open Graph Title"
+msgstr "Open Graph заголовок"
+
+#: ../resources/views/admin/seo/edit.blade.php:70
+#: ../resources/views/admin/seo/edit.blade.php:84
+#: ../resources/views/admin/settings/index.blade.php:480
+#: ../resources/views/admin/settings/index.blade.php:494
+#: ../resources/views/admin/videos/create_edit.blade.php:154
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:68
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:82
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:478
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:492
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:152
+msgid "Description"
+msgstr "Описание"
+
+#: ../resources/views/admin/seo/edit.blade.php:71
+#: ../resources/views/admin/seo/edit.blade.php:85
+#: ../resources/views/admin/settings/index.blade.php:481
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:69
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:83
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:479
+msgid "Open Graph Description"
+msgstr "Open Graph описание"
+
+#: ../resources/views/admin/seo/edit.blade.php:73
+#: ../resources/views/admin/seo/edit.blade.php:87
+#: ../resources/views/admin/settings/index.blade.php:483
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:71
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:85
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:481
+msgid "Open Graph Image like http://..."
+msgstr "Open Graph урл изображения, начинается с http://..."
+
+#: ../resources/views/admin/seo/edit.blade.php:75
+#: ../resources/views/admin/seo/edit.blade.php:89
+#: ../resources/views/admin/settings/index.blade.php:485
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:73
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:87
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:483
+msgid "Open Graph Image"
+msgstr "Open Graph изображение"
+
+#: ../resources/views/admin/seo/edit.blade.php:78
+#: ../resources/views/admin/settings/index.blade.php:488
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:76
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:486
+msgid "Twitter Card"
+msgstr "Twitter карточка"
+
+#: ../resources/views/admin/seo/edit.blade.php:92
+#: ../resources/views/admin/settings/index.blade.php:448
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:90
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:446
+msgid "Webmasters"
+msgstr "Для вебмастеров"
+
+#: ../resources/views/admin/seo/edit.blade.php:93
+#: ../resources/views/admin/settings/index.blade.php:449
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:91
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:447
+msgid "Google Webmaster Confirmation Code"
+msgstr "Google Webmaster код подтверждения"
+
+#: ../resources/views/admin/seo/edit.blade.php:95
+#: ../resources/views/admin/settings/index.blade.php:451
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:93
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:449
+msgid "Google"
+msgstr "Google"
+
+#: ../resources/views/admin/seo/edit.blade.php:98
+#: ../resources/views/admin/settings/index.blade.php:454
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:96
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:452
+msgid "Bing Webmaster Confirmation Code"
+msgstr "Bing Webmaster Confirmation Code"
+
+#: ../resources/views/admin/seo/edit.blade.php:100
+#: ../resources/views/admin/settings/index.blade.php:456
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:98
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:454
+msgid "Bing"
+msgstr "Bing"
+
+#: ../resources/views/admin/seo/edit.blade.php:103
+#: ../resources/views/admin/settings/index.blade.php:459
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:101
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:457
+msgid "Alexa Webmaster Confirmation Code"
+msgstr "Alexa Webmaster код подтверждения"
+
+#: ../resources/views/admin/seo/edit.blade.php:105
+#: ../resources/views/admin/settings/index.blade.php:461
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:103
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:459
+msgid "Alexa"
+msgstr "Alexa"
+
+#: ../resources/views/admin/seo/edit.blade.php:108
+#: ../resources/views/admin/settings/index.blade.php:464
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:106
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:462
+msgid "Pinterest Webmaster Confirmation Code"
+msgstr "Pinterest Webmaster код подтверждения"
+
+#: ../resources/views/admin/seo/edit.blade.php:110
+#: ../resources/views/admin/settings/index.blade.php:466
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:108
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:464
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../resources/views/admin/seo/edit.blade.php:113
+#: ../resources/views/admin/settings/index.blade.php:469
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:111
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:467
+msgid "Yandex Webmaster Confirmation Code"
+msgstr "Yandex Webmaster код подтверждения"
+
+#: ../resources/views/admin/seo/edit.blade.php:115
+#: ../resources/views/admin/settings/index.blade.php:471
+#: ../storage/framework/admin/3df9155b81093117431eee12d3b102031d89536d.php.php:113
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:469
+msgid "Yandex"
+msgstr "Yandex"
+
+#: ../resources/views/admin/settings/index.blade.php:31
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:29
+msgid "Site Language"
+msgstr "Язык сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:36
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:34
+msgid "Choose website interface Language"
+msgstr "Выберите язык интерфейса сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:49
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:47
+msgid "Site Name"
+msgstr "Название сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:54
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:52
+msgid "Enter Your Website Name Below"
+msgstr "Введите название вашего сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:56
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:54
+msgid "Site Title"
+msgstr "Заголовок Сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:65
+#: ../resources/views/admin/settings/index.blade.php:72
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:63
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:70
+msgid "Site Description"
+msgstr "Описание сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:70
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:68
+msgid "Enter Your Website Description Below"
+msgstr "Введите описание вашего сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:82
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:80
+msgid "Logo"
+msgstr "Логотип"
+
+#: ../resources/views/admin/settings/index.blade.php:92
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:90
+msgid "Upload Your Site Logo"
+msgstr "Загрузить логотип сайта"
+
+#: ../resources/views/admin/settings/index.blade.php:100
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:98
+msgid "Favicon"
+msgstr "Значок для избранного (Favicon)"
+
+#: ../resources/views/admin/settings/index.blade.php:110
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:108
+msgid "Upload Your Site Favicon"
+msgstr "Загрузить значок"
+
+#: ../resources/views/admin/settings/index.blade.php:120
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:118
+msgid "Demo Mode"
+msgstr "Демо режим"
+
+#: ../resources/views/admin/settings/index.blade.php:125
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:123
+msgid "Enable Demo Account"
+msgstr "Разрешить демо эккаунт"
+
+#: ../resources/views/admin/settings/index.blade.php:142
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:140
+msgid "Enable https:// sitewide"
+msgstr "Включить поддержку https://"
+
+#: ../resources/views/admin/settings/index.blade.php:147
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:145
+msgid "Make sure you have purchased an SSL before anabling https://"
+msgstr ""
+"Перед включением, убедитесь в том, что SLL сертификаты настроены на сервере"
+
+#: ../resources/views/admin/settings/index.blade.php:164
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:162
+msgid "Video Comments"
+msgstr "Комментарии к видео"
+
+#: ../resources/views/admin/settings/index.blade.php:171
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:169
+msgid "Enable Video Comments"
+msgstr "Разрешить комментирование видео"
+
+#: ../resources/views/admin/settings/index.blade.php:183
+#: ../resources/views/admin/settings/index.blade.php:219
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:181
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:217
+msgid "Comments Per Page"
+msgstr "Коментариев на страницу"
+
+#: ../resources/views/admin/settings/index.blade.php:188
+#: ../resources/views/admin/settings/index.blade.php:224
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:186
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:222
+msgid "# of Comments Per Page"
+msgstr "комментариев на страницу"
+
+#: ../resources/views/admin/settings/index.blade.php:199
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:197
+msgid "Post Comments"
+msgstr "Комментарии к постам"
+
+#: ../resources/views/admin/settings/index.blade.php:207
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:205
+msgid "Enable Post Comments"
+msgstr "Разрешить комментирование постов"
+
+#: ../resources/views/admin/settings/index.blade.php:241
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:239
+msgid "Videos Per Page"
+msgstr "Количество видео на страницу"
+
+#: ../resources/views/admin/settings/index.blade.php:246
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:244
+msgid "Default number of videos to show per page:"
+msgstr "Количество видео на страницу по умолчанию:"
+
+#: ../resources/views/admin/settings/index.blade.php:248
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:246
+msgid "# of Videos Per Page"
+msgstr "видео на страницу"
+
+#: ../resources/views/admin/settings/index.blade.php:256
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:254
+msgid "Posts Per Page"
+msgstr "Постов на страницу"
+
+#: ../resources/views/admin/settings/index.blade.php:262
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:260
+msgid "Default number of posts to show per page"
+msgstr "Количество постов на страницу по умолчанию"
+
+#: ../resources/views/admin/settings/index.blade.php:264
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:262
+msgid "# of Posts Per Page"
+msgstr "постов на страницу"
+
+#: ../resources/views/admin/settings/index.blade.php:274
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:272
+msgid "Registration"
+msgstr "Регистрация"
+
+#: ../resources/views/admin/settings/index.blade.php:282
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:280
+msgid "Enable Free Registration"
+msgstr "Включить бесплатную регистрацию"
+
+#: ../resources/views/admin/settings/index.blade.php:295
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:293
+msgid "Require users to verify account by email"
+msgstr "Подтверждение регистрации на почту"
+
+#: ../resources/views/admin/settings/index.blade.php:309
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:307
+msgid "Enable registered users ability to upgrade to subscriber"
+msgstr "Включить возможность пользователей апгрейдить экаунт до подписки"
+
+#: ../resources/views/admin/settings/index.blade.php:325
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:323
+msgid "System Email"
+msgstr "Системная почта"
+
+#: ../resources/views/admin/settings/index.blade.php:331
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:329
+msgid "Email address to be used to send system emails"
+msgstr "Эл. почта будет указана в письме, в поле \"From:\""
+
+#: ../resources/views/admin/settings/index.blade.php:333
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:331
+msgid "Email Address"
+msgstr "Эл. почта"
+
+#: ../resources/views/admin/settings/index.blade.php:340
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:338
+msgid "Social Networks"
+msgstr "Социальные сети"
+
+#: ../resources/views/admin/settings/index.blade.php:346
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:344
+#, fuzzy
+#| msgid "Facebook Page ID: ex. facebook.com/page_id (without facebook.com)"
+msgid "Facebook Page: ex. facebook.com/page_id (with facebook.com)"
+msgstr "Facebook Page ID: например, facebook.com/page_id (без facebook.com)"
+
+#: ../resources/views/admin/settings/index.blade.php:348
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:346
+#, fuzzy
+#| msgid "Facebook Page"
+msgid "Facebook URL"
+msgstr "Facebook страница"
+
+#: ../resources/views/admin/settings/index.blade.php:352
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:350
+#, fuzzy
+#| msgid "Google Plus Page"
+msgid "Google Plus"
+msgstr "Страница Google Plus"
+
+#: ../resources/views/admin/settings/index.blade.php:354
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:352
+#, fuzzy
+#| msgid "Google Plus Page"
+msgid "Google Plus URL"
+msgstr "Страница Google Plus"
+
+#: ../resources/views/admin/settings/index.blade.php:358
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:356
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../resources/views/admin/settings/index.blade.php:360
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:358
+msgid "Twitter URL"
+msgstr "Страница в Twitter"
+
+#: ../resources/views/admin/settings/index.blade.php:364
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:362
+#, fuzzy
+#| msgid "YouTube Channel ex. youtube.com/channel_name"
+msgid "YouTube ex. youtube.com/channel_name"
+msgstr "Канал на YouTube, например, youtube.com/channel_name"
+
+#: ../resources/views/admin/settings/index.blade.php:366
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:364
+#, fuzzy
+#| msgid "YouTube Channel"
+msgid "YouTube URL"
+msgstr "Канал на YouTube"
+
+#: ../resources/views/admin/settings/index.blade.php:370
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:368
+msgid "Instagram ex. instagram.com/user_name"
+msgstr "Instagram, например, instagram.com/user_name"
+
+#: ../resources/views/admin/settings/index.blade.php:372
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:370
+msgid "Instagram URL"
+msgstr "Страница в Instagram"
+
+#: ../resources/views/admin/settings/index.blade.php:376
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:374
+msgid "Vimeo ex. vimeo.com/user_name"
+msgstr "Vimeo, например, vimeo.com/user_name"
+
+#: ../resources/views/admin/settings/index.blade.php:378
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:376
+msgid "Vimeo URL"
+msgstr "Страница Vimeo"
+
+#: ../resources/views/admin/settings/index.blade.php:386
+#: ../resources/views/admin/settings/index.blade.php:395
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:384
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:393
+msgid "Google Analytics Tracking ID"
+msgstr "Google Analytics Tracking ID"
+
+#: ../resources/views/admin/settings/index.blade.php:392
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:390
+#, fuzzy
+#| msgid "Google Analytics Tracking ID (ex. UA-12345678-9)"
+msgid "Google Analytics Tracking ID (ex. UA-12345678-9)"
+msgstr "Google Analytics Tracking ID (например, UA-12345678-9)"
+
+#: ../resources/views/admin/settings/index.blade.php:393
+#: ../resources/views/admin/settings/index.blade.php:409
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:391
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:407
+msgid "Get The Code"
+msgstr "Получить код"
+
+#: ../resources/views/admin/settings/index.blade.php:402
+#: ../resources/views/admin/settings/index.blade.php:411
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:400
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:409
+msgid "Google Tag Manager ID"
+msgstr "Google Tag Manager ID"
+
+#: ../resources/views/admin/settings/index.blade.php:408
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:406
+msgid "Google Tag Manager ID (ex. GTM-1234567)"
+msgstr "Google Tag Manager ID (например,  GTM-1234567)"
+
+#: ../resources/views/admin/settings/index.blade.php:417
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:415
+msgid ""
+"Google Analytics API Integration (This will integrate with your dashboard "
+"analytics)"
+msgstr ""
+"Google Analytics API Integration (This will integrate with your dashboard "
+"analytics)"
+
+#: ../resources/views/admin/settings/index.blade.php:422
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:420
+msgid "Google Oauth Client ID Key"
+msgstr "Ключ Google Oauth Client ID"
+
+#: ../resources/views/admin/settings/index.blade.php:424
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:422
+msgid "Google Client ID Key"
+msgstr "Ключ Google Client ID"
+
+#: ../resources/views/admin/settings/index.blade.php:491
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:489
+msgid "Twitter Title"
+msgstr "Twitter заголовок"
+
+#: ../resources/views/admin/settings/index.blade.php:495
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:493
+msgid "Twitter Description"
+msgstr "Twitter описание"
+
+#: ../resources/views/admin/settings/index.blade.php:497
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:495
+msgid "Twitter Image like http://..."
+msgstr "Twitter изображение, начинается с http://..."
+
+#: ../resources/views/admin/settings/index.blade.php:499
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:497
+msgid "Twitter Image"
+msgstr "Twitter изображение"
+
+#: ../resources/views/admin/settings/index.blade.php:519
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:517
+msgid "Successfully Deleted Logo!"
+msgstr "Лого удалено!"
+
+#: ../resources/views/admin/settings/index.blade.php:519
+#: ../resources/views/admin/settings/index.blade.php:528
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:517
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:526
+msgid "Sweet Success!"
+msgstr "Удачно!"
+
+#: ../resources/views/admin/settings/index.blade.php:528
+#: ../storage/framework/admin/71b448c3bf56119198738d563f7b1d66b3936d15.php.php:526
+msgid "Successfully Deleted Icon!"
+msgstr "Удалено!"
+
+#: ../resources/views/admin/themes/index.blade.php:34
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:34
+#: ../storage/framework/admin/201f970ef1ca66c947b70c59c89f4d044649e4a8.php.php:32
+msgid "Activate"
+msgstr "Активировать"
+
+#: ../resources/views/admin/users/create_edit.blade.php:35
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:35
+msgid "Profile Image"
+msgstr "Изображение профиля"
+
+#: ../resources/views/admin/users/create_edit.blade.php:40
+#: ../resources/views/admin/users/index.blade.php:24
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:22
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:40
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: ../resources/views/admin/users/create_edit.blade.php:45
+#: ../resources/views/admin/users/create_edit.blade.php:59
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:45
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:59
+msgid "Oh snap!"
+msgstr "Oh snap!"
+
+#: ../resources/views/admin/users/create_edit.blade.php:48
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:48
+msgid "User's Username"
+msgstr "Имя пользователя"
+
+#: ../resources/views/admin/users/create_edit.blade.php:54
+#: ../resources/views/admin/users/index.blade.php:25
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:23
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:54
+msgid "Email"
+msgstr "Эл. почта"
+
+#: ../resources/views/admin/users/create_edit.blade.php:62
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:62
+msgid "User's Email Address"
+msgstr "Эл. почта пользователя"
+
+#: ../resources/views/admin/users/create_edit.blade.php:68
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:68
+msgid "Password"
+msgstr "Пароль"
+
+#: ../resources/views/admin/users/create_edit.blade.php:71
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:71
+msgid "leave empty to keep your original password"
+msgstr "оставьте пустым, если не хотите менять пароль"
+
+#: ../resources/views/admin/users/create_edit.blade.php:73
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:73
+msgid "Enter users password"
+msgstr "Введите пароль"
+
+#: ../resources/views/admin/users/create_edit.blade.php:83
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:83
+msgid "User Role"
+msgstr "Роль пользователя"
+
+#: ../resources/views/admin/users/create_edit.blade.php:85
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:85
+msgid "Select the user's role below"
+msgstr "Выберите роль пользователя"
+
+#: ../resources/views/admin/users/create_edit.blade.php:87
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:87
+msgid "Admin"
+msgstr "Админ"
+
+#: ../resources/views/admin/users/create_edit.blade.php:88
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:88
+msgid "Demo"
+msgstr "Демо"
+
+#: ../resources/views/admin/users/create_edit.blade.php:90
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:90
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: ../resources/views/admin/users/create_edit.blade.php:98
+#: ../resources/views/admin/users/create_edit.blade.php:100
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:98
+#: ../storage/framework/admin/bcfb2cec4251b65d9d0b6c63d330c4e36f931330.php.php:100
+msgid "User Active Status"
+msgstr "Статус пользователя - Активен"
+
+#: ../resources/views/admin/users/index.blade.php:15
+#: ../resources/views/admin/videos/index.blade.php:20
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:13
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:18
+msgid "Search..."
+msgstr "Поиск..."
+
+#: ../resources/views/admin/users/index.blade.php:26
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:24
+msgid "User Type"
+msgstr "Тип пользователя"
+
+#: ../resources/views/admin/users/index.blade.php:28
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:26
+msgid "Subscription Status"
+msgstr "Статус подписки"
+
+#: ../resources/views/admin/users/index.blade.php:41
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:39
+msgid "email n/a in demo mode"
+msgstr "email недоступен в демо режиме"
+
+#: ../resources/views/admin/users/index.blade.php:45
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:43
+msgid "Subscribed User"
+msgstr "Пользователь подписался"
+
+#: ../resources/views/admin/users/index.blade.php:48
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:46
+msgid "Registered User"
+msgstr "Зарегистрироаннный пользователь"
+
+#: ../resources/views/admin/users/index.blade.php:51
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:49
+msgid "Demo User"
+msgstr "Демо пользователь"
+
+#: ../resources/views/admin/users/index.blade.php:61
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:59
+msgid "Grace Period"
+msgstr "Ознакомительный период"
+
+#: ../resources/views/admin/users/index.blade.php:63
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:61
+msgid "Cancelled"
+msgstr "Отмененный"
+
+#: ../resources/views/admin/users/index.blade.php:65
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:63
+msgid "Subscribed"
+msgstr "Подписчик"
+
+#: ../resources/views/admin/users/index.blade.php:82
+#: ../storage/framework/admin/53df1c5dcdb784aa8293941a20dd1a40f73a8bd0.php.php:80
+msgid "Are you sure you want to delete this user?"
+msgstr "Подтвердите удаление пользователя."
+
+#: ../resources/views/admin/videos/categories/edit.blade.php:18
+#: ../resources/views/admin/videos/categories/index.blade.php:34
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:32
+#: ../storage/framework/admin/9f4acd969af7e27c46d68ba137823b3d26d36599.php.php:18
+msgid "Category Thumbnail"
+msgstr "Превью для категории"
+
+#: ../resources/views/admin/videos/categories/index.blade.php:21
+#: ../storage/framework/admin/682b0752ac39fe41d6aa3685ac9580555667bc9a.php.php:19
+msgid "New Video Category"
+msgstr "Новая видео категория"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:46
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:44
+msgid "Add the video title in the textbox below"
+msgstr "Добавить заголовок видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:48
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:46
+msgid "Video Title"
+msgstr "Заголовок видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:75
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:73
+msgid "Video Source"
+msgstr "Источник видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:82
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:80
+msgid "Video Format"
+msgstr "Формат видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:86
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:84
+msgid "Video File"
+msgstr "Видео файл"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:88
+#: ../resources/views/admin/videos/create_edit.blade.php:100
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:86
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:98
+msgid "Embed Code"
+msgstr "Код вставки"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:92
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:90
+#, php-format
+msgid "Choose the video file: (%s)"
+msgstr "Выберите видео файл: (%s)"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:123
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:121
+#, php-format
+msgid ""
+"To view this video please enable JavaScript, and consider upgrading to a web "
+"browser that <a href='%s' target='_blank'>supports HTML5 video</a>"
+msgstr ""
+"Для просмотра видео, включите пожалуйста поддержку JavaScript, так же "
+"проверьте ваш браузер должен <a href='%s' target='_blank'>поддерживать HTML5 "
+"видео</a>, обновите проверьте наличие обновлений"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:131
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:129
+msgid "Video Image Cover"
+msgstr "Обложка видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:136
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:134
+msgid "Get New"
+msgstr "Сгенерироваь новые"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:146
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:144
+#, php-format
+msgid "Select the video image (%s px or %s ratio)"
+msgstr "Выберите изображение  (%s px или соотношение сторон %s )"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:159
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:157
+msgid "Add a description of the video below"
+msgstr "Добавьте описание к видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:172
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:170
+msgid "Select a Video Category Below"
+msgstr "Выберите категорию для видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:185
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:183
+msgid "Tags"
+msgstr "Тэги"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:190
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:188
+msgid "Add video tags below"
+msgstr "Добавить тэги к видео"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:200
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:198
+msgid "Duration"
+msgstr "Продолжительность"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:205
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:203
+msgid ""
+"Enter the video duration in the following format (Hours : Minutes : Seconds)"
+msgstr "Введите продолжительность видео в формате (Часы:минуты:секунды)"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:215
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:213
+msgid "User Access"
+msgstr "Пользовательский доступ"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:221
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:219
+msgid "Who is allowed to view this video?"
+msgstr "Кому разрешено просматривать это видео?"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:249
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:247
+msgid "Is this video Featured"
+msgstr "Это видео важное"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:318
+#: ../resources/views/admin/videos/create_edit.blade.php:331
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:316
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:329
+msgid "Converting in progress."
+msgstr "Конвертирую..."
+
+#: ../resources/views/admin/videos/create_edit.blade.php:335
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:333
+msgid "Done!"
+msgstr "Готово!"
+
+#: ../resources/views/admin/videos/create_edit.blade.php:360
+#: ../storage/framework/admin/cd148397394ab10c5fda13992093f8c5b0ca32c8.php.php:358
+#, fuzzy
+#| msgid ""
+#| "Something went wrong. Please try again to upload your file in few minutes."
+msgid "Something went wrong. Can\\'t upload file."
+msgstr ""
+"Что-то пошло не так. Чтобы загрузить файл, повторите попытку через несколько "
+"минут."
+
+#: ../resources/views/admin/videos/index.blade.php:52
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:50
+#, fuzzy
+#| msgid "Embed Code"
+msgid "Embed"
+msgstr "Код вставки"
+
+#: ../resources/views/admin/videos/index.blade.php:54
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:52
+msgid "Converting Error"
+msgstr "Ошибка конвертации"
+
+#: ../resources/views/admin/videos/index.blade.php:56
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:54
+msgid "Converting In Progress"
+msgstr "Конвертируется"
+
+#: ../resources/views/admin/videos/index.blade.php:61
+#: ../storage/framework/admin/ddce04b985452e19bdc34c9ce8d7f3a1eebdc2bd.php.php:59
+msgid "Disabled"
+msgstr "Отключено"
+
+#: ../resources/views/admin/widgets/index.blade.php:7
+#: ../storage/framework/admin/1100d8d8f28c8f3a52971601d06a034b71ddc91f.php.php:5
+msgid "Widgets"
+msgstr "Виджеты"
+
+#: ../storage/framework/admin/0966c361f6c522ca6ebdd36deb90cadb0033ff3a.php.php:33
+msgid "Inactive"
+msgstr "Неативно"
+
+#: ../storage/framework/admin/1fcbaabb4bb884455d43ac1843442fb8d3b6f1a1.php.php:61
+#: Http/Controllers/admin/AdminPageController.php:61
+msgid "New Page Successfully Added!"
+msgstr "Страница создана!"
+
+#: ../storage/framework/admin/1fcbaabb4bb884455d43ac1843442fb8d3b6f1a1.php.php:75
+#: Http/Controllers/admin/AdminPageController.php:75
+msgid "Edit Page"
+msgstr "Редактировать страницу"
+
+#: ../storage/framework/admin/1fcbaabb4bb884455d43ac1843442fb8d3b6f1a1.php.php:78
+#: Http/Controllers/admin/AdminPageController.php:78
+msgid "Update Page"
+msgstr "Обновить страницу"
+
+#: ../storage/framework/admin/1fcbaabb4bb884455d43ac1843442fb8d3b6f1a1.php.php:110
+#: Http/Controllers/admin/AdminPageController.php:110
+msgid "Successfully Updated Page!"
+msgstr "Страница обновлена!"
+
+#: ../storage/framework/admin/1fcbaabb4bb884455d43ac1843442fb8d3b6f1a1.php.php:125
+#: Http/Controllers/admin/AdminPageController.php:125
+msgid "Successfully Deleted Page"
+msgstr "Страница удалена"
+
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:52
+#: Http/Controllers/admin/AdminVideosController.php:52
+msgid "New Video"
+msgstr "Новое видео"
+
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:118
+#: Http/Controllers/admin/AdminVideosController.php:118
+msgid "New Video Successfully Added!"
+msgstr "Видео добавлено!"
+
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:134
+#: Http/Controllers/admin/AdminVideosController.php:134
+msgid "Edit Video"
+msgstr "Редактировать видео"
+
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:137
+#: Http/Controllers/admin/AdminVideosController.php:137
+msgid "Update Video"
+msgstr "Обновить видео"
+
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:202
+#: Http/Controllers/admin/AdminVideosController.php:202
+msgid "Successfully Updated Video!"
+msgstr "Видео сохранено!"
+
+#: ../storage/framework/admin/2eb38666db6931bef152137e628ec3dfe8317e89.php.php:225
+#: Http/Controllers/admin/AdminVideosController.php:225
+msgid "Successfully Deleted Video"
+msgstr "Видео удалено"
+
+#: ../storage/framework/admin/380a021e34567e8f9f572378b20f77aedcdf522b.php.php:37
+#: Http/Controllers/admin/AdminMenuController.php:37
+msgid "Successfully Added New Menu Item"
+msgstr "Пункт меню добавлен"
+
+#: ../storage/framework/admin/380a021e34567e8f9f572378b20f77aedcdf522b.php.php:53
+#: Http/Controllers/admin/AdminMenuController.php:53
+msgid "Successfully Deleted Menu Item"
+msgstr "Пункт меню удален"
+
+#: ../storage/framework/admin/380a021e34567e8f9f572378b20f77aedcdf522b.php.php:60
+#: ../storage/framework/admin/8d53643d5238920b0fde217e0c4880db2ad306d4.php.php:37
+#: ../storage/framework/admin/fc62f3913482b883b7a87a806fec80e70fbc0156.php.php:47
+#: Http/Controllers/admin/AdminMenuController.php:60
+#: Http/Controllers/admin/AdminPostCategoriesController.php:37
+#: Http/Controllers/admin/AdminVideoCategoriesController.php:47
+msgid "Successfully Updated Category"
+msgstr "Категория сохранена"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:29
+#: Libraries/TimeHelper.php:29
+msgid "year"
+msgid_plural "years"
+msgstr[0] "год"
+msgstr[1] "года"
+msgstr[2] "лет"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:30
+#: Libraries/TimeHelper.php:30
+msgid "month"
+msgid_plural "months"
+msgstr[0] "месяц"
+msgstr[1] "месяца"
+msgstr[2] "месяцев"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:31
+#: Libraries/TimeHelper.php:31
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "неделя"
+msgstr[1] "недели"
+msgstr[2] "недель"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:32
+#: Libraries/TimeHelper.php:32
+msgid "day"
+msgid_plural "days"
+msgstr[0] "день"
+msgstr[1] "дня"
+msgstr[2] "дней"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:33
+#: Libraries/TimeHelper.php:33
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "час"
+msgstr[1] "часа"
+msgstr[2] "часов"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:34
+#: Libraries/TimeHelper.php:34
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "минута"
+msgstr[1] "минуты"
+msgstr[2] "минут"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:35
+#: Libraries/TimeHelper.php:35
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "секунда"
+msgstr[1] "секунды"
+msgstr[2] "секунд"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:46
+#: Libraries/TimeHelper.php:46
+msgid "ago"
+msgstr "назад"
+
+#: ../storage/framework/admin/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:46
+#: Libraries/TimeHelper.php:46
+msgid "just now"
+msgstr "толко что"
+
+#: ../storage/framework/admin/603295add925f9e88a58677b1d845635807067d6.php.php:89
+#: Http/Controllers/admin/AdminCommentsController.php:89
+msgid "Successfully Deleted Comment"
+msgstr "Комментарий удален"
+
+#: ../storage/framework/admin/655bef4dcc28de3e8a7a13a7f0da413501382ec2.php.php:65
+#: ../storage/framework/admin/a947534f7157069d14f8118702ea8247643017fe.php.php:30
+#: Http/Controllers/admin/AdminPluginsController.php:65
+#: Http/Controllers/admin/AdminThemesController.php:30
+msgid "Successfully Activated"
+msgstr "Ативировано"
+
+#: ../storage/framework/admin/655bef4dcc28de3e8a7a13a7f0da413501382ec2.php.php:73
+#: Http/Controllers/admin/AdminPluginsController.php:73
+msgid "Successfully De-activated"
+msgstr "Деактивировано"
+
+#: ../storage/framework/admin/7ef8a962b8e3b9f40ab5982b389df45e0bc40d91.php.php:50
+#: Http/Controllers/admin/AdminUsersController.php:50
+msgid "Successfully Created New User"
+msgstr "Пользователь создан"
+
+#: ../storage/framework/admin/7ef8a962b8e3b9f40ab5982b389df45e0bc40d91.php.php:61
+#: Http/Controllers/admin/AdminUsersController.php:61
+msgid "Update User"
+msgstr "Сохранить пользователя"
+
+#: ../storage/framework/admin/7ef8a962b8e3b9f40ab5982b389df45e0bc40d91.php.php:86
+#: Http/Controllers/admin/AdminUsersController.php:86
+msgid "Successfully Updated User Settings"
+msgstr "Настройки пользователя сохранены"
+
+#: ../storage/framework/admin/7ef8a962b8e3b9f40ab5982b389df45e0bc40d91.php.php:93
+#: Http/Controllers/admin/AdminUsersController.php:93
+msgid "Successfully Deleted User"
+msgstr "Пользователь удален"
+
+#: ../storage/framework/admin/86190f92306440211c335b591cdddbfc7add1675.php.php:79
+#: Http/Controllers/admin/AdminPostController.php:79
+msgid "New Post Successfully Added!"
+msgstr "Новый пост создан!"
+
+#: ../storage/framework/admin/86190f92306440211c335b591cdddbfc7add1675.php.php:93
+#: Http/Controllers/admin/AdminPostController.php:93
+msgid "Edit Post"
+msgstr "Редактировать пост"
+
+#: ../storage/framework/admin/86190f92306440211c335b591cdddbfc7add1675.php.php:96
+#: Http/Controllers/admin/AdminPostController.php:96
+msgid "Update Post"
+msgstr "Сохранить пост"
+
+#: ../storage/framework/admin/86190f92306440211c335b591cdddbfc7add1675.php.php:135
+#: Http/Controllers/admin/AdminPostController.php:135
+msgid "Successfully Updated Post!"
+msgstr "Пост сохранен!"
+
+#: ../storage/framework/admin/86190f92306440211c335b591cdddbfc7add1675.php.php:152
+#: Http/Controllers/admin/AdminPostController.php:152
+msgid "Successfully Deleted Post"
+msgstr "Пост удален"
+
+#: ../storage/framework/admin/8d53643d5238920b0fde217e0c4880db2ad306d4.php.php:29
+#: ../storage/framework/admin/fc62f3913482b883b7a87a806fec80e70fbc0156.php.php:34
+#: Http/Controllers/admin/AdminPostCategoriesController.php:29
+#: Http/Controllers/admin/AdminVideoCategoriesController.php:34
+msgid "Successfully Added Your New Video Category"
+msgstr "Новая видео категория создана"
+
+#: ../storage/framework/admin/8d53643d5238920b0fde217e0c4880db2ad306d4.php.php:48
+#: ../storage/framework/admin/fc62f3913482b883b7a87a806fec80e70fbc0156.php.php:58
+#: Http/Controllers/admin/AdminPostCategoriesController.php:48
+#: Http/Controllers/admin/AdminVideoCategoriesController.php:58
+msgid "Successfully Deleted Category"
+msgstr "Категоиря удалена"
+
+#: ../storage/framework/admin/bbd20c557d99adcb7bbbb9e2ac5237a32e0e7d6e.php.php:46
+#: Http/Controllers/admin/AdminPaymentSettingsController.php:46
+msgid "Successfully Updated Payment Settings!"
+msgstr "Настройки платежей сохранены!"
+
+#: ../storage/framework/admin/beb141e37ec330368c1a9130c9b5b50cb3b5238d.php.php:38
+#: Http/Controllers/admin/AdminSeoController.php:38
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../storage/framework/admin/beb141e37ec330368c1a9130c9b5b50cb3b5238d.php.php:95
+#: Http/Controllers/admin/AdminSeoController.php:95
+msgid "Successfully Updated SEO Meta!"
+msgstr "SEO Meta сохранена!"
+
+#: ../storage/framework/admin/d1315ebd574c39a46409c48bea7726a115bda23c.php.php:73
+#: ../storage/framework/admin/f943e3847ba8701aa3e0f14ea83514ecf7511fca.php.php:73
+#: Http/Controllers/admin/AdminCommentsSettingsController.php:73
+#: Http/Controllers/admin/AdminSettingsController.php:73
+msgid "Successfully Updated Site Settings!"
+msgstr "Настройки сайта сохранены!"
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:147
+#: Http/Controllers/admin/AdminMediaController.php:147
+msgid ""
+"Sorry that folder already exists, please delete that folder if you wish to "
+"re-create it"
+msgstr ""
+"Папка уже существует, пожалуйста удалите ее, если вы хотите пересоздать ее"
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:152
+#: Http/Controllers/admin/AdminMediaController.php:152
+msgid ""
+"Sorry something seems to have gone wrong with creating the directory, please "
+"check your permissions"
+msgstr "Что-то пошло не так с созданием каталога, проверьте свои права"
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:167
+#: Http/Controllers/admin/AdminMediaController.php:167
+msgid ""
+"Sorry something seems to have gone wrong when deleting this folder, please "
+"check your permissions"
+msgstr "Что-то пошло не так с удалением каталога, проверьте свои права"
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:172
+#: Http/Controllers/admin/AdminMediaController.php:172
+msgid ""
+"Sorry something seems to have gone wrong deleting this file, please check "
+"your permissions"
+msgstr "Что-то пошло не так с удалением файла, проверьте свои права"
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:233
+#: Http/Controllers/admin/AdminMediaController.php:233
+msgid ""
+"Sorry there seems to be a problem moving that file/folder, please make sure "
+"you have the correct permissions."
+msgstr ""
+"Что-то пошло не так с перемещение файла/каталога, проверьте свои права."
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:236
+#: Http/Controllers/admin/AdminMediaController.php:236
+msgid ""
+"Sorry there is already a file/folder with that existing name in that folder."
+msgstr "В этой папке уже есть файл/папка с таким именем."
+
+#: ../storage/framework/admin/e0fa08fe66f20b744e538594da203e7bcbe8f431.php.php:253
+#: Http/Controllers/admin/AdminMediaController.php:253
+msgid "Successfully uploaded"
+msgstr "Загружено!"
+
+#~ msgid "Updates"
+#~ msgstr "Обновления"
+
+#~ msgid "Google Plus User ID"
+#~ msgstr "Google Plus User ID"
+
+#~ msgid "Mp4 File URL"
+#~ msgstr "Ссылка на Mp4  видео"
+
+#~ msgid "WebM File URL"
+#~ msgstr "Ссылка на WebM видео"
+
+#~ msgid "Ogg File URL"
+#~ msgstr "Ссылка на Ogg видео"
+
+#~ msgid "Video Details, Links, and Info"
+#~ msgstr "Описание видео, ссылки, инфо и т.д."
+
+#~ msgid "Short Description"
+#~ msgstr "Короткое описание"
+
+#~ msgid "Data Posted"
+#~ msgstr "Дата создания"

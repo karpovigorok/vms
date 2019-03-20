@@ -1,0 +1,22 @@
+#noty_top_layout_container li{
+	border-width:0px !important;
+}
+
+#noty_top_layout_container {
+	left:0px !important;
+	width:100% !important;
+}
+
+.noty_close{
+	display:block;
+	background:url('../img/close.png') no-repeat 0px 0px !important;
+	width:20px !important;
+	height:20px !important;
+	top:28px !important;
+	right:22px !important;
+	position:relative;
+}
+
+.noty_close:hover{
+	background-position:0px -20px !important;
+}

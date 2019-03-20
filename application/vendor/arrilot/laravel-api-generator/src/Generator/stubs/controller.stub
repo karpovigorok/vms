@@ -1,0 +1,28 @@
+<?php namespace {{controller.namespace}};
+
+use {{controller.namespaceBase}}\Controller;
+use {{model.fullName}};
+use {{transformer.fullName}};
+
+class {{controller.name}} extends Controller
+{
+    /**
+     * Eloquent model.
+     *
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    protected function model()
+    {
+        return new {{model.name}};
+    }
+
+    /**
+     * Transformer for the current model.
+     *
+     * @return \League\Fractal\TransformerAbstract
+     */
+    protected function transformer()
+    {
+        return new {{transformer.name}};
+    }
+}

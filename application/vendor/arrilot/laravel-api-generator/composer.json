@@ -1,0 +1,23 @@
+{
+    "name": "arrilot/laravel-api-generator",
+    "description": "Two simple tools for building REST APIs with fractal: console generator and API skeleton",
+    "license": "MIT",
+    "keywords": ["rest", "api", "fractal", "generator"],
+    "authors": [
+        {
+            "name": "Nekrasov Ilya",
+            "email": "nekrasov.ilya90@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/Arrilot/laravel-api-generator",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=5.5",
+        "league/fractal": "0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arrilot\\Api\\": "src/"
+        }
+    }
+}

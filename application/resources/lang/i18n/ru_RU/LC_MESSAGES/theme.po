@@ -1,0 +1,1252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VMS\n"
+"POT-Creation-Date: 2019-02-08 12:21+0200\n"
+"PO-Revision-Date: 2019-02-08 12:21+0200\n"
+"Last-Translator: Igor Karpov <mail@noxls.net>\n"
+"Language-Team: Igor Karpov <mail@noxls.net>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: _;__;_i;_s;gettext;_n:1,2;ngettext:1,2;dgettext:2\n"
+"X-Poedit-Basepath: ../../../../../app\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: ../public/content/themes/default\n"
+"X-Poedit-SearchPath-1: Http/Controllers/front\n"
+"X-Poedit-SearchPath-2: Libraries\n"
+"X-Poedit-SearchPath-3: ../storage/framework/theme\n"
+
+#: ../public/content/themes/default/404.php:14
+#: ../storage/framework/theme/00457d8b2af26ad6c6bf4c97e9564ecca7629f92.php.php:14
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: ../public/content/themes/default/404.php:16
+#: ../storage/framework/theme/00457d8b2af26ad6c6bf4c97e9564ecca7629f92.php.php:16
+msgid "Go Back Home Page"
+msgstr "Вернуться на главную"
+
+#: ../public/content/themes/default/emails/verify.php:7
+#: ../storage/framework/theme/42d254d6dc3b63ae425f691b1822f74a12df3428.php.php:7
+msgid "Verify Your Email Address"
+msgstr "Подтвердите вашу почту"
+
+#: ../public/content/themes/default/emails/verify.php:10
+#: ../storage/framework/theme/42d254d6dc3b63ae425f691b1822f74a12df3428.php.php:10
+#, php-format
+msgid ""
+"Thanks for creating an account with %s.\n"
+"            Please follow the link below to verify your email address"
+msgstr ""
+"Эккаунт создан %s.\n"
+"            Перейдите по ссылке для подтверждения емейла"
+
+#: ../public/content/themes/default/home.php:29
+#: ../public/content/themes/default/partials/video-loop.php:9
+#: ../public/content/themes/default/video.php:218
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:218
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:29
+#: ../storage/framework/theme/d473678cb8a45614b6c86f27f010c000c731d078.php.php:9
+msgid "Watch Video"
+msgstr "Смотреть видео"
+
+#: ../public/content/themes/default/home.php:67
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:67
+msgid "Browse Videos By Category"
+msgstr "Видео по категориям"
+
+#: ../public/content/themes/default/home.php:112
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:112
+msgid "Newest Videos"
+msgstr "Новинки"
+
+#: ../public/content/themes/default/home.php:120
+#: ../public/content/themes/default/home.php:160
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:254
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:120
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:160
+#: Http/Controllers/front/ThemeVideoController.php:254
+msgid "All Videos"
+msgstr "Все видео"
+
+#: ../public/content/themes/default/home.php:120
+#: ../public/content/themes/default/home.php:160
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:120
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:160
+msgid "Videos posted"
+msgstr "Добавленные видео"
+
+#: ../public/content/themes/default/home.php:136
+#: ../public/content/themes/default/home.php:175
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:136
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:175
+msgid "View All Video"
+msgstr "Все видео"
+
+#: ../public/content/themes/default/home.php:151
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:151
+msgid "Most Popular Videos"
+msgstr "Популярное видео"
+
+#: ../public/content/themes/default/home.php:183
+#: ../public/content/themes/default/video-list.php:47
+#: ../storage/framework/theme/93c9fb4694df85720d870b7a386c5f07d0ba7d26.php.php:183
+#: ../storage/framework/theme/bb9db48fc77d6afed7cc199ae221dacfcc4bc94e.php.php:47
+msgid "No videos added yet."
+msgstr "Скоро здесь появятся видео."
+
+#: ../public/content/themes/default/includes/header.php:50
+#: ../public/content/themes/default/includes/menu-mobile.php:45
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:50
+#: ../storage/framework/theme/8b77414618a2f5cf8d8b4b6140a9c5451c9f0fba.php.php:45
+msgid "Upload Video"
+msgstr "Загрузить видео"
+
+#: ../public/content/themes/default/includes/header.php:66
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:66
+msgid "Visit Profile"
+msgstr "Профиль"
+
+#: ../public/content/themes/default/includes/header.php:70
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:70
+msgid "Admin"
+msgstr "Админ"
+
+#: ../public/content/themes/default/includes/header.php:75
+#: ../public/content/themes/default/partials/renew-subscription.php:108
+#: ../public/content/themes/default/partials/user-left-sidebar.php:28
+#: ../storage/framework/theme/0c9dbeda3573ba917234fe9908496c9ff667e4c2.php.php:28
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:75
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:108
+msgid "Logout"
+msgstr "Выйти"
+
+#: ../public/content/themes/default/includes/header.php:83
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:83
+msgid "Great to have you back!"
+msgstr "Рады видеть вас снова!"
+
+#: ../public/content/themes/default/includes/header.php:87
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:87
+msgid "Enter username"
+msgstr "Введите логин"
+
+#: ../public/content/themes/default/includes/header.php:91
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:91
+msgid "Enter password"
+msgstr "Введите пароль"
+
+#: ../public/content/themes/default/includes/header.php:95
+#: ../public/content/themes/default/partials/login.php:55
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:95
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:55
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+#: ../public/content/themes/default/includes/header.php:97
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:97
+msgid "Login Now"
+msgstr "Залогиниться сейчас"
+
+#: ../public/content/themes/default/includes/header.php:101
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:101
+msgid "New here?"
+msgstr "Впервые здесь?"
+
+#: ../public/content/themes/default/includes/header.php:101
+#: ../public/content/themes/default/partials/login.php:62
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:101
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:62
+msgid "Create a new Account"
+msgstr "Создать эккаунт"
+
+#: ../public/content/themes/default/includes/header.php:152
+#: ../public/content/themes/default/includes/menu-mobile.php:12
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:152
+#: ../storage/framework/theme/8b77414618a2f5cf8d8b4b6140a9c5451c9f0fba.php.php:12
+msgid "Seach Here your video"
+msgstr "Искать видео"
+
+#: ../public/content/themes/default/includes/header.php:155
+#: ../storage/framework/theme/104a8eb839efd3444346e67a728f354a25ad4434.php.php:155
+msgid "search now"
+msgstr "искать"
+
+#: ../public/content/themes/default/includes/menu-mobile.php:48
+#: ../storage/framework/theme/8b77414618a2f5cf8d8b4b6140a9c5451c9f0fba.php.php:48
+msgid "Login/Register"
+msgstr "Логин/Регистрация"
+
+#: ../public/content/themes/default/partials/form-forgot-password.php:8
+#: ../public/content/themes/default/partials/form-reset-password.php:8
+#: ../storage/framework/theme/a7c8861449079fa578dfc158f8c010f2096d94e4.php.php:8
+#: ../storage/framework/theme/f4f0b6dd447546dbbf4434800cde03a27798eeb5.php.php:8
+msgid "Reset Password"
+msgstr "Сбросить пароль"
+
+#: ../public/content/themes/default/partials/form-forgot-password.php:9
+#: ../storage/framework/theme/a7c8861449079fa578dfc158f8c010f2096d94e4.php.php:9
+msgid "Enter your email address and we'll send you a password reset link"
+msgstr "Чтобы сбросить пароль, введите свою эл. почту"
+
+#: ../public/content/themes/default/partials/form-forgot-password.php:30
+#: ../storage/framework/theme/a7c8861449079fa578dfc158f8c010f2096d94e4.php.php:30
+msgid "Email Address"
+msgstr "Эл. почта"
+
+#: ../public/content/themes/default/partials/form-forgot-password.php:34
+#: ../storage/framework/theme/a7c8861449079fa578dfc158f8c010f2096d94e4.php.php:34
+msgid "Send Password Reset"
+msgstr "Сбросить пароль"
+
+#: ../public/content/themes/default/partials/form-reset-password.php:9
+#: ../storage/framework/theme/f4f0b6dd447546dbbf4434800cde03a27798eeb5.php.php:9
+msgid ""
+"Enter your email and your new password below to finish resetting your "
+"password."
+msgstr "Для щавершения сброса пароля, введите новый пароль и эл. почту."
+
+#: ../public/content/themes/default/partials/form-reset-password.php:27
+#: ../storage/framework/theme/f4f0b6dd447546dbbf4434800cde03a27798eeb5.php.php:27
+msgid "Enter your Email address"
+msgstr "Введите эл. почту"
+
+#: ../public/content/themes/default/partials/form-reset-password.php:31
+#: ../public/content/themes/default/partials/login.php:49
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:49
+#: ../storage/framework/theme/f4f0b6dd447546dbbf4434800cde03a27798eeb5.php.php:31
+msgid "Enter your password"
+msgstr "Введите пароль"
+
+#: ../public/content/themes/default/partials/form-reset-password.php:35
+#: ../public/content/themes/default/partials/signup.php:73
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:73
+#: ../storage/framework/theme/f4f0b6dd447546dbbf4434800cde03a27798eeb5.php.php:35
+msgid "Re-type your password"
+msgstr "Пароль еще раз"
+
+#: ../public/content/themes/default/partials/form-reset-password.php:38
+#: ../storage/framework/theme/f4f0b6dd447546dbbf4434800cde03a27798eeb5.php.php:38
+msgid "Set Your New Password"
+msgstr "Ноый пароль"
+
+#: ../public/content/themes/default/partials/login.php:18
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:18
+msgid "User login"
+msgstr "Логин"
+
+#: ../public/content/themes/default/partials/login.php:28
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:28
+msgid "Login with your Account"
+msgstr "Залогиниться с вашим эккантом"
+
+#: ../public/content/themes/default/partials/login.php:35
+#: ../public/content/themes/default/partials/signup.php:32
+#: ../public/content/themes/default/partials/upgrade-subscription.php:51
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:51
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:35
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:32
+msgid "There are some errors in your form."
+msgstr "В форме есть ошибки."
+
+#: ../public/content/themes/default/partials/login.php:41
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:41
+msgid "Enter your Email address or Username"
+msgstr "Введите вашу эл. почту или логин"
+
+#: ../public/content/themes/default/partials/login.php:43
+#: ../public/content/themes/default/partials/upgrade-subscription.php:74
+#: ../public/content/themes/default/partials/upgrade-subscription.php:81
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:74
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:81
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:43
+msgid "username is required"
+msgstr "логин обязателен для заполнения"
+
+#: ../public/content/themes/default/partials/login.php:51
+#: ../public/content/themes/default/partials/upgrade-subscription.php:89
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:89
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:51
+msgid "password is required"
+msgstr "пароль обязателен для заполнения"
+
+#: ../public/content/themes/default/partials/login.php:58
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:58
+msgid "login Now"
+msgstr "Войти"
+
+#: ../public/content/themes/default/partials/login.php:61
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:61
+msgid "Forgot Password"
+msgstr "Забыл пароль"
+
+#: ../public/content/themes/default/partials/login.php:61
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:61
+msgid "New Here?"
+msgstr "Впервые здесь?"
+
+#: ../public/content/themes/default/partials/login.php:69
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:69
+msgid "Demo Login"
+msgstr "Демо логин"
+
+#: ../public/content/themes/default/partials/login.php:71
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:71
+msgid "username"
+msgstr "логин"
+
+#: ../public/content/themes/default/partials/login.php:73
+#: ../storage/framework/theme/7ba75b4b642cf22fb8905263f3c010dc886801a2.php.php:73
+msgid "password"
+msgstr "пароль"
+
+#: ../public/content/themes/default/partials/pagination.php:15
+#: ../storage/framework/theme/977475084ba0020bbd4301f040cbb9e7f2fabe2e.php.php:15
+msgid "Prev Page"
+msgstr "Перд. страница"
+
+#: ../public/content/themes/default/partials/pagination.php:19
+#: ../storage/framework/theme/977475084ba0020bbd4301f040cbb9e7f2fabe2e.php.php:19
+msgid "Next Page"
+msgstr "След. страница"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:1
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:1
+msgid "Renew Your Subscription"
+msgstr "Восстановить подписку"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:5
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:5
+msgid "Sorry, it looks like your account is no longer active..."
+msgstr "Извините, ваш эккаунт больше не активен..."
+
+#: ../public/content/themes/default/partials/renew-subscription.php:20
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:20
+msgid "Go ahead and re-activate your account below"
+msgstr "Активироть снова ваш эккаунт вы можете ниже"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:24
+#: ../public/content/themes/default/partials/signup.php:80
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:80
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:24
+msgid "All Credit Cards Supported"
+msgstr "Поддерживаемые кредитные карты"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:36
+#: ../public/content/themes/default/partials/signup.php:89
+#: ../public/content/themes/default/partials/signup.php:164
+#: ../public/content/themes/default/partials/upgrade-subscription.php:72
+#: ../public/content/themes/default/partials/upgrade-subscription.php:79
+#: ../public/content/themes/default/partials/user-update-billing.php:35
+#: ../storage/framework/theme/0aaec1f65034b25a0243bde173b27b7e845d9d11.php.php:35
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:72
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:79
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:89
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:164
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:36
+msgid "Credit Card Number"
+msgstr "Номер кредитной карты"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:48
+#: ../public/content/themes/default/partials/signup.php:97
+#: ../public/content/themes/default/partials/signup.php:166
+#: ../public/content/themes/default/partials/upgrade-subscription.php:93
+#: ../public/content/themes/default/partials/user-update-billing.php:46
+#: ../storage/framework/theme/0aaec1f65034b25a0243bde173b27b7e845d9d11.php.php:46
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:93
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:97
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:166
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:48
+msgid "Expiration Date"
+msgstr "Дата окончания действия карты"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:90
+#: ../public/content/themes/default/partials/signup.php:130
+#: ../public/content/themes/default/partials/upgrade-subscription.php:87
+#: ../public/content/themes/default/partials/user-update-billing.php:88
+#: ../storage/framework/theme/0aaec1f65034b25a0243bde173b27b7e845d9d11.php.php:88
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:87
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:130
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:90
+msgid "CVV Number"
+msgstr "CVV код"
+
+#: ../public/content/themes/default/partials/renew-subscription.php:110
+#: ../storage/framework/theme/92981bd0ce4b1344469108bbf7c0bb87b152cde1.php.php:110
+msgid "Renew My Subscription"
+msgstr "Восстановить подписку"
+
+#: ../public/content/themes/default/partials/signup.php:9
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:9
+msgid "User Registeration"
+msgstr "Регистрация"
+
+#: ../public/content/themes/default/partials/signup.php:11
+#: ../public/content/themes/default/partials/upgrade-subscription.php:10
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:10
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:11
+msgid "Signup to Gain access to all content on the site."
+msgstr "Зарегистрироваться, что бы получить доступ к контенту."
+
+#: ../public/content/themes/default/partials/signup.php:13
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:13
+msgid "Enter your info below to signup for an account."
+msgstr "Для регистрации, заполните форму ниже."
+
+#: ../public/content/themes/default/partials/signup.php:22
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:22
+msgid "Create your Account"
+msgstr "Создать эккаунт"
+
+#: ../public/content/themes/default/partials/signup.php:42
+#: ../public/content/themes/default/widgets/comments.php:71
+#: ../public/content/themes/default/widgets/comments.php:235
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:71
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:235
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:42
+msgid "Enter your username"
+msgstr "Введите ваш логин"
+
+#: ../public/content/themes/default/partials/signup.php:53
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:53
+msgid "Enter your email"
+msgstr "Введите вашу эл. почту"
+
+#: ../public/content/themes/default/partials/signup.php:135
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:135
+msgid "your email is invalid"
+msgstr "неправильная эл. почта"
+
+#: ../public/content/themes/default/partials/signup.php:136
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:136
+msgid "Register Now"
+msgstr "Зарегистрироваться"
+
+#: ../public/content/themes/default/partials/signup.php:137
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:137
+msgid "Already have acoount?"
+msgstr "Уже есть эккаунт?"
+
+#: ../public/content/themes/default/partials/signup.php:162
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:162
+msgid "Demo Credit Card Info"
+msgstr "Информация о демо кредитках"
+
+#: ../public/content/themes/default/partials/signup.php:168
+#: ../storage/framework/theme/80a091fc855ee6a19e9b042e6c7b5f56b5ec6c90.php.php:168
+msgid "CVV Code"
+msgstr "CVV код"
+
+#: ../public/content/themes/default/partials/upgrade-subscription.php:11
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:11
+msgid ""
+"Become a Subscriber. Enter your credit card info to upgrade your account to "
+"a subscriber membership."
+msgstr ""
+"Стать подписчиком. Введите данные вашей кредитной карты, что бы обновить "
+"эккаунт до уровня \"подписчик\"."
+
+#: ../public/content/themes/default/partials/upgrade-subscription.php:57
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:57
+msgid "Choose Subscription Plan"
+msgstr "Выберите план подписки"
+
+#: ../public/content/themes/default/partials/upgrade-subscription.php:115
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:115
+msgid "Upgrade to Subscriber"
+msgstr "Обновиться до \"подписчика\""
+
+#: ../public/content/themes/default/partials/upgrade-subscription.php:131
+#: ../storage/framework/theme/0bbfcad55a47d0a97b066bed4dd4b8d33d8170c2.php.php:131
+msgid "Payment system is under maintenance. Please try again later."
+msgstr "Платежная система недоступна. Попробуйте позже."
+
+#: ../public/content/themes/default/partials/user-billing.php:1
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:1
+msgid "Billing Information"
+msgstr "Информация об оплате"
+
+#: ../public/content/themes/default/partials/user-billing.php:4
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:4
+msgid "Past Invoices"
+msgstr "Предыдущие счета"
+
+#: ../public/content/themes/default/partials/user-billing.php:17
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:17
+#, php-format
+msgid ""
+"You have cancelled your subscription and your account will be active until %s"
+msgstr "Вы отменили подписку, ваш эккаунт будет активен до %s"
+
+#: ../public/content/themes/default/partials/user-billing.php:18
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:18
+msgid "Still want to be a subscriber?"
+msgstr "Все еще хотите быть подписчиком?"
+
+#: ../public/content/themes/default/partials/user-billing.php:20
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:20
+msgid "Click Here to Re-activate your Account"
+msgstr "Нажмите здесь, чтобы снова активировать ваш эккаунт"
+
+#: ../public/content/themes/default/partials/user-billing.php:24
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:24
+msgid "Credit Card"
+msgstr "Кредитная карта"
+
+#: ../public/content/themes/default/partials/user-billing.php:24
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:24
+#, php-format
+msgid "Ending in %s"
+msgstr "Заканчивается %s"
+
+#: ../public/content/themes/default/partials/user-billing.php:26
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:26
+msgid "Update Your Credit Card"
+msgstr "Обновить кредитную карту"
+
+#: ../public/content/themes/default/partials/user-billing.php:29
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:29
+msgid "Danger Zone"
+msgstr "Опасно"
+
+#: ../public/content/themes/default/partials/user-billing.php:30
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:30
+msgid "Cancel My Account"
+msgstr "Удалить эккаунт"
+
+#: ../public/content/themes/default/partials/user-billing.php:34
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:34
+msgid "Warning. Are you sure you want to cancel?"
+msgstr "Предупреждение. Подтвердите удаление эккаунта."
+
+#: ../public/content/themes/default/partials/user-billing.php:35
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:35
+msgid "No, keep my account active"
+msgstr "Не удалять мой эккаунт"
+
+#: ../public/content/themes/default/partials/user-billing.php:37
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:37
+msgid "Yes, Cancel My Account"
+msgstr "Да, удалить мой эккаунт"
+
+#: ../public/content/themes/default/partials/user-billing.php:52
+#: ../storage/framework/theme/b939bd7c61b66b5f9e174add68be92c38f468d67.php.php:52
+msgid "It looks like your account has been cancelled."
+msgstr "Ваш эккаунт удален."
+
+#: ../public/content/themes/default/partials/user-comments.php:27
+#: ../public/content/themes/default/widgets/comments.php:96
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:96
+#: ../storage/framework/theme/b510036b903574bebe1decb72e1f67109e9e887d.php.php:27
+msgid "newest"
+msgstr "новые"
+
+#: ../public/content/themes/default/partials/user-comments.php:27
+#: ../storage/framework/theme/b510036b903574bebe1decb72e1f67109e9e887d.php.php:27
+msgid "oldest"
+msgstr "старые"
+
+#: ../public/content/themes/default/partials/user-favorite-videos.php:18
+#: ../public/content/themes/default/partials/user-left-sidebar.php:10
+#: ../storage/framework/theme/0c9dbeda3573ba917234fe9908496c9ff667e4c2.php.php:10
+#: ../storage/framework/theme/1a5414914bef4c868f5ca5f90adfc5c3db0be60f.php.php:18
+msgid "Favorite Videos"
+msgstr "Избранное"
+
+#: ../public/content/themes/default/partials/user-favorite-videos.php:37
+#: ../public/content/themes/default/partials/user-uploaded-videos.php:39
+#: ../storage/framework/theme/1a5414914bef4c868f5ca5f90adfc5c3db0be60f.php.php:37
+#: ../storage/framework/theme/f8c6e687341d5e2e1d731e57308ec74be832388d.php.php:39
+msgid "published"
+msgstr "опубликовано"
+
+#: ../public/content/themes/default/partials/user-favorite-videos.php:46
+#: ../storage/framework/theme/1a5414914bef4c868f5ca5f90adfc5c3db0be60f.php.php:46
+msgid "Unfavorite"
+msgstr "Удалить из избранного"
+
+#: ../public/content/themes/default/partials/user-left-sidebar.php:18
+#: ../storage/framework/theme/0c9dbeda3573ba917234fe9908496c9ff667e4c2.php.php:18
+msgid "Сomments"
+msgstr "Комментарии"
+
+#: ../public/content/themes/default/partials/user-left-sidebar.php:37
+#: ../storage/framework/theme/0c9dbeda3573ba917234fe9908496c9ff667e4c2.php.php:37
+msgid "Profile Overview"
+msgstr "Профиль"
+
+#: ../public/content/themes/default/partials/user-left-sidebar.php:50
+#: ../storage/framework/theme/0c9dbeda3573ba917234fe9908496c9ff667e4c2.php.php:50
+msgid "Submit Video"
+msgstr "Добавить видео"
+
+#: ../public/content/themes/default/partials/user-update-billing.php:1
+#: ../storage/framework/theme/0aaec1f65034b25a0243bde173b27b7e845d9d11.php.php:1
+msgid "Update Your Credit Card Info"
+msgstr "Обновить информацию по кредитной карте"
+
+#: ../public/content/themes/default/partials/user-update-billing.php:104
+#: ../storage/framework/theme/0aaec1f65034b25a0243bde173b27b7e845d9d11.php.php:104
+msgid "Update Credit Card"
+msgstr "Обновить кредитную карту"
+
+#: ../public/content/themes/default/partials/user-uploaded-videos.php:18
+#: ../storage/framework/theme/f8c6e687341d5e2e1d731e57308ec74be832388d.php.php:18
+msgid "My Videos"
+msgstr "Мои видео"
+
+#: ../public/content/themes/default/partials/user-uploaded-videos.php:46
+#: ../storage/framework/theme/f8c6e687341d5e2e1d731e57308ec74be832388d.php.php:46
+msgid "edit"
+msgstr "редактировать"
+
+#: ../public/content/themes/default/partials/user-uploaded-videos.php:47
+#: ../storage/framework/theme/f8c6e687341d5e2e1d731e57308ec74be832388d.php.php:47
+msgid "delete"
+msgstr "удалить"
+
+#: ../public/content/themes/default/partials/user-uploaded-videos.php:56
+#: ../storage/framework/theme/f8c6e687341d5e2e1d731e57308ec74be832388d.php.php:56
+msgid "No Videos uploaded yet."
+msgstr "Здесь появятся добавленные видео."
+
+#: ../public/content/themes/default/partials/user-uploaded-videos.php:58
+#: ../storage/framework/theme/f8c6e687341d5e2e1d731e57308ec74be832388d.php.php:58
+msgid "Add my first video."
+msgstr "Добюавить первое видео."
+
+#: ../public/content/themes/default/partials/video-loop.php:14
+#: ../public/content/themes/default/video.php:224
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:224
+#: ../storage/framework/theme/d473678cb8a45614b6c86f27f010c000c731d078.php.php:14
+msgid "HD"
+msgstr "HD"
+
+#: ../public/content/themes/default/partials/video-loop.php:46
+#: ../public/content/themes/default/video.php:85
+#: ../public/content/themes/default/video.php:250
+#: ../public/content/themes/default/widgets/most-view-videos.php:21
+#: ../public/content/themes/default/widgets/slide-videos.php:49
+#: ../storage/framework/theme/2a337002b25d344a5d28c0ddc08525f66c034631.php.php:21
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:85
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:250
+#: ../storage/framework/theme/80cc9cda0061721a1f9585b027b281537a5b6b5e.php.php:49
+#: ../storage/framework/theme/d473678cb8a45614b6c86f27f010c000c731d078.php.php:46
+msgid "view"
+msgid_plural "views"
+msgstr[0] "просмотр"
+msgstr[1] "просмотра"
+msgstr[2] "просмотров"
+
+#: ../public/content/themes/default/partials/video-loop.php:64
+#: ../public/content/themes/default/video.php:259
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:259
+#: ../storage/framework/theme/d473678cb8a45614b6c86f27f010c000c731d078.php.php:64
+msgid "watch video"
+msgstr "смотреть видео"
+
+#: ../public/content/themes/default/post.php:35
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:35
+msgid "Become a subscriber to read this post"
+msgstr "Подпишитесь, чтобы прочитать этот пост"
+
+#: ../public/content/themes/default/post.php:39
+#: ../public/content/themes/default/video.php:58
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:58
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:39
+msgid "Signup Now"
+msgstr "Зарегистрироваться"
+
+#: ../public/content/themes/default/post.php:40
+#: ../public/content/themes/default/video.php:59
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:59
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:40
+msgid "to Become a Subscriber"
+msgstr "чтобы стать \"подписчиком\""
+
+#: ../public/content/themes/default/post.php:40
+#: ../public/content/themes/default/video.php:59
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:59
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:40
+msgid "for Free!"
+msgstr "бесплатно!"
+
+#: ../public/content/themes/default/post.php:44
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:44
+msgid "Sorry, this post is only available to "
+msgstr "Пост доступен только для"
+
+#: ../public/content/themes/default/post.php:45
+#: ../public/content/themes/default/video.php:64
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:64
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:45
+msgid "Subscribers"
+msgstr "\"подписчиков\""
+
+#: ../public/content/themes/default/post.php:45
+#: ../public/content/themes/default/video.php:64
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:64
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:45
+msgid "Registered Users"
+msgstr "зарегистрированных пользователей"
+
+#: ../public/content/themes/default/post.php:51
+#: ../public/content/themes/default/video.php:168
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:168
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:51
+msgid "Category"
+msgstr "Категория"
+
+#: ../public/content/themes/default/post.php:73
+#: ../public/content/themes/default/video.php:145
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:145
+#: ../storage/framework/theme/9600aa750cf733e5e230d925de008b499c1290f2.php.php:73
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: ../public/content/themes/default/search-list.php:13
+#: ../storage/framework/theme/1b964db3571a86bbd51445419114c77ad3ec69f6.php.php:13
+#, php-format
+msgid "Search Results for “%s”"
+msgstr "Результаты поиска для  “%s”"
+
+#: ../public/content/themes/default/search-list.php:23
+#: ../storage/framework/theme/1b964db3571a86bbd51445419114c77ad3ec69f6.php.php:21
+#, php-format
+msgid "Search Results: <span>%s</span> matching"
+msgstr "Результаты поиска: <span>%s</span> совпадений"
+
+#: ../public/content/themes/default/search-list.php:34
+#: ../storage/framework/theme/1b964db3571a86bbd51445419114c77ad3ec69f6.php.php:32
+#, php-format
+msgid "No Video Search results found for %s"
+msgstr "По запросу %s видео не найдены"
+
+#: ../public/content/themes/default/search-list.php:43
+#: ../storage/framework/theme/1b964db3571a86bbd51445419114c77ad3ec69f6.php.php:54
+#, php-format
+msgid "No Post Search results found for %s"
+msgstr "По запросу %s посты не найдены"
+
+#: ../public/content/themes/default/search-list.php:45
+#: ../storage/framework/theme/1b964db3571a86bbd51445419114c77ad3ec69f6.php.php:56
+#, php-format
+msgid "Post Search Results <span>for %s</span>"
+msgstr "По запросу <span>%s</span> найдены посты"
+
+#: ../public/content/themes/default/user.php:27
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:27
+msgid "Update Your Profile Info"
+msgstr "Обновить профиль"
+
+#: ../public/content/themes/default/user.php:35
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:35
+msgid "Avatar"
+msgstr "Аватарка"
+
+#: ../public/content/themes/default/user.php:44
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:44
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: ../public/content/themes/default/user.php:54
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:54
+msgid "Email"
+msgstr "Эл. почта"
+
+#: ../public/content/themes/default/user.php:60
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:60
+msgid "Password (leave empty to keep your original password)"
+msgstr "Пароль (оставьте пусты, чтобы оставить старый пароль)"
+
+#: ../public/content/themes/default/user.php:66
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:66
+msgid "User Type"
+msgstr "Тип пользователя"
+
+#: ../public/content/themes/default/user.php:69
+#: ../public/content/themes/default/user.php:74
+#: ../public/content/themes/default/user.php:79
+#: ../public/content/themes/default/user.php:84
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:69
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:74
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:79
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:84
+msgid "User"
+msgstr "Пользователь"
+
+#: ../public/content/themes/default/user.php:91
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:91
+msgid "Upgrade to Premium Subscription"
+msgstr "Стать премиальным подписчиком"
+
+#: ../public/content/themes/default/user.php:95
+#: ../storage/framework/theme/c91b5dd28a1a435311f7e45f1f5786541b9660b5.php.php:95
+msgid "Manage Your Billing Info"
+msgstr "Настройки платежей"
+
+#: ../public/content/themes/default/video.php:37
+#: ../public/content/themes/default/video.php:45
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:37
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:45
+#, php-format
+msgid ""
+"To view this video please enable JavaScript, and consider upgrading to a web "
+"browser that <a href='%s' target='_blank'>supports HTML5 video</a>"
+msgstr ""
+"Для просмотра видео, разрешите поддержку JavaScript и убедитесь, что ваш "
+"браузер <a href='%s' target='_blank'>поддерживает HTML5 видео</a>"
+
+#: ../public/content/themes/default/video.php:54
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:54
+msgid "Become a subscriber to watch this video"
+msgstr "Подпишитесь, чтобы смотреть это видео"
+
+#: ../public/content/themes/default/video.php:63
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:63
+#, fuzzy
+#| msgid "Sorry, this video is only available to"
+msgid "Sorry, this video is only available to "
+msgstr "Видео доступно только для"
+
+#: ../public/content/themes/default/video.php:98
+#: ../public/content/themes/default/widgets/subscribe-now.php:27
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:98
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:27
+msgid "Subscribe"
+msgstr "Подписаться"
+
+#: ../public/content/themes/default/video.php:107
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:107
+msgid "Favorited"
+msgstr "Избранное"
+
+#: ../public/content/themes/default/video.php:111
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:111
+msgid "Add to"
+msgstr "Добавить в"
+
+#: ../public/content/themes/default/video.php:160
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:160
+msgid "Description"
+msgstr "Описание"
+
+#: ../public/content/themes/default/video.php:175
+#: ../public/content/themes/default/widgets/tags-cloud.php:5
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:175
+#: ../storage/framework/theme/d1e389a1127a902d554d9bb8ae6a92d9157c1ad4.php.php:5
+msgid "Tags"
+msgstr "Теги"
+
+#: ../public/content/themes/default/video.php:198
+#: ../storage/framework/theme/752b0ab42865a19526c059b2a95cd94badca3594.php.php:198
+msgid "Related Videos"
+msgstr "Похожие видео"
+
+#: ../public/content/themes/default/widgets/comments.php:23
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:23
+msgid "Comments"
+msgstr "Комментарии"
+
+#: ../public/content/themes/default/widgets/comments.php:47
+#: ../public/content/themes/default/widgets/comments.php:75
+#: ../public/content/themes/default/widgets/comments.php:206
+#: ../public/content/themes/default/widgets/comments.php:241
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:47
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:75
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:206
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:241
+msgid "Add a comment here..."
+msgstr "Пишите комментарий здесь..."
+
+#: ../public/content/themes/default/widgets/comments.php:72
+#: ../public/content/themes/default/widgets/comments.php:238
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:72
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:238
+msgid "Username is required"
+msgstr "Имя пользователя обязательно для заполнения"
+
+#: ../public/content/themes/default/widgets/comments.php:77
+#: ../public/content/themes/default/widgets/comments.php:243
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:77
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:243
+msgid "Send"
+msgstr "Добавить"
+
+#: ../public/content/themes/default/widgets/comments.php:92
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:92
+msgid "Sort By"
+msgstr "Сортировать по"
+
+#: ../public/content/themes/default/widgets/comments.php:100
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:100
+msgid "popular"
+msgstr "популярности"
+
+#: ../public/content/themes/default/widgets/comments.php:257
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:257
+msgid "Please"
+msgstr "Пожалуста"
+
+#: ../public/content/themes/default/widgets/comments.php:257
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:257
+msgid "login"
+msgstr "водите"
+
+#: ../public/content/themes/default/widgets/comments.php:257
+#: ../storage/framework/theme/3974a0e87de4b648ae823040a338ba9141069ac7.php.php:257
+msgid "for comments"
+msgstr "чтобы иметь возможность комментировать"
+
+#: ../public/content/themes/default/widgets/most-view-videos.php:5
+#: ../storage/framework/theme/2a337002b25d344a5d28c0ddc08525f66c034631.php.php:5
+msgid "Most View Videos"
+msgstr "Самые просматриваемые"
+
+#: ../public/content/themes/default/widgets/recent-comments.php:5
+#: ../storage/framework/theme/ce9466f6be7ff5f9b3bf7342a2ddbc8c0393ea43.php.php:5
+msgid "Recent comments"
+msgstr "Последние добавленные комментарии"
+
+#: ../public/content/themes/default/widgets/recent-videos.php:13
+#: ../storage/framework/theme/c1f4d5d8bd390dcfd9343736728c1a30eaa20c97.php.php:13
+msgid "Recent Videos"
+msgstr "Последние добавленные видео"
+
+#: ../public/content/themes/default/widgets/search.php:13
+#: ../storage/framework/theme/a1cc7712da2cf3ff36774d1f4e57d198e9066fb9.php.php:13
+msgid "Search Videos"
+msgstr "Искать видео"
+
+#: ../public/content/themes/default/widgets/search.php:17
+#: ../storage/framework/theme/a1cc7712da2cf3ff36774d1f4e57d198e9066fb9.php.php:17
+msgid "Enter your keyword"
+msgstr "поиск"
+
+#: ../public/content/themes/default/widgets/search.php:19
+#: ../storage/framework/theme/a1cc7712da2cf3ff36774d1f4e57d198e9066fb9.php.php:19
+#, fuzzy
+#| msgid "Submit Video"
+msgid "Submit"
+msgstr "Добавить видео"
+
+#: ../public/content/themes/default/widgets/slide-videos.php:19
+#: ../storage/framework/theme/80cc9cda0061721a1f9585b027b281537a5b6b5e.php.php:19
+msgid "Featured videos"
+msgstr "Избранные видео"
+
+#: ../public/content/themes/default/widgets/social-fans.php:5
+#: ../storage/framework/theme/9d2ca5b2a5e850df0f82a9edd642cceda6114599.php.php:5
+msgid "social fans"
+msgstr "социальные сети"
+
+#: ../public/content/themes/default/widgets/social_bunch.php:9
+#: ../storage/framework/theme/569fca1e27cca238f3eb38cf48c12e8a51f96976.php.php:9
+msgid "We’re a Social Bunch"
+msgstr "Мы в социальных сетях"
+
+#: ../public/content/themes/default/widgets/subscribe-now.php:13
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:13
+msgid "Subscribe Now"
+msgstr "Подписаться"
+
+#: ../public/content/themes/default/widgets/subscribe-now.php:17
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:17
+msgid "Subscribe to get exclusive videos"
+msgstr "Подпишитесь, чтобы иметь доступ к эксклюзивным видео"
+
+#: ../public/content/themes/default/widgets/subscribe-now.php:20
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:20
+msgid "Enter your full Name"
+msgstr "Введите ваше имя"
+
+#: ../public/content/themes/default/widgets/subscribe-now.php:21
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:21
+msgid "Yo, you had better fill this out, it's required."
+msgstr "Обызательное поле"
+
+#: ../public/content/themes/default/widgets/subscribe-now.php:24
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:24
+#, fuzzy
+#| msgid "Enter your Email address"
+msgid "Enter your email address"
+msgstr "Введите эл. почту"
+
+#: ../public/content/themes/default/widgets/subscribe-now.php:25
+#: ../storage/framework/theme/d29f0ecfbd31afe825618accd79a5231cee8bada.php.php:25
+msgid "I'm required!"
+msgstr "обязательное поле"
+
+#: ../public/content/themes/default/widgets/user-profile-header.php:33
+#: ../storage/framework/theme/d72f3629a280968715c78b1380b906a5c31176c9.php.php:33
+msgid "Join Date:"
+msgstr "С нами с:"
+
+#: ../public/content/themes/default/widgets/user-profile-header.php:43
+#: ../storage/framework/theme/d72f3629a280968715c78b1380b906a5c31176c9.php.php:43
+msgid "favorites"
+msgstr "избранное"
+
+#: ../public/content/themes/default/widgets/user-profile-header.php:52
+#: ../storage/framework/theme/d72f3629a280968715c78b1380b906a5c31176c9.php.php:52
+msgid "comments"
+msgstr "комментарии"
+
+#: ../public/content/themes/default/widgets/video-categories-cloud.php:12
+#: ../storage/framework/theme/a8ecb823d55479f5d90262084516d2f7b2075fd2.php.php:12
+msgid "Video Categories"
+msgstr "Видео категории"
+
+#: ../public/content/themes/default/widgets/video-categories-list.php:13
+#: ../storage/framework/theme/aff12e09aaee6ab2506b1c75f4fd27254a5eabfc.php.php:13
+msgid "Categories"
+msgstr "Категории"
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:104
+#: Http/Controllers/front/ThemeAuthController.php:104
+msgid ""
+"Uh oh, looks like you don't have an active subscription, please renew to "
+"gain access to all content"
+msgstr "Похоже у вашей подписки вышло время, пожалуйста возобновите подписку"
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:111
+#: Http/Controllers/front/ThemeAuthController.php:111
+msgid "Invalid login, please try again."
+msgstr "Неправильный логин, сделайте еще одну попытку."
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:147
+#: Http/Controllers/front/ThemeAuthController.php:147
+msgid "Sorry, there was an error creating your account."
+msgstr "Произошла ошибка при создании эккаунта."
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:160
+#: Http/Controllers/front/ThemeAuthController.php:160
+msgid ""
+"Success! One last step, be sure to verify your account by clicking on the "
+"activation link sent to your email."
+msgstr ""
+"Все отлично! Проверьте почту и активируйте вашу учетную запись, не забудьте "
+"проверить папку \"спам\"."
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:167
+#: Http/Controllers/front/ThemeAuthController.php:167
+msgid "Welcome! Your Account has been Successfully Created!"
+msgstr "Добро пожаловать! Ваш эккаунт создан!"
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:172
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:247
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:398
+#: Http/Controllers/front/ThemeAuthController.php:172
+#: Http/Controllers/front/ThemeUserController.php:247
+#: Http/Controllers/front/ThemeUserController.php:398
+#, php-format
+msgid "Sorry, there was an error with your card: %s"
+msgstr "Что-то не так с вашей кредиткой: %s"
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:194
+#: Http/Controllers/front/ThemeAuthController.php:194
+msgid "You have successfully verified your account. Please login below."
+msgstr "Ваш эккаунт подтвержден, теперь вы можете залогиниться."
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:199
+#: Http/Controllers/front/ThemeAuthController.php:199
+msgid "You have been successfully logged out"
+msgstr "Ва разлогинились. До новых встреч"
+
+#: ../storage/framework/theme/2457dc1a5df471f330a7ab7d62c9b99d993b23d7.php.php:281
+#: Http/Controllers/front/ThemeAuthController.php:281
+msgid "Your password has been successfully reset. Please login below"
+msgstr "Пароль сброшен, залогиньтесь с новым паролем"
+
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:229
+#: Http/Controllers/front/ThemeVideoController.php:229
+msgid "Sorry, this video is no longer active."
+msgstr "Извините, видео больше не активно."
+
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:255
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:302
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:470
+#: Http/Controllers/front/ThemeVideoController.php:255
+#: Http/Controllers/front/ThemeVideoController.php:302
+#: Http/Controllers/front/ThemeVideoController.php:470
+msgid "Page"
+msgstr "Страница"
+
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:301
+#: Http/Controllers/front/ThemeVideoController.php:301
+msgid "Videos tagged with"
+msgstr "Видео с тегом"
+
+#: ../storage/framework/theme/2ef859272977155e3a3bd8a004f34651464dc403.php.php:469
+#: Http/Controllers/front/ThemeVideoController.php:469
+msgid "Videos"
+msgstr "Видео"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:29
+#: Libraries/TimeHelper.php:29
+msgid "year"
+msgid_plural "years"
+msgstr[0] "год"
+msgstr[1] "года"
+msgstr[2] "лет"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:30
+#: Libraries/TimeHelper.php:30
+msgid "month"
+msgid_plural "months"
+msgstr[0] "месяц"
+msgstr[1] "месяца"
+msgstr[2] "месяцев"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:31
+#: Libraries/TimeHelper.php:31
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "неделя"
+msgstr[1] "недели"
+msgstr[2] "недель"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:32
+#: Libraries/TimeHelper.php:32
+msgid "day"
+msgid_plural "days"
+msgstr[0] "день"
+msgstr[1] "дня"
+msgstr[2] "дней"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:33
+#: Libraries/TimeHelper.php:33
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "час"
+msgstr[1] "часа"
+msgstr[2] "часов"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:34
+#: Libraries/TimeHelper.php:34
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "минут"
+msgstr[1] "минуты"
+msgstr[2] "минут"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:35
+#: Libraries/TimeHelper.php:35
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "секунда"
+msgstr[1] "секунды"
+msgstr[2] "секунд"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:46
+#: Libraries/TimeHelper.php:46
+msgid "ago"
+msgstr "назад"
+
+#: ../storage/framework/theme/4c9f88fd85060ada231242cc5aacbc2bc262bc0a.php.php:46
+#: Libraries/TimeHelper.php:46
+msgid "just now"
+msgstr "только что"
+
+#: ../storage/framework/theme/5536202e7dc66e857479e8179fb3ed22d778cf81.php.php:191
+#: Http/Controllers/front/ThemePostController.php:191
+msgid "Sorry, this post is no longer active."
+msgstr "Извините, ваш эккаунт больше не активен."
+
+#: ../storage/framework/theme/8ce273e4d7dee20fc9c0203e836318c28980f74b.php.php:42
+#: Http/Controllers/front/ThemePageController.php:42
+msgid "Sorry, this page is no longer active."
+msgstr "Извините, ваш эккаунт больше не активен."
+
+#: ../storage/framework/theme/ae6497dcd50e6d68ae084060aecd383322ecc9f7.php.php:11
+#: Http/Controllers/front/UpgradeController.php:11
+msgid "Successfully Updated Your Script"
+msgstr "Скрипт успешно обновлен"
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:119
+#: Http/Controllers/front/ThemeUserController.php:119
+msgid "Sorry That Username is already in Use"
+msgstr "Это имя пользователя уже занято"
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:125
+#: Http/Controllers/front/ThemeUserController.php:125
+msgid "Successfully Updated User Info"
+msgstr "Информация обновлена"
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:128
+#: Http/Controllers/front/ThemeUserController.php:128
+msgid "Sorry, there seems to have been an error when updating the user info"
+msgstr "При обновлении информации произшла ошибка, попробуйте позже"
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:141
+#: Http/Controllers/front/ThemeUserController.php:141
+msgid ""
+"This user type does not have billing info associated with their account."
+msgstr ""
+"Этот тип пользователя не имеет информации об оплате, связанной с их учетной "
+"записью."
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:195
+#: Http/Controllers/front/ThemeUserController.php:195
+msgid "Your account has been cancelled."
+msgstr "Ваш эккаунт удален."
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:217
+#: Http/Controllers/front/ThemeUserController.php:217
+msgid "Welcome back, your account has been successfully re-activated."
+msgstr "Ваш эккаунт снова активен. Добро пожаловать."
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:244
+#: Http/Controllers/front/ThemeUserController.php:244
+msgid "Your Credit Card Info has been successfully updated."
+msgstr "Информация по кредитной карте обновлена."
+
+#: ../storage/framework/theme/bf9e68e1adb831b34f92033639ea5239bbc358ac.php.php:395
+#: Http/Controllers/front/ThemeUserController.php:395
+msgid "You have been successfully signed up for a subscriber membership!"
+msgstr "Эккаунт создан. Теперь вы подписчик!"
+
+#~ msgid "Search Results: <span>%n</span> matching"
+#~ msgstr "Результаты поиска: <span>%n</span> совпадений"
+
+#~ msgid "Followers"
+#~ msgstr "Подписчики"
+
+#~ msgid "Profile Settings"
+#~ msgstr "Настройки профиля"
+
+#, fuzzy
+#~| msgid "Signup Now"
+#~ msgid "Sign up Now"
+#~ msgstr "Зарегистрироваться"
+
+#~ msgid "all"
+#~ msgstr "все"
+
+#~ msgid "Password Reset"
+#~ msgstr "Сброс пароля"
+
+#~ msgid "Login via Social Profile"
+#~ msgstr "Залогиниться через соц. сети"
+
+#~ msgid "login via facebook"
+#~ msgstr "Залогиниться через Facebook"
+
+#~ msgid "login via twitter"
+#~ msgstr "Залогиниться через Twitter"
+
+#~ msgid "login via google plus"
+#~ msgstr "Залогиниться через Google Plus"
+
+#~ msgid "login via linkedin"
+#~ msgstr "Залогиниться через LinkedIn"
+
+#~ msgid "OR"
+#~ msgstr "ИЛИ"
+
+#~ msgid "View All Categories"
+#~ msgstr "Все категории"
