@@ -40,12 +40,12 @@ VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-c
 Visit the [Demo site](http://vms-light-demo.noxls.net/)
 
 Demo User
-Username: demo 
+Username: demo
 Password: demo
 
 Admin User
-Username: admin 
-Password: admin 
+Username: admin
+Password: admin
 [Admin Panel](http://vms-light-demo.noxls.net/login)
 
 ### How to help VMS
@@ -69,7 +69,7 @@ Password: admin
 4. Rocket since way - [donate](https://noxls.net/send-money)
 
 ### In progress
-* dark theme
+* Dark theme
 
-### Any questins?
+### Any questions?
 mail@noxls.net
