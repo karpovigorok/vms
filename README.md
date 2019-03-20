@@ -39,6 +39,11 @@ VMS Video integrated with [Stripe](https://stripe.com/) to allow you accept re-c
 
 Visit the [Demo site](http://vms-light-demo.noxls.net/?source=github)
 
+Type | Username | Password
+--- | --- | ---
+Demo | demo | demo
+Admin | admin | admin
+
 Demo User
 Username: demo
 Password: demo
