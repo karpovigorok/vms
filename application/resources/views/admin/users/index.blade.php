@@ -57,13 +57,14 @@
 				</td>
 				<td>{{ $user->active }}</td>
 				<td>
-					@if($user->subscribed('main') && $user->subscription()->onGracePeriod() )
+                    <?php //dd($user->subscribed('main'));
+					if($user->subscribed('main') && $user->subscription('main')->onGracePeriod()):?>
 						<div class="label label-warning"><i class="fa fa-meh-o"></i> <?php echo _i("Grace Period");?></div>
-					@elseif( $user->subscribed('main') && $user->subscription()->canceled() )
+                    <?php elseif( $user->subscribed('main') && $user->subscription('main')->cancelled()):?>
 						<div class="label label-danger"><i class="fa fa-frown-o"></i> <?php echo _i("Cancelled");?></div>
-					@elseif( $user->subscribed('main') || ($user->role == 'admin' || $user->role == 'demo') )
+                    <?php elseif( $user->subscribed('main') || ($user->role == 'admin' || $user->role == 'demo')):?>
 						<div class="label label-success"><i class="fa fa-ticket"></i> <?php echo _i("Subscribed");?></div>
-					@endif
+					<?php endif;?>
 					
 				</td>
 				<td>
