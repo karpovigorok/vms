@@ -85,7 +85,7 @@
 
 		</div>
 
-		<input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+		<input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
 		<input type="submit" value="<?php echo _i("Update Payment Settings");?>" class="btn btn-success pull-right" />
 
 	</form>

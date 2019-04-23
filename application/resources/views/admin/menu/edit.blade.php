@@ -15,7 +15,7 @@
         <input type="radio" class="menu-dropdown-radio" name="type" value="videos"  @if($menu->type == 'videos') checked="checked" @endif /> <?php echo _i("Video Categories");?>
         <input type="radio" class="menu-dropdown-radio" name="type" value="posts"  @if($menu->type == 'posts') checked="checked" @endif /> <?php echo _i("Post Categories");?>
         <input type="hidden" name="id" id="id" value="{{ $menu->id }}" />
-        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
     </form>
 </div>
 

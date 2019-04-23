@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -33,7 +33,7 @@ ul.video_list{
                     <div class="main-image">
                         <?php foreach($featured_videos as $video):?>
                         <div class="image <?php echo $video->id; ?>">
-                            <img src="<?php echo ImageHandler::getImage($video->image, '800x400'); ?>" alt="imaga">
+                            <img src="<?php echo ImageHandler::getImage($video->image, '800x400'); ?>" alt="<?php echo $video->title; ?>">
                             <a href="<?php echo ($settings->enable_https) ? secure_url('video') : URL::to('video') . '/' . $video->id; ?>" class="hover-posts">
                                 <span><i class="fa fa-play"></i><?php echo _i('Watch Video');?></span>
                             </a>

@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,24 +11,25 @@
 
 //namespace App\Http\Controllers\front;
 use App\Models\Video;
-use App\Models\Setting;
 use App\Models\VideoCategory;
 use App\Models\PostCategory;
 use App\Libraries\ThemeHelper;
 use App\Models\Page;
+use Arcanedev\SeoHelper\Entities\Webmasters;
+use Arcanedev\SeoHelper\Entities\Title;
+use Arcanedev\SeoHelper\Entities\Description;
 
 class ThemeHomeController extends \BaseController {
 
-	private $videos_per_page = 12;
     private $_num_recent_videos = 8;
     private $_num_popular_videos = 8;
     private $_num_featured_videos = 8;
+    private $_settings;
 
 	public function __construct()
 	{
 		$this->middleware('secure');
-		$settings = Setting::first();
-        $this->videos_per_page = $settings->videos_per_page;
+		$this->_settings = ThemeHelper::getSystemSettings();
         parent::__construct();
 	}
 
@@ -40,7 +41,6 @@ class ThemeHomeController extends \BaseController {
 
 	public function index()
 	{
-
         $theme_settings = ThemeHelper::getThemeSettings();
 
         $excluded_video_ids = array();
@@ -71,6 +71,39 @@ class ThemeHomeController extends \BaseController {
             array_push($excluded_video_ids, $popular_video->id);
         }
 
+        $title = new Title;
+        $title->set($this->_settings->website_name);
+        $description = new Description;
+        $description->set($this->_settings->website_description);
+
+        $seo_data = array(
+            'meta_title' => $title,
+            'meta_description' => $description,
+        );
+
+
+
+        $webmasters_data = array();
+        if(!empty($this->_settings->webmasters_google)) {
+            $webmasters_data['google'] = $this->_settings->webmasters_google;
+        }
+        if(!empty($this->_settings->webmasters_bing)) {
+            $webmasters_data['bing'] = $this->_settings->webmasters_bing;
+        }
+        if(!empty($this->_settings->webmasters_alexa)) {
+            $webmasters_data['alexa'] = $this->_settings->webmasters_alexa;
+        }
+        if(!empty($this->_settings->webmasters_yandex)) {
+            $webmasters_data['yandex'] = $this->_settings->webmasters_yandex;
+        }
+
+        if(sizeof($webmasters_data)) {
+            $webmasters = new Webmasters($webmasters_data);
+        }
+        if(isset($webmasters)) {
+            $seo_data['webmasters'] = $webmasters;
+        }
+
 		$data = array(
 			'recent_videos' => $recent_videos,
             'featured_videos' => $featured_videos,
@@ -83,8 +116,11 @@ class ThemeHomeController extends \BaseController {
 			'theme_settings' => $theme_settings,
 			'pages' => Page::where('active', '=', 1)->get(),
             'number_videos_posted' => Video::where('active', 1)->count(),
-            'excluded_video_ids' => $excluded_video_ids
+            'excluded_video_ids' => $excluded_video_ids,
 			);
+        if(isset($seo_data)) {
+            $data['seo'] = $seo_data;
+        }
 		//dd($data['featured_videos']);
         if(isset($theme_settings->homepage_file) && substr($theme_settings->homepage_file, 0, 4) == 'home') {
             $homepage_template = $theme_settings->homepage_file;

@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,7 +11,6 @@
 
 use \Redirect as Redirect;
 use App\User as User;
-use App\Models\Setting;
 use App\Models\VideoCategory;
 use App\Models\PostCategory;
 use App\Models\Post;
@@ -37,7 +36,7 @@ class ThemePostController extends \BaseController {
     {
         $this->middleware('secure');
         //$settings = Setting::first();
-        $this->_settings = Setting::first();
+        $this->_settings = ThemeHelper::getSystemSettings();
         //$this->_posts_per_page = $this->_settings->posts_per_page;
         $this->_enable_post_comments =  $this->_settings->enable_post_comments;
         parent::__construct();
@@ -80,27 +79,6 @@ class ThemePostController extends \BaseController {
 
             $meta_misc_tags = new MiscTags($data_misc_tags);
 
-            if($post->hasSeo()) {
-                $webmasters_data = array();
-                if($post->seo->extras['webmasters']['google'] != '') {
-                    $webmasters_data['google'] = $post->seo->extras['webmasters']['google'];
-                }
-                if($post->seo->extras['webmasters']['bing'] != '') {
-                    $webmasters_data['bing'] = $post->seo->extras['webmasters']['bing'];
-                }
-                if($post->seo->extras['webmasters']['alexa'] != '') {
-                    $webmasters_data['alexa'] = $post->seo->extras['webmasters']['alexa'];
-                }
-                if($post->seo->extras['webmasters']['pinterest'] != '') {
-                    $webmasters_data['pinterest'] = $post->seo->extras['webmasters']['pinterest'];
-                }
-                if($post->seo->extras['webmasters']['yandex'] != '') {
-                    $webmasters_data['yandex'] = $post->seo->extras['webmasters']['yandex'];
-                }
-                if(sizeof($webmasters_data)) {
-                    $webmasters = new Webmasters($webmasters_data);
-                }
-            }
             $openGraph = new Graph;
             $openGraph->setType('website');
             //
@@ -170,12 +148,6 @@ class ThemePostController extends \BaseController {
                 'openGraph' => $openGraph,
                 'twitter_card' => $twitter_card,
             );
-            if(isset($webmasters)) {
-                $seo_data['webmasters'] = $webmasters;
-            }
-
-
-
             $data = array(
                     'post' => $post, 
                     'author' => $author,

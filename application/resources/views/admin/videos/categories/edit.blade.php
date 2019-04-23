@@ -10,12 +10,12 @@
         <label for="slug"><?php echo _i("URL slug (ex. %s)", "videos/categories/slug-name");?></label>
         <input name="slug" id="slug" placeholder="<?php echo _i("URL Slug");?>" class="form-control" value="{{ $category->slug }}" />
         <input type="hidden" name="id" id="id" value="{{ $category->id }}" />
-        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
 
         <div id="category-badge mt10">
             @if(isset($category))<?php $avatar = $category->thumb; ?>@else<?php $avatar = 'default.png'; ?>@endif
             <img width="185" src="<?php echo $avatar; ?>" />
-            <label for="thumb">@if(isset($category->thumb))<?= ucfirst($category->thumb). '\'s'; ?>@endif <?php echo _i("Category Thumbnail");?></label>
+            <label for="thumb">@if(isset($category->thumb))<?php echo ucfirst($category->thumb). '\'s'; ?>@endif <?php echo _i("Category Thumbnail");?></label>
             <input type="file" multiple="true" class="form-control" name="thumb" id="thumb" />
         </div>
     </form>

@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -42,7 +42,7 @@ include('includes/header.php');
                                         foreach ($site_video_dimensions as $key_video_dimension => $video_dimension):?>
                                             <?php if ($video->max_height >= $video_dimension['height']): ?>
                                                 <source
-                                                    src="<?php echo Config::get('site.uploads_dir') . "/video/" . $video->path . $key_video_dimension . ".mp4"; ?>"
+                                                    src="<?php echo Config::get('site.uploads_dir') . "/video/" . $video->path . $key_video_dimension . basename($video->original_name) . ".mp4"; ?>"
                                                     label='<?php echo _i($key_video_dimension) ?>'
                                                     res="<?php echo $video_dimension['height'] ?>"
                                                     type='<?php echo $video->mime_type; ?>' <?php echo($k++ == 0 ? 'selected="true"' : ''); ?>>

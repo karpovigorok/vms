@@ -27,7 +27,7 @@
 				        <input name="name" id="name" placeholder="<?php echo _i("Category Name");?>" class="form-control" value="" /><br />
 				        <label for="slug"><?php echo _i("URL slug (ex. %s)", "posts/categories/slug-name");?></label>
 				        <input name="slug" id="slug" placeholder="<?php echo _i("URL Slug");?>" class="form-control" value="" />
-				        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+				        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
 				    </form>
 				</div>
 				
@@ -121,7 +121,7 @@
 		
 		</div>
 
-	<input type="hidden" id="_token" name="_token" value="<?= csrf_token() ?>" />
+	<input type="hidden" id="_token" name="_token" value="<?php echo csrf_token() ?>" />
 
 	@section('javascript')
 

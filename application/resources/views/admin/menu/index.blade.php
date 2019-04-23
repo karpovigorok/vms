@@ -32,7 +32,7 @@
 				        <input type="radio" class="menu-dropdown-radio" name="type" value="none" checked="checked" /> <?php echo _i("None");?>
 				        <input type="radio" class="menu-dropdown-radio" name="type" value="videos" /> <?php echo _i("Video Categories");?>
 				        <input type="radio" class="menu-dropdown-radio" name="type" value="posts" /> <?php echo _i("Post Categories");?>
-				        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+				        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
 				    </form>
 				</div>
 				
@@ -126,7 +126,7 @@
 		
 		</div>
 
-	<input type="hidden" id="_token" name="_token" value="<?= csrf_token() ?>" />
+	<input type="hidden" id="_token" name="_token" value="<?php echo csrf_token() ?>" />
 
 	<?php if(isset($_GET['menu_first_level'])): ?>
 		<input type="hidden" id="menu_first_level" value="1" />

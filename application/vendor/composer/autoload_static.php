@@ -10,6 +10,9 @@ class ComposerStaticInita5fb65e1e5c05dc63890ac2b2bb630e0
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
@@ -41,8 +44,11 @@ class ComposerStaticInita5fb65e1e5c05dc63890ac2b2bb630e0
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Php70\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
+            'Symfony\\Polyfill\\Iconv\\' => 23,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Yaml\\' => 23,
@@ -155,6 +161,10 @@ class ComposerStaticInita5fb65e1e5c05dc63890ac2b2bb630e0
         array (
             0 => __DIR__ . '/../..' . '/tests',
         ),
+        'Symfony\\Polyfill\\Php72\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
+        ),
         'Symfony\\Polyfill\\Php70\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php70',
@@ -162,6 +172,14 @@ class ComposerStaticInita5fb65e1e5c05dc63890ac2b2bb630e0
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Intl\\Idn\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
+        ),
+        'Symfony\\Polyfill\\Iconv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-iconv',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
@@ -468,6 +486,7 @@ class ComposerStaticInita5fb65e1e5c05dc63890ac2b2bb630e0
         'AddMaxHeightToVideosTable' => __DIR__ . '/../..' . '/database/migrations/2018_09_11_160043_add_max_height_to_videos_table.php',
         'AddParentIdComments' => __DIR__ . '/../..' . '/database/migrations/2018_10_30_132639_add_parent_id_comments.php',
         'AddSocialWebsites' => __DIR__ . '/../..' . '/database/migrations/2018_11_22_162310_add_social_websites.php',
+        'AddWebmasterToSettingsTable' => __DIR__ . '/../..' . '/database/migrations/2019_04_12_135238_add_webmaster_to_settings_table.php',
         'AdminBaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/AdminBaseController.php',
         'AdminCommentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/AdminCommentsController.php',
         'AdminCommentsSettingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/AdminCommentsSettingsController.php',
@@ -504,7 +523,6 @@ class ComposerStaticInita5fb65e1e5c05dc63890ac2b2bb630e0
         'App\\Models\\PluginData' => __DIR__ . '/../..' . '/app/Models/PluginData.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
         'App\\Models\\PostCategory' => __DIR__ . '/../..' . '/app/Models/PostCategory.php',
-        'App\\Models\\Setting' => __DIR__ . '/../..' . '/app/Models/Setting.php',
         'App\\Models\\Tag' => __DIR__ . '/../..' . '/app/Models/Tag.php',
         'App\\Models\\ThemeSetting' => __DIR__ . '/../..' . '/app/Models/ThemeSetting.php',
         'App\\Models\\Video' => __DIR__ . '/../..' . '/app/Models/Video.php',

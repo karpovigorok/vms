@@ -27,10 +27,10 @@
 				        <input name="name" id="name" placeholder="<?php echo _i("Category Name");?>" class="form-control" value="" /><br />
 				        <label for="slug"><?php echo _i("URL slug (ex. %s)", "videos/categories/slug-name");?></label>
 				        <input name="slug" id="slug" placeholder="<?php echo _i("URL Slug");?>" class="form-control" value="" />
-				        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+				        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
                         <div id="category-badge mt10">
 
-                            <img width="185" src="<?= Config::get('site.uploads_url') . 'category_thumb/default.png'?>" />
+                            <img width="185" src="<?php echo Config::get('site.uploads_url') . 'category_thumb/default.png'?>" />
                             <label for="thumb"><?php echo _i("Category Thumbnail");?></label>
                             <input type="file" multiple="true" class="form-control" name="thumb" id="thumb" />
                         </div>
@@ -115,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-	<input type="hidden" id="_token" name="_token" value="<?= csrf_token() ?>" />
+	<input type="hidden" id="_token" name="_token" value="<?php echo csrf_token() ?>" />
 
 
 	@section('javascript')

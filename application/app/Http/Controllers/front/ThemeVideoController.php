@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,7 +11,6 @@
 
 use \Redirect as Redirect;
 use App\Models\Video;
-use App\Models\Setting;
 use App\Models\VideoCategory;
 use App\Models\PostCategory;
 use App\Models\Tag;
@@ -23,10 +22,9 @@ use Arcanedev\SeoHelper\Entities\Title;
 use Arcanedev\SeoHelper\Entities\Description;
 use Arcanedev\SeoHelper\Entities\Keywords;
 use Arcanedev\SeoHelper\Entities\MiscTags;
-use Arcanedev\SeoHelper\Entities\Webmasters;
 use Arcanedev\SeoHelper\Entities\OpenGraph\Graph;
 use Arcanedev\SeoHelper\Entities\Twitter\Card;
-//$settings = \App\Models\Setting::first();
+
 
 class ThemeVideoController extends \BaseController {
 
@@ -38,7 +36,7 @@ class ThemeVideoController extends \BaseController {
     public function __construct()
     {
         $this->middleware('secure');
-        $this->_settings = Setting::first();
+        $this->_settings = ThemeHelper::getSystemSettings();
         $this->_enable_video_comments = $this->_settings->enable_video_comments;
 
         parent::__construct();
@@ -96,28 +94,6 @@ class ThemeVideoController extends \BaseController {
             ];
 
             $meta_misc_tags = new MiscTags($data_misc_tags);
-
-            if($video->hasSeo()) {
-                $webmasters_data = array();
-                if($video->seo->extras['webmasters']['google'] != '') {
-                    $webmasters_data['google'] = $video->seo->extras['webmasters']['google'];
-                }
-                if($video->seo->extras['webmasters']['bing'] != '') {
-                    $webmasters_data['bing'] = $video->seo->extras['webmasters']['bing'];
-                }
-                if($video->seo->extras['webmasters']['alexa'] != '') {
-                    $webmasters_data['alexa'] = $video->seo->extras['webmasters']['alexa'];
-                }
-                if($video->seo->extras['webmasters']['pinterest'] != '') {
-                    $webmasters_data['pinterest'] = $video->seo->extras['webmasters']['pinterest'];
-                }
-                if($video->seo->extras['webmasters']['yandex'] != '') {
-                    $webmasters_data['yandex'] = $video->seo->extras['webmasters']['yandex'];
-                }
-                if(sizeof($webmasters_data)) {
-                    $webmasters = new Webmasters($webmasters_data);
-                }
-            }
             $openGraph = new Graph;
             $openGraph->setType('website');
             //
@@ -187,11 +163,6 @@ class ThemeVideoController extends \BaseController {
                 'openGraph' => $openGraph,
                 'twitter_card' => $twitter_card,
             );
-            if(isset($webmasters)) {
-                $seo_data['webmasters'] = $webmasters;
-            }
-
-
 
             $data = array(
                 'video' => $video,
@@ -372,28 +343,6 @@ class ThemeVideoController extends \BaseController {
 
         $meta_misc_tags = new MiscTags($data_misc_tags);
         $meta_misc_tags->add('canonical', url('videos/category/' . $cat->slug));
-
-        if($cat->hasSeo()) {
-            $webmasters_data = array();
-            if($cat->seo->extras['webmasters']['google'] != '') {
-                $webmasters_data['google'] = $cat->seo->extras['webmasters']['google'];
-            }
-            if($cat->seo->extras['webmasters']['bing'] != '') {
-                $webmasters_data['bing'] = $cat->seo->extras['webmasters']['bing'];
-            }
-            if($cat->seo->extras['webmasters']['alexa'] != '') {
-                $webmasters_data['alexa'] = $cat->seo->extras['webmasters']['alexa'];
-            }
-            if($cat->seo->extras['webmasters']['pinterest'] != '') {
-                $webmasters_data['pinterest'] = $cat->seo->extras['webmasters']['pinterest'];
-            }
-            if($cat->seo->extras['webmasters']['yandex'] != '') {
-                $webmasters_data['yandex'] = $cat->seo->extras['webmasters']['yandex'];
-            }
-            if(sizeof($webmasters_data)) {
-                $webmasters = new Webmasters($webmasters_data);
-            }
-        }
         $openGraph = new Graph;
         $openGraph->setType('website');
         //
@@ -460,9 +409,7 @@ class ThemeVideoController extends \BaseController {
             'openGraph' => $openGraph,
             'twitter_card' => $twitter_card,
         );
-        if(isset($webmasters)) {
-            $seo_data['webmasters'] = $webmasters;
-        }
+
 
         $data = array(
             'videos' => $videos,

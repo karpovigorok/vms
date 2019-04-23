@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -13,8 +13,8 @@ use \App\User as User;
 use Carbon\Carbon as Carbon;
 use \App\Models\Video;
 use \App\Models\Post;
-use \App\Models\Setting;
 use Illuminate\Http\Request;
+use \App\Libraries\ThemeHelper;
 //use App\Http\Controllers\AdminBaseController as AdminBaseController;
 
 class AdminController extends \AdminBaseController {
@@ -35,7 +35,7 @@ class AdminController extends \AdminBaseController {
 		$total_videos = count(Video::where('active', '=', 1)->get());
 		$total_posts = count(Post::where('active', '=', 1)->get());
 
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 
 
 		$data = array(
@@ -51,7 +51,7 @@ class AdminController extends \AdminBaseController {
 
 
 	public function settings_form(){
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 		$user = Auth::user();
 		$data = array(
 			'settings' => $settings,

@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,7 +11,6 @@
 
 use \Redirect as Redirect;
 use \App\Models\Video;
-use \App\Models\Setting;
 use \App\Models\AllowedMime;
 use \App\Models\VideoCategory;
 use \App\Models\Tag;
@@ -336,7 +335,7 @@ class AdminVideosController extends \AdminBaseController {
 
         $img = Image::make($upload_folder . $filename);
         //$img->resize(1280, 720);
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
         $theme_config = ThemeHelper::get_theme_config($settings->theme);
 
 

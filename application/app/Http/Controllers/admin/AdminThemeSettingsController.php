@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,16 +11,13 @@
 
 use \Redirect as Redirect;
 use Illuminate\Http\Request;
-use App\Models\Setting;
-use App\Models\ThemeSetting;
 use App\Libraries\ThemeHelper;
 use Illuminate\Support\Facades\File;
-//use App\Models\Setting;;
 
 class AdminThemeSettingsController extends \AdminBaseController {
 
 	public function theme_settings(){
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 		$user = Auth::user();
 		$data = array(
 			'settings' => $settings,
@@ -30,7 +27,7 @@ class AdminThemeSettingsController extends \AdminBaseController {
 	}
 
 	public function theme_settings_form(){
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 		$user = Auth::user();
 
         //dd(THEME_DIR);
@@ -55,7 +52,7 @@ class AdminThemeSettingsController extends \AdminBaseController {
 
 	public function update_theme_settings(){
 		// Get the Active Theme
-		$active_theme = Setting::first()->theme;
+		$active_theme = ThemeHelper::getSystemSettings()->theme;
 
 		$input = Input::all();
         if(isset($input['_token'])) {
@@ -65,39 +62,17 @@ class AdminThemeSettingsController extends \AdminBaseController {
             unset($input['homepage_file']);
         }
 		foreach($input as $key => $value){
-			$this->createOrUpdateThemeSetting($active_theme, $key, trim($value));
+            ThemeHelper::createOrUpdateThemeSetting($active_theme, $key, trim($value));
 		}
 
 		return Redirect::to('/admin/theme_settings');
 	}
 
-	private function createOrUpdateThemeSetting($theme_slug, $key, $value){
-       	
-       	$setting = array(
-        		'theme_slug' => $theme_slug,
-        		'key' => $key,
-        		'value' => $value
-        	);
-
-       	$theme_setting = ThemeSetting::where('theme_slug', '=', $theme_slug)->where('key', '=', $key)->first();
-
-        if (isset($theme_setting->id))
-        {
-            $theme_setting->update($setting);
-            $theme_setting->save();
-        }
-        else
-        {
-            ThemeSetting::create($setting);
-        }
-
-    }
-
     public function delete_logo(Request $request) {
         if($request->ajax()) {
-            $settings = Setting::first();
+            $settings = ThemeHelper::getSystemSettings();
             $settings->logo = '';
-            $settings->save();
+            ThemeHelper::createOrUpdateThemeSetting('system', 'settings', $settings);
         }
         else {
             abort(403);
@@ -106,9 +81,9 @@ class AdminThemeSettingsController extends \AdminBaseController {
 
     public function delete_favicon(Request $request) {
         if($request->ajax()) {
-            $settings = Setting::first();
+            $settings = ThemeHelper::getSystemSettings();
             $settings->favicon = '';
-            $settings->save();
+            ThemeHelper::createOrUpdateThemeSetting('system', 'settings', $settings);
         }
         else {
             abort(403);

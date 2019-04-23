@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <?php $settings = \App\Models\Setting::first(); ?>
+    <?php $settings = \App\Libraries\ThemeHelper::getSystemSettings(); ?>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,11 +27,21 @@
     <link rel="stylesheet" href="{{ '/application/assets/admin/css/custom.css' }}">
 
     <?php $favicon = (isset($settings->favicon) && trim($settings->favicon) != "") ? $settings->favicon : '/favicon.png'; ?>
-    <link rel="icon" href="<?= Config::get('site.uploads_dir') . '/settings/' . $favicon ?>" type="image/x-icon">
-    <link rel="shortcut icon" href="<?= Config::get('site.uploads_dir') . '/settings/' . $favicon ?>"
+    <link rel="icon" href="<?php echo Config::get('site.uploads_dir') . '/settings/' . $favicon ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo Config::get('site.uploads_dir') . '/settings/' . $favicon ?>"
           type="image/x-icon">
 
     @yield('css')
+
+    <?php if (isset($settings->google_tag_id) && $settings->google_tag_id != ''): ?>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','<?php echo $settings->google_tag_id;?>');</script>
+    <!-- End Google Tag Manager -->
+    <?php endif; ?>
 
     <script src="{{ '/application/assets/admin/js/jquery-1.11.0.min.js' }}"></script>
     <script src="{{ '/application/assets/admin/js/bootstrap-colorpicker.min.js' }}" id="script-resource-13"></script>
@@ -51,7 +61,12 @@
 
 </head>
 <body class="page-body skin-black">
-
+<?php if (isset($settings->google_tag_id) && $settings->google_tag_id != ''): ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?php echo $settings->google_tag_id;?>"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<?php endif; ?>
 <a href="{{ URL::to('/') }}" class="top-left-logo">
     <img src="{{ '/application/assets/admin/images/noxls-logo-cut.png' }}"/>
 </a>
@@ -435,10 +450,10 @@
 
     <?php if(Session::get('note') != '' && Session::get('note_type') != ''): ?>
 
-    if ('<?= Session::get("note_type") ?>' == 'success') {
-        toastr.success('<?= Session::get("note") ?>', "Sweet Success!", opts);
-    } else if ('<?= Session::get("note_type") ?>' == 'error') {
-        toastr.error('<?= Session::get("note") ?>', "Whoops!", opts);
+    if ('<?php echo Session::get("note_type") ?>' == 'success') {
+        toastr.success('<?php echo Session::get("note") ?>', "Sweet Success!", opts);
+    } else if ('<?php echo Session::get("note_type") ?>' == 'error') {
+        toastr.error('<?php echo Session::get("note") ?>', "Whoops!", opts);
     }
     <?php Session::forget('note');
           Session::forget('note_type');

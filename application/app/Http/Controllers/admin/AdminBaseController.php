@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,13 +11,13 @@
 
 //namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
-use App\Models\Setting;
+use App\Libraries\ThemeHelper;
 
 class AdminBaseController extends Controller {
     public function __construct() {
         LaravelGettext::setDomain("admin");
 //        LaravelGettext::setDomain("messages");
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
 
         if(!is_null($settings->locale)) {
             LaravelGettext::setLocale($settings->locale);

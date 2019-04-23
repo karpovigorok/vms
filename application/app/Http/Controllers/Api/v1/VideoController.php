@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -16,7 +16,7 @@ use \Response as Response;
 use \Input as Input;
 
 use \Auth as Auth;
-use \App\Models\Setting;
+use App\Libraries\ThemeHelper;
 use \VideoCategory as VideoCategory;
 use \App\Models\Video;
 use FFMpeg;
@@ -58,7 +58,7 @@ class VideoController extends Controller {
 
 	public function video($id)
 	{
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 		$video = Video::find($id);
 		
 		// If user has access to all the content

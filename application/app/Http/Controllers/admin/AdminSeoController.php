@@ -1,25 +1,25 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
 <?php
 use \Redirect as Redirect;
-use App\Models\Setting;
 use App\Models\Video;
 use App\Models\VideoCategory;
 use App\Models\Post;
+use App\Libraries\ThemeHelper;
 
 class AdminSeoController extends \AdminBaseController
 {
 
     public function edit($article_type, $article_id)
     {
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
         $user = Auth::user();
 
         //dd($article_id);
@@ -55,7 +55,7 @@ class AdminSeoController extends \AdminBaseController
     public function store() {
         $input = Input::all();
         $id = $input['id'];
-        //я знаdd($input);
+
         switch ($input['article_type']) {
             case 'videos':
                 $article = Video::find($id);

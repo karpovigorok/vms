@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,6 +11,7 @@
 
 
 use \Redirect as Redirect;
+use App\Libraries\ThemeHelper;
 
 class AdminCommentsSettingsController extends \AdminBaseController {
 
@@ -19,7 +20,7 @@ class AdminCommentsSettingsController extends \AdminBaseController {
 
         $data = array(
             'admin_user' => Auth::user(),
-            'settings' => Setting::first(),
+            'settings' => ThemeHelper::getSystemSettings(),
         );
         return View::make('admin.comments.settings', $data);
     }
@@ -27,13 +28,12 @@ class AdminCommentsSettingsController extends \AdminBaseController {
     public function save_settings(){
 
         $input = Input::all();
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
 
         $demo_mode = Input::get('demo_mode');
         $enable_https = Input::get('enable_https');
         $free_registration = Input::get('free_registration');
         $activation_email = Input::get('activation_email');
-        $premium_upgrade = Input::get('premium_upgrade');
         $premium_upgrade = Input::get('premium_upgrade');
         $locale = Input::get('locale');
         $enable_video_comments = Input::get('enable_video_comments');

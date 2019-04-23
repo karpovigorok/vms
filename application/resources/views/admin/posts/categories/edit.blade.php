@@ -10,7 +10,7 @@
         <label for="slug"><?php echo _i("URL slug (ex. %s)", "posts/categories/slug-name");?></label>
         <input name="slug" id="slug" placeholder="<?php echo _i("URL Slug");?>" class="form-control" value="{{ $category->slug }}" />
         <input type="hidden" name="id" id="id" value="{{ $category->id }}" />
-        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
     </form>
 </div>
 

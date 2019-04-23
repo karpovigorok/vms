@@ -275,7 +275,7 @@
                 <input type="hidden" id="id" name="id" value="0"/>
             @endif
             <input type="hidden" id="process-status" name="process-status" value=""/>
-            <input type="hidden" name="_token" value="<?= csrf_token() ?>"/>
+            <input type="hidden" name="_token" value="<?php echo csrf_token() ?>"/>
             <input type="submit" value="{{ $button_text }}" id="add-video-button" class="btn btn-success pull-right @if(empty($video->id)) {{'disabled'}}@endif"/>
         </form>
         <div class="clear"></div>

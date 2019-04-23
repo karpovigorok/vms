@@ -12,7 +12,7 @@
 				<h3><i class="entypo-newspaper"></i> Posts</h3><a href="{{ URL::to('admin/posts/create') }}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Add New</a>
 			</div>
 			<div class="col-md-4">	
-				<form method="get" role="form" class="search-form-full"> <div class="form-group"> <input type="text" class="form-control" name="s" id="search-input" value="<?= Input::get('s'); ?>" placeholder="Search..."> <i class="entypo-search"></i> </div> </form>
+				<form method="get" role="form" class="search-form-full"> <div class="form-group"> <input type="text" class="form-control" name="s" id="search-input" value="<?php echo Input::get('s'); ?>" placeholder="Search..."> <i class="entypo-search"></i> </div> </form>
 			</div>
 		</div>
 	</div>
@@ -50,7 +50,7 @@
 
 	<div class="clear"></div>
 
-	<div class="pagination-outter"><?= $posts->appends(Request::only('s'))->render(); ?></div>
+	<div class="pagination-outter"><?php echo $posts->appends(Request::only('s'))->render(); ?></div>
 	<script src="{{ '/application/assets/admin/js/sweetalert.min.js' }}"></script>
 	<script>
 

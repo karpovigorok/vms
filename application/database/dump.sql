@@ -379,54 +379,6 @@ CREATE TABLE `sessions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `settings`
---
-
-CREATE TABLE `settings` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `website_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'VMS',
-  `website_description` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Your Premium Video CMS',
-  `logo` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'logo.png',
-  `favicon` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'favicon.png',
-  `system_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'email@domain.com',
-  `demo_mode` tinyint(1) NOT NULL DEFAULT '0',
-  `enable_https` tinyint(1) NOT NULL DEFAULT '0',
-  `theme` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default',
-  `facebook_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `google_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `twitter_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `youtube_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `google_tracking_id` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `google_tag_id` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `google_oauth_key` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `videos_per_page` int(11) NOT NULL DEFAULT '12',
-  `posts_per_page` int(11) NOT NULL DEFAULT '12',
-  `free_registration` tinyint(1) NOT NULL DEFAULT '0',
-  `activation_email` tinyint(1) NOT NULL DEFAULT '0',
-  `premium_upgrade` tinyint(1) NOT NULL DEFAULT '1',
-  `locale` char(5) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `enable_video_comments` tinyint(4) NOT NULL DEFAULT '1',
-  `enable_post_comments` tinyint(4) NOT NULL DEFAULT '1',
-  `video_comments_per_page` int(11) NOT NULL DEFAULT '10',
-  `post_comments_per_page` int(11) NOT NULL DEFAULT '10',
-  `enable_anonymous_comments` tinyint(4) NOT NULL DEFAULT '1',
-  `enable_google_captcha_comments` tinyint(4) NOT NULL DEFAULT '0',
-  `instagram_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `vimeo_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `settings`
---
-
-INSERT INTO `settings` (`id`, `website_name`, `website_description`, `logo`, `favicon`, `system_email`, `demo_mode`, `enable_https`, `theme`, `facebook_page_id`, `google_page_id`, `twitter_page_id`, `youtube_page_id`, `google_tracking_id`, `google_oauth_key`, `created_at`, `updated_at`, `videos_per_page`, `posts_per_page`, `free_registration`, `activation_email`, `premium_upgrade`, `locale`, `enable_video_comments`, `enable_post_comments`, `video_comments_per_page`, `post_comments_per_page`, `enable_anonymous_comments`, `enable_google_captcha_comments`, `instagram_page_id`, `vimeo_page_id`) VALUES
-(1, 'VMS', 'Your Online Video Subscription Platform', '', '', 'admin@admin.com', 1, 0, 'default', 'vms-app', 'vms-app', 'vms-app', '', '', '', '0000-00-00 00:00:00', '2018-10-23 17:46:29', 12, 12, 1, 0, 1, 'en_US', 1, 1, 10, 10, 1, 0, '', '');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `subscriptions`
 --
 
@@ -507,6 +459,13 @@ CREATE TABLE `theme_settings` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+
+--
+-- Dumping data for table `theme_settings`
+--
+
+INSERT INTO `theme_settings` (`id`, `theme_slug`, `key`, `value`, `created_at`, `updated_at`) VALUES
+(1, 'system', 'settings', '{\"locale\":\"en_US\",\"website_name\":\"VMS\",\"website_description\":\"Your Premium Video VMS\",\"enable_video_comments\":\"1\",\"video_comments_per_page\":\"10\",\"enable_post_comments\":\"1\",\"post_comments_per_page\":\"10\",\"videos_per_page\":\"12\",\"posts_per_page\":\"12\",\"free_registration\":\"1\",\"activation_email\":\"0\",\"premium_upgrade\":\"0\",\"system_email\":\"mail@noxls.net\",\"mail_host\":\"\",\"mail_port\":\"587\",\"mail_username\":\"\",\"mail_password\":\"\",\"webmasters_google\":\"\",\"webmasters_bing\":\"\",\"webmasters_alexa\":\"\",\"webmasters_yandex\":\"\",\"facebook_page_id\":\"\",\"google_page_id\":\"\",\"twitter_page_id\":\"\",\"youtube_page_id\":\"\",\"instagram_page_id\":\"\",\"vimeo_page_id\":\"\",\"google_tracking_id\":\"\",\"google_tag_id\":\"\",\"google_oauth_key\":\"\",\"_token\":\"\",\"demo_mode\":0,\"enable_https\":0,\"logo\":\"\",\"favicon\":\"\",\"theme\":\"default\"}', '2019-04-17 13:06:20', '2019-04-22 12:52:16');
 -- --------------------------------------------------------
 
 --

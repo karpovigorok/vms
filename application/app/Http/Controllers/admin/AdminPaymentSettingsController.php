@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,7 +11,7 @@
 
 use \Redirect as Redirect;
 use App\Models\PaymentSetting;
-use App\Models\Setting;
+use App\Libraries\ThemeHelper;
 
 class AdminPaymentSettingsController extends \AdminBaseController {
 
@@ -31,7 +31,7 @@ class AdminPaymentSettingsController extends \AdminBaseController {
         }
 		$data = array(
 			'admin_user' => Auth::user(),
-			'settings' => Setting::first(),
+			'settings' => ThemeHelper::getSystemSettings(),
 			'payment_settings' => $payment_settings,
             'stripe_subscription_plans' => $stripe_subscription_plans
 			);

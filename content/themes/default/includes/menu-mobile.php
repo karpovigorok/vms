@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -50,9 +50,9 @@
         <ul class="menu">
             <?php //if(Auth::check()):?>
             <?php //else:?>
-            <li>
+            <!--li>
                 <a href="submit-post.html"><?php echo _i('Upload Video');?></a>
-            </li>
+            </li-->
             <li class="dropdown-login">
                 <a href="/login"><?php echo _i('Login/Register');?></a>
             </li>

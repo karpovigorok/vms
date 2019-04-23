@@ -88,33 +88,6 @@
                     <input type="text" class="form-control" name="seo[extras][tc][image]" id="seo_extras_tc_image"
                            placeholder="<?php echo _i("Open Graph Image");?>"
                            value="@if(!empty($seoble_article->seo->extras['tc']['image'])){{ $seoble_article->seo->extras['tc']['image'] }}@endif"/>
-                    <br>
-                    <h4><?php echo _i('Webmasters');?></h4>
-                    <p><?php echo _i("Google Webmaster Confirmation Code");?>:</p>
-                    <input type="text" class="form-control" name="seo[extras][webmasters][google]" id="seo_extras_webmasters_google"
-                           placeholder="<?php echo _i("Google");?>"
-                           value="@if(!empty($seoble_article->seo->extras['webmasters']['google'])){{ $seoble_article->seo->extras['webmasters']['google'] }}@endif"/>
-                    <br>
-                    <p><?php echo _i("Bing Webmaster Confirmation Code");?>:</p>
-                    <input type="text" class="form-control" name="seo[extras][webmasters][bing]" id="seo_extras_webmasters_bing"
-                           placeholder="<?php echo _i("Bing");?>"
-                           value="@if(!empty($seoble_article->seo->extras['webmasters']['bing'])){{ $seoble_article->seo->extras['webmasters']['bing'] }}@endif"/>
-                    <br>
-                    <p><?php echo _i("Alexa Webmaster Confirmation Code");?>:</p>
-                    <input type="text" class="form-control" name="seo[extras][webmasters][alexa]" id="seo_extras_webmasters_alexa"
-                           placeholder="<?php echo _i("Alexa");?>"
-                           value="@if(!empty($seoble_article->seo->extras['webmasters']['alexa'])){{ $seoble_article->seo->extras['webmasters']['alexa'] }}@endif"/>
-                    <br>
-                    <p><?php echo _i("Pinterest Webmaster Confirmation Code");?>:</p>
-                    <input type="text" class="form-control" name="seo[extras][webmasters][pinterest]" id="seo_extras_webmasters_pinterest"
-                           placeholder="<?php echo _i("Pinterest");?>"
-                           value="@if(!empty($seoble_article->seo->extras['webmasters']['pinterest'])){{ $seoble_article->seo->extras['webmasters']['pinterest'] }}@endif"/>
-                    <br>
-                    <p><?php echo _i("Yandex Webmaster Confirmation Code");?>:</p>
-                    <input type="text" class="form-control" name="seo[extras][webmasters][yandex]" id="seo_extras_webmasters_yandex"
-                           placeholder="<?php echo _i("Yandex");?>"
-                           value="@if(!empty($seoble_article->seo->extras['webmasters']['yandex'])){{ $seoble_article->seo->extras['webmasters']['yandex'] }}@endif"/>
-                    <br>
                 </div>
             </div>
 

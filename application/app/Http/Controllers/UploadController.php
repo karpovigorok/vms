@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -169,9 +169,9 @@ class UploadController extends Controller
             'process_status' => Config::get('site.video.convert')?0:1,
         ];
         $video = Video::create($file_data);
-        $fileName = '0.' . $allowed_mime_exists->extension;
+        $fileName = uniqid() . '.' . $allowed_mime_exists->extension;
         $filePath = $video->get_dir_path() . '/converted/';
-        $finalPath = storage_path("video/".$filePath);
+        $finalPath = storage_path("video/" . $filePath);
 
         $file_data = [
             'id' => $video->id,

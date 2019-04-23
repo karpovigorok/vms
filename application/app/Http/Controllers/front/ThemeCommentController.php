@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -12,8 +12,8 @@
 use Illuminate\Http\Request;
 use App\Models\Video;
 use App\Models\Post;
-use App\Models\Setting;
 use App\User;
+use App\Libraries\ThemeHelper;
 
 class ThemeCommentController extends \BaseController
 {
@@ -50,7 +50,7 @@ class ThemeCommentController extends \BaseController
         if(Auth::check()) {
             $user = Auth::user();
         }
-        elseif(Setting::first()->enable_anonymous_comments) {
+        elseif(ThemeHelper::getSystemSettings()->enable_anonymous_comments) {
             $user = User::find(3); //anonymous user
         }
 

@@ -1,20 +1,18 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
 <?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use \App\Models\Setting;
 use \App\Models\VideoCategory;
 use \App\Models\PostCategory;
 use \App\Models\Page as Page;
-
 use \App\Libraries\ThemeHelper;
 
 class AppServiceProvider extends ServiceProvider {
@@ -26,7 +24,7 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-	    $settings = Setting::first();
+	    $settings = ThemeHelper::getSystemSettings();
 	    $theme = $settings->theme;
 	    $theme_settings = ThemeHelper::getThemeSettings();
 	    $menu = \Menu::orderBy('order', 'ASC')->get();

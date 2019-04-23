@@ -42,11 +42,11 @@
 					<?php if($errors->first('username')): ?>
                         <div class="alert alert-danger">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <strong><?php echo _i("Oh snap!");?></strong> <?= $errors->first('username'); ?>
+                            <strong><?php echo _i("Oh snap!");?></strong> <?php echo $errors->first('username'); ?>
                         </div>
                         <?php endif; ?>
 					<p><?php echo _i("User's Username");?></p>
-					<input type="text" class="form-control" name="username" id="username" value="<?php if(!empty($user->username)): ?><?= $user->username ?><?php endif; ?>" />
+					<input type="text" class="form-control" name="username" id="username" value="<?php if(!empty($user->username)): ?><?php echo $user->username ?><?php endif; ?>" />
 				</div>
 			</div>
 
@@ -56,11 +56,11 @@
 					<?php if($errors->first('email')): ?>
                         <div class="alert alert-danger">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <strong><?php echo _i("Oh snap!");?></strong> <?= $errors->first('email'); ?>
+                            <strong><?php echo _i("Oh snap!");?></strong> <?php echo $errors->first('email'); ?>
                         </div>
                         <?php endif; ?>
 					<p><?php echo _i("User's Email Address");?></p>
-					<input type="text" class="form-control" name="email" id="email" value="<?php if(!empty($user->email)): ?><?= $user->email ?><?php endif; ?>" />
+					<input type="text" class="form-control" name="email" id="email" value="<?php if(!empty($user->email)): ?><?php echo $user->email ?><?php endif; ?>" />
 				</div>
 			</div>
 
@@ -107,7 +107,7 @@
 			@if(isset($user->id))
 				<input type="hidden" id="id" name="id" value="{{ $user->id }}" />
 			@endif
-			<input type="hidden" name="_token" value="<?= csrf_token() ?>" />
+			<input type="hidden" name="_token" value="<?php echo csrf_token() ?>" />
 			<input type="submit" value="{{ $button_text }}" class="btn btn-success pull-right" />
 
 			<div class="clear"></div>

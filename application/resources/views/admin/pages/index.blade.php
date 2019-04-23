@@ -44,7 +44,7 @@
 
 	<div class="clear"></div>
 
-	<div class="pagination-outter"><?= $pages->render(); ?></div>
+	<div class="pagination-outter"><?php echo $pages->render(); ?></div>
 
 	<script>
 

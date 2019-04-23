@@ -1,15 +1,14 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
 <?php
 
-use \App\Models\Setting;
 use \App\Libraries\ThemeHelper;
 
 class ImageHandler {
@@ -61,7 +60,7 @@ class ImageHandler {
 
 			$uploadSuccess = $image->move($upload_folder, $filename);
 		
-			$settings = Setting::first();
+			$settings = ThemeHelper::getSystemSettings();
 
 			$img = Image::make($upload_folder . $filename);
 
@@ -97,12 +96,24 @@ class ImageHandler {
 
 
 		if ( $image_info = @getimagesize($image) ){ //check if image uploaded
-
+            //dd($image_info[0]);
+            if( $image_info[2] == IMAGETYPE_JPEG ) {
+                $image_create = imagecreatefromjpeg($image);
+            }
+            elseif( $image_info[2] == IMAGETYPE_PNG ) {
+                $image_create = imagecreatefrompng($image);
+            }
+            elseif( $image_info[2] == IMAGETYPE_GIF ) {
+                $image_create = imagecreatefromgif($image);
+            }
+            $new_image = imagecreatetruecolor($image_info[0], $image_info[1]);
+            imagecopyresampled($new_image, $image_create, 0, 0, 0, 0, $image_info[0], $image_info[1], $image_info[0], $image_info[1]);
+//dd($new_image);
 
 
 			// if the folder doesn't exist then create it.
 			if (!file_exists($upload_folder)) {
-				mkdir($upload_folder, 0777, true);
+				mkdir($upload_folder, 0775, true);
 			}
 
 			if($type =='upload'){
@@ -113,7 +124,6 @@ class ImageHandler {
 				while (file_exists($upload_folder.$filename)) {
 					$filename =  uniqid() . '-' . $filename;
 				}
-
 
 				$uploadSuccess = $image->move($upload_folder, $filename);
 
@@ -149,16 +159,19 @@ class ImageHandler {
 			}
             //ignore ICO, resize other
             if($image_info[2] != IMAGETYPE_ICO) {
-                $settings = Setting::first();
+                $settings = ThemeHelper::getSystemSettings();
                 $img = Image::make($upload_folder . $filename);
+                //dd($img);
                 $theme_config = ThemeHelper::get_theme_config($settings->theme);
 
                 foreach($theme_config['image'] as $destination => $dimensions) {
                     if(strpos($folder, $destination) === 0) {
                         foreach($dimensions as $dimension_key => $dimension) {
-                            Image::make($upload_folder . $filename)->resize($dimension['width'], $dimension['height'], function ($constraint) {
+                            $image_resize = Image::make($upload_folder . $filename)->resize($dimension['width'], $dimension['height'], function ($constraint) {
                                 $constraint->aspectRatio();
-                            })->save($upload_folder . pathinfo($filename, PATHINFO_FILENAME) . "-" . $dimension_key . '.' . pathinfo($filename, PATHINFO_EXTENSION));
+                            });
+                            //dd($image_resize);
+                            $image_resize->save($upload_folder . pathinfo($filename, PATHINFO_FILENAME) . "-" . $dimension_key . '.' . pathinfo($filename, PATHINFO_EXTENSION));
                         }
                     }
                 }

@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -44,7 +44,7 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot();
 
         //
-        $settings = \App\Models\Setting::first();
+        $settings = \App\Libraries\ThemeHelper::getSystemSettings();
 
         if($_SERVER['DOCUMENT_ROOT'] != '') {
             $root_dir = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/';
@@ -63,8 +63,24 @@ class RouteServiceProvider extends ServiceProvider
             endif;
         }
 
+        if(!empty($settings->system_email)) {
+            \Config::set('mail.from', ['address' => $settings->system_email, 'name' => $settings->website_name]);
+        }
 
-        \Config::set('mail.from', ['address' => $settings->system_email, 'name' => $settings->website_name]);
+        if(!empty($settings->mail_username)) {
+            \Config::set('mail.username', $settings->mail_username);
+        }
+        if(!empty($settings->mail_password)) {
+            \Config::set('mail.password', $settings->mail_password);
+        }
+
+        if(!empty($settings->mail_host)) {
+            \Config::set('mail.host', $settings->mail_host);
+        }
+
+        if(!empty($settings->mail_port)) {
+            \Config::set('mail.port', $settings->mail_port);
+        }
 
         @include($root_dir . 'content/themes/' . $theme . '/functions.php');
 
@@ -166,7 +182,7 @@ class RouteServiceProvider extends ServiceProvider
     public function map(Router $router)
     {
         $router->group(['namespace' => $this->namespace], function ($router) {
-            require app_path('Http/routes.php');
+            require base_path('routes/web.php');
         });
     }
 

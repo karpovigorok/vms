@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -13,7 +13,7 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 use App\Models\Comment;
-use App\Models\Setting;
+use App\Libraries\ThemeHelper;
 
 class RecentComments extends AbstractWidget
 {
@@ -33,7 +33,7 @@ class RecentComments extends AbstractWidget
      */
     public function run()
     {
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
         if($settings->enable_video_comments) {
             $sidebar_recent_comments = Comment::with('user')
                 ->where(['approved' => '1', 'commentable_type' => 'App\Models\Video', 'parent_id' => null])

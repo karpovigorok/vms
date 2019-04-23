@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                 </div>
-            <?php elseif (\App\Models\Setting::first()->enable_anonymous_comments): ?>
+            <?php elseif (\App\Libraries\ThemeHelper::getSystemSettings()->enable_anonymous_comments): ?>
                 <div class="comment-box thumb-border">
                     <div class="media-object stack-for-small">
                         <div class="media-object-section comment-img text-center">
@@ -226,7 +226,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <?php elseif (\App\Models\Setting::first()->enable_anonymous_comments): ?>
+                                    <?php elseif (\App\Libraries\ThemeHelper::getSystemSettings()->enable_anonymous_comments): ?>
                                         <div class="comment-box subcomment-box" id="subcomment-form-<?php echo $comment->id; ?>" style="display: none;">
                                             <div class="media-object stack-for-small">
                                                 <div class="media-object-section comment-img text-center">

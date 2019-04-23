@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -15,12 +15,16 @@ use App\Models\VideoCategory;
 use App\Models\PostCategory;
 use App\Libraries\ThemeHelper;
 use App\Models\Page;
+use Arcanedev\SeoHelper\Entities\Title;
+use Arcanedev\SeoHelper\Entities\Description;
 
 class ThemePageController extends \BaseController {
 
+    private $_settings;
     public function __construct()
     {
         $this->middleware('secure');
+        $this->_settings = ThemeHelper::getSystemSettings();
         parent::__construct();
     }
 
@@ -37,6 +41,19 @@ class ThemePageController extends \BaseController {
         //Make sure page is active
         if((!Auth::guest() && Auth::user()->role == 'admin') || $page->active){
             $author = User::find($page->user_id);
+
+            $title = new Title;
+            $title->set($page->title)
+                ->setSeparator('|')
+                ->setSiteName($this->_settings->website_name);
+            $description = new Description;
+            $description->set($page->title . '-' . $this->_settings->website_name);
+
+            $seo_data = array(
+                'meta_title' => $title,
+                'meta_description' => $description,
+            );
+
             $data = array(
                     'page' => $page, 
                     'author' => $author,
@@ -45,6 +62,7 @@ class ThemePageController extends \BaseController {
                     'post_categories' => PostCategory::all(),
                     'theme_settings' => ThemeHelper::getThemeSettings(),
                     'pages' => Page::where('active', '=', 1)->get(),
+                    'seo' => $seo_data,
                 );
             return View::make('Theme::page', $data);
 

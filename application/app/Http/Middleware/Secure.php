@@ -1,18 +1,17 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
 <?php namespace App\Http\Middleware;
 
 use Closure;
-//use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Foundation\Application;
-use \App\Models\Setting;
+use \App\Libraries\ThemeHelper;
 
 /**
  * Secure
@@ -32,7 +31,7 @@ class Secure {
 	
 	public function handle($request, Closure $next)
 	{
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 
 		if (!$request->secure() && $settings->enable_https) {
 			if($request->header('x-forwarded-proto') <> 'https'){

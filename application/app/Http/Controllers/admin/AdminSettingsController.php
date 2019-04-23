@@ -1,25 +1,24 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
 <?php
 
 use \Redirect as Redirect;
-use \App\Models\Setting;
+use \App\Libraries\ThemeHelper;
 
 class AdminSettingsController extends \AdminBaseController {
 
 	public function index()
 	{
-
 		$data = array(
 			'admin_user' => Auth::user(),
-			'settings' => Setting::first(),
+			'settings' =>  ThemeHelper::getSystemSettings(),
 			);
 		return View::make('admin.settings.index', $data);
 	}
@@ -27,7 +26,8 @@ class AdminSettingsController extends \AdminBaseController {
 	public function save_settings(){
 
 		$input = Input::all();
-		$settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
+        //dd($settings->demo_mode);
 
 		$demo_mode = Input::get('demo_mode');
 		$enable_https = Input::get('enable_https');
@@ -71,18 +71,18 @@ class AdminSettingsController extends \AdminBaseController {
 		if(Input::hasFile('logo')){
         	$input['logo'] = ImageHandler::uploadImage(Input::file('logo'), 'settings');
         }
-        else {
+        else if(isset($settings->logo)) {
             $input['logo'] = $settings->logo;
         }
 
         if(Input::hasFile('favicon')){
         	$input['favicon'] = ImageHandler::uploadImage(Input::file('favicon'), 'settings');
         }
-        else {
+        else if(isset($settings->favicon)) {
             $input['favicon'] = $settings->favicon;
         }
 
-        $settings->update($input);
+        ThemeHelper::createOrUpdateThemeSetting('system', 'settings', $input);
 
         return Redirect::to('admin/settings')->with(array('note' => _i('Successfully Updated Site Settings!'), 'note_type' => 'success') );
 

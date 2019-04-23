@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -14,7 +14,7 @@ use \App\User as User;
 use \Redirect as Redirect;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use \App\Libraries\ThemeHelper;
-use \App\Models\Setting;
+
 use \App\Models\PaymentSetting;
 use \App\Models\VideoCategory;
 use \App\Models\PostCategory;
@@ -74,7 +74,7 @@ class ThemeAuthController extends BaseController {
 
         Log::debug('Log in post');
 
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 
 	    // get login POST data
 	    $email_login = array(
@@ -97,7 +97,7 @@ class ThemeAuthController extends BaseController {
     		}
 	    	if(Auth::user()->subscribed('main') || (Auth::user()->role == 'admin' || Auth::user()->role == 'demo') || ($settings->free_registration && Auth::user()->role == 'registered') ):
 	    		$redirect = (Input::get('redirect', 'false')) ? Input::get('redirect') : '/';
-	    		if(Auth::user()->role == 'demo' && Setting::first()->demo_mode != 1){
+	    		if(Auth::user()->role == 'demo' && ThemeHelper::getSystemSettings()->demo_mode != 1){
 	    			Auth::logout();
 	    			return Redirect::to($redirect)->with(array('note' => 'Sorry, demo mode has been disabled', 'note_type' => 'error'));
 	    		} elseif($settings->free_registration && $settings->activation_email && Auth::user()->active == 0) {
@@ -126,7 +126,7 @@ class ThemeAuthController extends BaseController {
 		$input = Input::all();
 		$user_data = array('username' => Input::get('username'), 'email' => Input::get('email'), 'password' => Hash::make(Input::get('password')) );
 
-		$settings = Setting::first();
+		$settings = ThemeHelper::getSystemSettings();
 		if(!$settings->free_registration){
 		
 			$payment_settings = PaymentSetting::first();

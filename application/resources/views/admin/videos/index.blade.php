@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-4">
                 <form method="get" role="form" class="search-form-full">
-                    <div class="form-group"><input type="text" class="form-control" value="<?= Input::get('s'); ?>"
+                    <div class="form-group"><input type="text" class="form-control" value="<?php echo Input::get('s'); ?>"
                                                    name="s" id="search-input" placeholder="<?php echo _i("Search...");?>"> <i
                                 class="entypo-search"></i></div>
                 </form>
@@ -91,7 +91,7 @@
                 </div>
             @endforeach
             <div class="clear"></div>
-            <div class="pagination-outter"><?= $videos->appends(Request::only('s'))->render(); ?></div>
+            <div class="pagination-outter"><?php echo $videos->appends(Request::only('s'))->render(); ?></div>
         </div>
     </div>
 @section('javascript')

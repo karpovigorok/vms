@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -27,7 +27,7 @@ class AdminWidgetsSettingsController extends \AdminBaseController {
 
         //  @TODO: add phpDoc params parser
 
-//        $settings = Setting::first();
+//        $settings = ThemeHelper::getSystemSettings();
 //        $widgets_dir = THEME_DIR . "/widgets";
 //        if ($handle = opendir($widgets_dir)) {
 //            while (false !== ($entry = readdir($handle))) {

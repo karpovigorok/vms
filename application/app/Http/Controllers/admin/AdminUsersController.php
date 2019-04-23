@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -11,7 +11,7 @@
 
 use \Redirect as Redirect;
 use \App\User as User;
-use App\Models\Setting;
+use \App\Libraries\ThemeHelper;
 
 class AdminUsersController extends \AdminBaseController {
 
@@ -61,7 +61,7 @@ class AdminUsersController extends \AdminBaseController {
 
 	public function edit($id) {
 
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
     	$user = User::find($id);
     	$data = array(
     		'user' => $user,

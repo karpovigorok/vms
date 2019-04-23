@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -27,7 +27,7 @@ class MustBeSubscribed
     {
         //dd(Auth::guest());
             if (!Auth::guest()){
-				$settings = \App\Models\Setting::first();
+				$settings = \App\Libraries\ThemeHelper::getSystemSettings();
 				$free_registration = $settings->free_registration;
 
 				if( (!Auth::user()->subscribed('main') && Auth::user()->role == 'subscriber') || (!$free_registration && Auth::user()->role == 'registered') ){

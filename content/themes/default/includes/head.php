@@ -1,15 +1,15 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
 <?php
-$settings = \App\Models\Setting::first();
-if(isset($video->id) || isset($category->id) || isset($post->id)):
+$settings = \App\Libraries\ThemeHelper::getSystemSettings();
+if(isset($seo)):
     if(isset($seo['meta_title'])):
         echo $seo['meta_title']->render();
     endif;
@@ -32,9 +32,6 @@ if(isset($video->id) || isset($category->id) || isset($post->id)):
         echo $seo['twitter_card']->render();
     endif;
     ?>
-<?php elseif(isset($page->id)): ?>
-    <title><?php echo $page->title . '-' . $settings->website_name; ?></title>
-    <meta name="description" content="<?php echo $page->title . '-' . $settings->website_name; ?>">
 <?php else: ?>
     <title><?php echo $settings->website_name . ' - ' . $settings->website_description; ?></title>
     <meta name="description" content="<?php echo $settings->website_description ?>">

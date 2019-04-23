@@ -10,7 +10,7 @@
 
 @section('content')
 
-
+<?php// dd($settings)?>
     <div id="admin-container">
         <!-- This is where -->
 
@@ -34,7 +34,7 @@
                             <p><?php echo _i("Choose website interface Language");?>:</p>
                             <select name="locale">
                                 <?php foreach(Config::get('laravel-gettext.supported-locales') as $locale):?>
-                                <option value="<?php echo $locale;?>" @if($settings->locale == $locale){{"selected"}}@endif><?php echo $locale;?></option>
+                                <option value="<?php echo $locale;?>" @if(isset($settings->locale) && $settings->locale == $locale){{"selected"}}@endif><?php echo $locale;?></option>
                                 <?php endforeach;?>
                             </select>
 
@@ -67,8 +67,7 @@
                         <div class="panel-body" style="display: block;">
                             <p><?php echo _i("Enter Your Website Description Below");?>:</p>
 						<textarea class="form-control" name="website_description" id="website_description"
-                                  placeholder="<?php echo _i("Site Description");?>">@if(!empty($settings->website_description)){{ $settings->website_description }}@endif
-                        </textarea>
+                                  placeholder="<?php echo _i("Site Description");?>">@if(!empty($settings->website_description)){{ $settings->website_description }}@endif</textarea>
                         </div>
                     </div>
                 </div>
@@ -327,10 +326,66 @@
                     <p><?php echo _i("Email address to be used to send system emails");?>:</p>
                     <input type="text" class="form-control" name="system_email" id="system_email"
                            placeholder="<?php echo _i("Email Address");?>"
-                           value="@if(!empty($settings->system_email)){{ $settings->system_email }}@endif"/>
+                           value="@if(!empty($settings->system_email)){{ $settings->system_email }}@else{{\Config::get('mail.from')['address']}}@endif"/>
                 </div>
+                <div class="panel-body" style="display: block;">
+                    <p><?php echo _i("Mail Host");?>:</p>
+                    <input type="text" class="form-control" name="mail_host" id="mail_host"
+                           placeholder="<?php echo _i("Mail Host");?>"
+                           value="@if(!empty($settings->mail_host)){{ $settings->mail_host }}@else{{\Config::get('mail.host')}}@endif"/>
+                </div>
+                <div class="panel-body" style="display: block;">
+                    <p><?php echo _i("Mail Port");?>:</p>
+                    <input type="text" class="form-control" name="mail_port" id="mail_port"
+                           placeholder="<?php echo _i("Mail Port");?>"
+                           value="@if(!empty($settings->mail_port)){{ $settings->mail_port }}@else{{\Config::get('mail.port')}}@endif"/>
+                </div>
+                <div class="panel-body" style="display: block;">
+                    <p><?php echo _i("Mail Username");?>:</p>
+                    <input type="text" class="form-control" name="mail_username" id="mail_username"
+                           placeholder="<?php echo _i("Mail Username");?>"
+                           value="@if(!empty($settings->mail_username)){{ $settings->mail_username }}@else{{\Config::get('mail.username')}}@endif"/>
+                </div>
+                <div class="panel-body" style="display: block;">
+                    <p><?php echo _i("Mail Password");?>:</p>
+                    <input type="text" class="form-control" name="mail_password" id="mail_password"
+                           placeholder="<?php echo _i("Mail Password");?>"
+                           value="@if(!empty($settings->mail_password)){{ $settings->mail_password }}@else{{\Config::get('mail.password')}}@endif"/>
+                </div>
+
             </div>
 
+
+            <div class="panel panel-primary" data-collapsed="0">
+                <div class="panel-heading">
+                    <div class="panel-title"><?php echo _i('Webmasters');?></div>
+                    <div class="panel-options"><a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                    </div>
+                </div>
+                <div class="panel-body" style="display: block;">
+
+                    <p><?php echo _i("Google Webmaster Confirmation Code");?>:</p>
+                    <input type="text" class="form-control" name="webmasters_google" id="seo_webmasters_google"
+                           placeholder="<?php echo _i("Google");?>"
+                           value="@if(!empty($settings->webmasters_google)){{ $settings->webmasters_google }}@endif"/>
+                    <br>
+                    <p><?php echo _i("Bing Webmaster Confirmation Code");?>:</p>
+                    <input type="text" class="form-control" name="webmasters_bing" id="seo_webmasters_bing"
+                           placeholder="<?php echo _i("Bing");?>"
+                           value="@if(!empty($settings->webmasters_bing)){{ $settings->webmasters_bing }}@endif"/>
+                    <br>
+                    <p><?php echo _i("Alexa Webmaster Confirmation Code");?>:</p>
+                    <input type="text" class="form-control" name="webmasters_alexa" id="seo_webmasters_alexa"
+                           placeholder="<?php echo _i("Alexa");?>"
+                           value="@if(!empty($settings->webmasters_alexa)){{ $settings->webmasters_alexa }}@endif"/>
+                    <br>
+                    <p><?php echo _i("Yandex Webmaster Confirmation Code");?>:</p>
+                    <input type="text" class="form-control" name="webmasters_yandex" id="seo_webmasters_yandex"
+                           placeholder="<?php echo _i("Yandex");?>"
+                           value="@if(!empty($settings->webmasters_yandex)){{ $settings->webmasters_yandex }}@endif"/>
+                    <br>
+                </div>
+            </div>
             <div class="panel panel-primary" data-collapsed="0">
                 <div class="panel-heading">
                     <div class="panel-title"><?php echo _i("Social Networks");?></div>

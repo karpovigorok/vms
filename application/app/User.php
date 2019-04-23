@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -44,13 +44,15 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 	protected $dates = ['trial_ends_at', 'subscription_ends_at'];
 
-	public static $rules = array('username' => 'required|unique:users|min:3',
-						        'email' => 'required|email|unique:users',
-						        'password' => 'required|confirmed|min:3'
+	public static $rules = array('username' => 'required|unique:users|min:3|max:255',
+						        'email' => 'required|email|unique:users|max:255',
+						        'password' => 'required|confirmed|min:3',
+						        'avatar' => 'image',
 						    );
 
-	public static $update_rules = array('username' => 'unique:users|min:3',
-						        'email' => 'email|unique:users'
+	public static $update_rules = array('username' => 'unique:users|min:3|max:255',
+						        'email' => 'email|unique:users|max:255',
+                                'avatar' => 'image',
 						    );
 
 //    public function isAdmin() {

@@ -51,7 +51,7 @@
                             <?php echo _i("Demo User");?></div>
 					@elseif($user->role == 'admin')
 						<div class="label label-primary"><i class="fa fa-star"></i>
-						<?= ucfirst($user->role) ?> <?php echo _i("User");?></div>
+						<?php echo ucfirst($user->role) ?> <?php echo _i("User");?></div>
 					@endif
 					 
 				</td>

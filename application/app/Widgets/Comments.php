@@ -1,9 +1,9 @@
 <?php /**
     *
     * Copyright (c) 2019
-    * @package VMS - Video CMS v1.0
+    * @package VMS - Video CMS v1.1
     * @author Igor Karpov <ika@noxls.net>
-    * @author Sergey Karpov
+    * @author Sergey Karpov <ska@noxls.net>
     * @website https://noxls.net
     *
 */?>
@@ -12,7 +12,7 @@
 namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
-use App\Models\Setting;
+use App\Libraries\ThemeHelper;
 
 class Comments extends AbstractWidget
 {
@@ -35,7 +35,7 @@ class Comments extends AbstractWidget
     public function run()
     {
 
-        $settings = Setting::first();
+        $settings = ThemeHelper::getSystemSettings();
         if(isset($settings->videos_per_page) && $settings->videos_per_page > 0) {
             $this->_videos_per_page = $settings->videos_per_page;
         }
