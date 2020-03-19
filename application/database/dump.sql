@@ -330,6 +330,55 @@ INSERT INTO `post_categories` (`id`, `parent_id`, `order`, `name`, `slug`, `crea
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `settings`
+--
+
+CREATE TABLE `settings` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `website_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'VMS',
+  `website_description` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Your Premium Video CMS',
+  `logo` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'logo.png',
+  `favicon` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'favicon.png',
+  `system_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'email@domain.com',
+  `demo_mode` tinyint(1) NOT NULL DEFAULT 0,
+  `enable_https` tinyint(1) NOT NULL DEFAULT 0,
+  `theme` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default',
+  `facebook_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `google_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `twitter_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `youtube_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `google_tracking_id` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `google_tag_id` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `google_oauth_key` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `videos_per_page` int(11) NOT NULL DEFAULT 12,
+  `posts_per_page` int(11) NOT NULL DEFAULT 12,
+  `free_registration` tinyint(1) NOT NULL DEFAULT 0,
+  `activation_email` tinyint(1) NOT NULL DEFAULT 0,
+  `premium_upgrade` tinyint(1) NOT NULL DEFAULT 1,
+  `locale` char(5) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `enable_video_comments` tinyint(4) NOT NULL DEFAULT 1,
+  `enable_post_comments` tinyint(4) NOT NULL DEFAULT 1,
+  `video_comments_per_page` int(11) NOT NULL DEFAULT 10,
+  `post_comments_per_page` int(11) NOT NULL DEFAULT 10,
+  `enable_anonymous_comments` tinyint(4) NOT NULL DEFAULT 1,
+  `enable_google_captcha_comments` tinyint(4) NOT NULL DEFAULT 0,
+  `instagram_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `vimeo_page_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `settings`
+--
+
+INSERT INTO `settings` (`id`, `website_name`, `website_description`, `logo`, `favicon`, `system_email`, `demo_mode`, `enable_https`, `theme`, `facebook_page_id`, `google_page_id`, `twitter_page_id`, `youtube_page_id`, `google_tracking_id`, `google_tag_id`, `google_oauth_key`, `created_at`, `updated_at`, `videos_per_page`, `posts_per_page`, `free_registration`, `activation_email`, `premium_upgrade`, `locale`, `enable_video_comments`, `enable_post_comments`, `video_comments_per_page`, `post_comments_per_page`, `enable_anonymous_comments`, `enable_google_captcha_comments`, `instagram_page_id`, `vimeo_page_id`) VALUES
+(1, 'VMS', 'Your Online Video Subscription Platform', '', '', 'admin@admin.com', 1, 0, 'default', 'vms-app', 'vms-app', 'vms-app', '', 'UA-1398385-23', 'GTM-58NHVD8', '', '0000-00-00 00:00:00', '2019-09-08 20:19:19', 12, 12, 1, 0, 1, 'en_US', 1, 1, 10, 10, 1, 0, '', '');
+
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `seo_metas`
 --
 
